@@ -427,7 +427,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Server-side external API requests (Brianna)</td>
     <td></td>
     <td></td>
-    <td></td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w05-project-1/weekend-homework/weekend-homework.md" target="_block">Weekend Homework</a></td>
   </tr>
 </table>
 
