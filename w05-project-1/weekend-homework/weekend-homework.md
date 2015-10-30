@@ -41,7 +41,7 @@ We will be working together Monday morning on some of these issues!
  - http://humblelittlerubybook.com/book/html/index.html
  - http://ruby-doc.com/docs/ProgrammingRuby/
 
-3. Choose at least one of these books to read more of. I recommend you choose one to spend as much time as you can with. (But also get some rest, it's been a long week!) 
+3. Choose at least one of these books to read more of. I recommend you choose one to spend as much time as you can with this weekend. (But also get some rest, it's been a long week!) 
 
      **reading tips for technical books:**
   - If you are getting bored, skip ahead to something you are more curios about. You can always come back later.
