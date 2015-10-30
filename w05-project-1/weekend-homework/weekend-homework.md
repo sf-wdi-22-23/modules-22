@@ -49,4 +49,6 @@ We will be working together Monday morning on some of these issues!
   
 4. Completely Optional Reading: Practical Object Oriented Design (POODR) by Sandi Metz chapters 1-3. (This is not a free book, so it is optional. Highly reccomended reading however.)
 
+### There is nothing to submit for homework!
+
 ### Have a great weekend and be safe!
