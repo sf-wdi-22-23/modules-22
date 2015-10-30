@@ -46,5 +46,7 @@ We will be working together Monday morning on some of these issues!
      **reading tips for technical books:**
   - If you are getting bored, skip ahead to something you are more curios about. You can always come back later.
   - Read the about the author, so you know why you should care what they think. After that, skip to chapter 1, or alternatively skip to a chapter you are especially excited about. Don't bother with the introduction, etc. 
+  
+4. Completely Optional Reading: Practical Object Oriented Design (POODR) by Sandi Metz chapters 1-3. (This is not a free book, so it is optional. Highly reccomended reading however.)
 
 ### Have a great weekend and be safe!
