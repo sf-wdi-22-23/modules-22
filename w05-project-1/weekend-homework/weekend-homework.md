@@ -31,9 +31,9 @@ We will be working together Monday morning on some of these issues!
 
     - [Try Ruby](http://tryruby.org/levels/1/challenges/0) levels 1-4 - an interactive introduction to Ruby. *Time: 30 minutes*
 
-   - [Intro to Ruby Data-Types](https://github.com/sf-wdi-22-23/modules-23/blob/master/w06-ruby-on-rails/d1-dusk-intro-to-ruby/tutorials-ruby-data-types.md)
+   - [Intro to Ruby Data-Types](ruby-data-types.md)
 
-   - [Intro to Ruby arrays, hashes, and blocks](https://github.com/sf-wdi-22-23/modules-23/blob/master/w06-ruby-on-rails/d1-dusk-intro-to-ruby/tutorials-arrays-hashes-blocks.md)
+   - [Intro to Ruby arrays, hashes, and blocks](arrays-hashes-blocks.md)
 
 2. Take about fifteen minutes (total) skimming through the following 3 free books on Ruby. Spend a little time really reading the table of contents (if there is one) and seeing what piques your interest. 
 
