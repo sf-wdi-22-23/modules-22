@@ -313,55 +313,50 @@ Look here for all things related to lesson notes, exercises, and solutions as we
 <!--  </tr>-->
 <!--</table>-->
 
-<!--##Week 6 - Ruby-->
+##Week 6 - Ruby on Rails
 
-<!--<table>-->
-<!--  <tr>-->
-<!--    <th></th>-->
-<!--    <th>Monday</th>-->
-<!--    <th>Tuesday</th>-->
-<!--    <th>Wednesday</th>-->
-<!--    <th>Thursday</th>-->
-<!--    <th>Friday</th>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Drills</td>-->
-<!--    <td><a href="week-06/day-01-review-and-ruby/dawn-review-and-install-fest">Peer Review</a> (All Morning)</td>-->
-<!--    <td><a href="/week-06/drills.md">Regex Drills</a> (Justin)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/rubyMerge">Ruby Merge</a> (Ilias)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/bubble_sort_ruby">Ruby Bubble Sort</a> (Nathan)</td>-->
-<!--    <td>AR Review (Nathan)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Module1</td>-->
-<!--    <td><a href="week-06/day-01-review-and-ruby/dawn-review-and-install-fest/installfest.md">Environment Setup </a> (Justin)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/ruby_method_drills">Ruby Method Drills</a> (Nathan)</td>-->
-<!--    <td><a href="week-06/day-03-ruby-oop/dawn-ruby-oop">Ruby OOP</a> (Ilias / Justin)</td>-->
-<!--    <td><a href="week-06/day-04-rails-intro/dawn-first-rails-app/readme.md">Intro Rails Framework</a> (Ilias)</td>-->
-<!--    <td><a href="week-06/day-05-rails-review/dawn-rock-n-rails/readme.md">Rock 'n Rails</a> (Ilias)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Module2</td>-->
-<!--    <td><a href= "week-06/day-01-review-and-ruby/dusk-intro-to-ruby">Intro Ruby</a> (Justin)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/username_generator">Username Generator Lab</a> w/ Pairing (Nathan)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/car-racing-lab">OOP Lab</a> (Justin / Ilias)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/hacktive_record">Intro Active Record</a> (Nathan)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/bog-app">Bog App</a> (Justin)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>HW</td>-->
-<!--    <td><a href="week-06/day-01-review-and-ruby/dusk-intro-to-ruby/reading-ruby-data-types.md">Datatypes</a> and <a href="week-06/day-01-review-and-ruby/dusk-intro-to-ruby/reading-arrays-hashes-blocks.md">more</a>, <a href="https://github.com/sf-wdi-21/ValidIP">IP Lab</a></td>-->
-<!--    <td><a href="week-06/day-03-ruby-oop/dawn-ruby-oop/reading-intro-to-classes.md">OOP Reading</a> (Justin)</td>-->
-<!--    <td><a href="week-06/day-04-rails-intro/dawn-first-rails-app/reading-intro-rails.md">Rails Intro</a> (Ilias)</td>-->
-<!--    <td><a href="week-06/day-05-rails-review/dawn-rock-n-rails/reading-rails-guides.md">Rails Guides</a> & <a href="http://railsforzombies.org/levels/1">Rails for Zombies</a></td>-->
-<!--    <td><a href="how-tos/the_rails_checklist.md">Rails Checklist</a></td>-->
-<!--  </tr>-->
-<!--</table>-->
-
-<!--##Week 5 - Project 1-->
-
-<!-------->
-<!-------->
+<table>
+ <tr>
+   <th></th>
+   <th>Monday</th>
+   <th>Tuesday</th>
+   <th>Wednesday</th>
+   <th>Thursday</th>
+   <th>Friday</th>
+ </tr>
+ <tr>
+   <td>Drills</td>
+   <td>Peer Review (Ben)</td>
+   <td>Regex Drills (Brianna)</td>
+   <td>Ruby Binary Search (Brianna)</td>
+   <td>Ruby Bubble Sort (Alex)</td>
+   <td>Rails Drills (Brianna)</td>
+ </tr>
+ <tr>
+   <td>Module1</td>
+   <td>Peer Review  (Ben)</td>
+   <td>Ruby Method Drills (Brianna)</td>
+   <td>Ruby OOP (Brianna)</td>
+   <td>Intro Rails Framework (Alex)</td>
+   <td>Review (Brianna)</td>
+ </tr>
+ <tr>
+   <td>Module2</td>
+   <td>Intro Ruby (Alex)</td>
+   <td>Username Generator Lab (Ben)</td>
+   <td>OOP Lab (Alex)</td>
+   <td>Intro Active Record (Ben)</td>
+   <td>Bog App (Brianna)</td>
+ </tr>
+ <tr>
+   <td>HW</td>
+   <td>Ruby Language and IP Address Lab (Matt)</td>
+   <td>OOP Reading (Alex)</td>
+   <td>Intro Rails Reading (Brianna)</td>
+   <td>Rails Guides (Ben)</td>
+   <td>Rails Checklist & Rails for Zombies (Juliana)</td>
+</tr>
+</table>
 
 ##Week 5 - <a href="https://github.com/sf-wdi-22-23/modules-23/blob/master/w04-associations-and-auth/project-1/README.md" target="_blank">Project 1</a>
 <table>
