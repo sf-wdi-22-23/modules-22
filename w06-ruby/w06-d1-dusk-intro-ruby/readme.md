@@ -115,7 +115,9 @@ Let's recall some of our JS Data Types
     * uses `def` keyword
      ``` 
          def some_method
+         
            do_something
+           
          end
      ```
     * Uses [dynamic scope](http://www.sitepoint.com/understanding-scope-in-ruby/)
