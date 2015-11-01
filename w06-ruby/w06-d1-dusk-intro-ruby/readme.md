@@ -256,7 +256,7 @@ puts bar
 The problem is the ruby is locally scoped. Meaning that a function only has access to its variables and the variables it defined inside of itself.
 
 ```ruby
-foo = 1
+foo = 100
 
 def do_stuff
   foo = 1
