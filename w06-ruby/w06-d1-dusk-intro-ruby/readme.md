@@ -57,7 +57,7 @@ Let's recall some of our JS Data Types
 * Hashes
   * `{ :key => value }`
   * `{ key: value }` which is the same as `{:key =>value }`
-  * `[some_key]` and `[some_key]=` 
+  * `array[some_key]` and `array[some_key]= some_value` 
   * `key`,`.keys`, `.each`
 * operators
   * `||=`, `*=`, `/=`
@@ -102,7 +102,8 @@ Let's recall some of our JS Data Types
 
 * Function
     * Anonymous: `function (param1, [..param2, [...]]){...}`, 
-    * Named: `function Name(param1, [..param2, [...]]){...}`
+    * Named: `function Name(param1, [..param2, [...]]){...}`,
+    * Named: `var Name = function(param1, param2){...}`,
     * Uses lexical scope
     * Used as values
     * require explicit return
@@ -112,7 +113,7 @@ Let's recall some of our JS Data Types
 
  * Function
     * uses `def` 
-    * Do not capture scope
+    * Uses [dynamic scope](http://www.sitepoint.com/understanding-scope-in-ruby/)
     * Not used as values
     * optional parameters must be specified
     * implicitly returns last evaluation
