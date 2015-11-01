@@ -112,7 +112,12 @@ Let's recall some of our JS Data Types
 #### Ruby   
 
  * Function
-    * uses `def` 
+    * uses `def` keyword
+     ``` 
+         def some_method
+           do_something
+         end
+     ```
     * Uses [dynamic scope](http://www.sitepoint.com/understanding-scope-in-ruby/)
     * Not used as values
     * optional parameters must be specified
