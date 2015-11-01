@@ -186,7 +186,7 @@ def add_numbers_quietly(first, second)
 end
 
 add_numbers_quietly(1,2)
-add_numbers_quietly 1, 2
+puts(add_numbers_quietly 1, 2)
 ```
 
 #### Methods in Ruby always return the value of the last evaluated expression
