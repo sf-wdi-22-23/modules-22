@@ -296,7 +296,7 @@ In JavaScript, everything is an Object. To create classes, you create an object 
  };
 ```
 
-In ruby, we classes are defined using the keyword class. 
+In ruby, classes are also Objects, but they are a special kind of Object distinct from instances of a class. Classes are defined using the keyword class. 
 ```
  class Comedian
     def initialize
