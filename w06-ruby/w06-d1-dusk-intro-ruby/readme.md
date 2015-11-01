@@ -282,11 +282,37 @@ end
 puts do_stuff2(foo)
 ```
 
-[Ruby Method Calls In Depth](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls)
+#### Classes are a special kind of object (no need to fully grasp this now)
 
+In JavaScript, everything is an Object. To create classes, you create an object and add properties and methods to that object, generally using the somewhat cryptic 'prototype' structure. 
 
+```
+ var Comedian = function(){
+     this.funny = true;
+ };
+ 
+ Comedian.prototype.tellJoke = function(joke){
+     console.log(joke);
+ };
+```
+
+In ruby, we classes are defined using the keyword class. 
+```
+ class Comedian
+    def initialize
+      @funny = true
+    end
+    def tell_joke joke
+      puts joke
+    end
+  end 
+ ```
+ 
+ For now, we want to focus on methods. We will go a lot futher into classes when we introduce Object Oriented Ruby in a couple days. 
+ 
 ### Further Reading
 
+* [Ruby Method Calls In Depth](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls)
 * [Tutorialspoint Ruby Quick Guide](http://www.tutorialspoint.com/ruby/ruby_quick_guide.htm)
 * [Ruby Hash in Detail] (http://ruby-doc.org/core-2.2.0/Hash.html)
 * [RubyMonk Library](https://rubymonk.com/learning/books/1-ruby-primer)
