@@ -27,7 +27,7 @@ Recall that there are 2 notations for hashes, a colon (`:`) notation and a hash 
 
 ##Objects
 
-Ruby also has Objects. In fact, everything in Ruby is an Object. However, we almost never use plain vanilla Objects because there are more sophisticated, specialized object types such a `String`, `Integer`, and `Hash`.
+Ruby also has Objects. In fact, everything in Ruby is a BasicObject. However, we almost never use plain vanilla Objects because there are more sophisticated, specialized object types such a `String`, `Integer`, and `Hash`.
 
 
 **Class Inheritance Tree**
@@ -36,31 +36,31 @@ Ruby also has Objects. In fact, everything in Ruby is an Object. However, we alm
 
 
 **Example:**
-How can we prove that the Hash we just created inherited from `BasicObject`?
+How can we prove that the hash we just created is a `BasicObject`, through `Hash` and `Object`?
 
 
 ```ruby
-ourhash.is_a? Hash  
-# => true
+ourhash.class
+# => Hash  
 
-Hash < Object
+Hash < Object     
 # => true
 
 Object < BaseObject
 # => true
 
-Hash < BasicObject
+# or a shortcut:
+ourhash.is_a? BasicObject
 # => true
 ```
 
+
 ##Classes
 
-Classes are data types used to create more data. They are similar to the object types we manipulated with constructors and prototypes in JavaScript.
+Ruby uses **classes** for object-oriented programming.  Classes are data types used to create more data.  They are similar to the object types we manipulated with constructors and prototypes in JavaScript.  Classes are more common among programming languages than prototypes, so we'll go into more depth about OOP with Ruby than we did with JavaScript. (Also, JavaScript is adding classes soon.)
 
-Ruby uses **classes** for object-oriented programming.
 
 **Challenge:** create a `Monster` class and an instance of `Monster`.
-
 
 *Hint: you'll have to use the Ruby reserved words `class` and `new`.*
 
@@ -100,7 +100,7 @@ dalek.threat_level
 
 ##Instance Methods
 
-**Challenge:** Create a `habitat?` instance method for `Monster` that tests whether the monster's habitat matches what is passed in?
+**Challenge:** Create a `habitat?` instance method for `Monster` that tests whether the monster's habitat matches what is passed in.
 
 ```ruby
 yeti = Monster.new
@@ -207,7 +207,7 @@ People are animals too! In this exercise, you'll define:
       * age
       * gender
       * name
-    - Also, people aren't cannibals! Make sure your `Person` class *overrides* the existing `eat` method (in `Animal`) so that a `Person` cannot eat a `"person"`
+    - Also, people aren't cannibals! Make sure your `Person` class *overrides* the existing `eat` method (in `Animal`) so that a `Person` cannot eat a `"person"`.
 
 **Bored? More!**
 
