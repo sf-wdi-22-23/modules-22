@@ -2,16 +2,16 @@
 
 > <a href="http://ruby-doc.org/core-2.2.0/Regexp.html" target="_blank">Ruby Regexp</a>
 
-Regular expressions (**regex** or **regexps**) are patterns which describe the contents of a string. They’re used for testing whether a string contains a given pattern or extracting the portions that match. Common examples of regexps are "find-and-replace" operations and string format validation (i.e. phone numbers or email addresses).
+Regular expressions (**regex** or **regexps**) are patterns which describe the contents of a string. They’re used for testing whether a string contains a given pattern or for extracting the portions that match. Common examples of regexps are "find-and-replace" operations and string format validation (i.e. phone numbers or email addresses).
 
-Many programming languages have regexp capabilities built-in, and Ruby is one of them. Today we'll use regexps to match string patterns in Ruby.
+Many programming languages have regexp capabilities built-in, including JavaScript and Ruby. Luckily, regex pattern syntax is fairly consistent across languages. Today we'll use regexps to match string patterns in Ruby.
 
 ## Defining and Matching
 
 Regexps are bounded by forward-slashes (`/`). **For example:**
 
 ```ruby
-/hello/
+/hello/   
 ```
 
 To test if a string matches the pattern of a regexp, we use `.match`. **For example:**
@@ -29,15 +29,15 @@ To test if a string matches the pattern of a regexp, we use `.match`. **For exam
 For a more complete list of basic regex patterns, see <a href="http://rubular.com" target="_blank">Rubular's Regex quick reference</a>.
 
 ```ruby
-/[abc]/ #=> a single character of: a, b, or c
+/[abc]/ # matches a single character from the set: 'a', 'b', or 'c'
 
-/\A/ #=> start of string
+/\A/ # matches start of string
 
-/\s/ #=> any whitespace character
+/\s/ # matches any whitespace character
 
-/\d/ #=> any digit (number)
+/\d/ # matches any digit (number)
 
-/(a|b)/ # => a or b
+/(a|b)/ # matches 'a' or 'b'
 ```
 
 ## Challenges
@@ -61,9 +61,9 @@ Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges 
 
 ### Stretch Challenges
 
-You're encouraged to #GTS for these challenges, but instead of looking for pre-written regex patterns that solve the challenges (you will have no trouble finding them!), logically break down the string patterns, search for the individual pieces, and put them together.
+You're encouraged to look up external information for these challenges, but not to look for pre-written regex patterns that solve the challenges (you would have no trouble finding them!).  Instead, logically break down the string patterns, search for the individual regex ingredients your logic requires, and put them together.
 
-1. Again using the same text, write a regexp to match the HTML tags (`<p></p>` and `<span></span>`). **Hint:** You must escape all forward-slashes (`/`) with a back-slash (`\`), like this `\/`.
+1. Again using the same paragraph from above, write a regexp to match the HTML tags (`<p></p>` and `<span></span>`). **Hint:** Inside the regex, you must "escape" all forward-slashes (`/`) with a back-slash (`\`), like this `\/`.  If you forget, the forward-slash will be interpreted as the end of the regex!
 
 2. Write a regexp to validate a phone number. Think about the following formats:
   * `(555) 555-5555`
