@@ -85,18 +85,18 @@ end
 # puts get_contact contacts_hash
 
 ## List exercises
-def get_sum(xs)
-  xs.inject do |memo,x|
-    memo + x
+def get_sum array
+  array.inject do |memo, number|
+    memo + number
   end
 end
 
 # puts get_sum [1,2,3]
 
-def get_max(xs)
-  xs.inject do |memo,x|
-    if memo < x
-      x
+def get_max(array)
+  array.inject do |memo, number|
+    if memo < number
+      number
     else
       memo
     end
@@ -105,12 +105,12 @@ end
 
 # puts get_max [1,2,5,4,3]
 
-def get_min(xs)
-  xs.inject do |memo,x|
-    if memo < x
+def get_min(array)
+  array.inject do |memo, number|
+    if memo < number
       memo
     else
-      x
+      number
     end
   end
 end
@@ -124,6 +124,10 @@ def reverse_str(str)
 end
 
 # puts reverse_str "hello world"
+
+# using built in Ruby method:
+
+puts str.reverse
 
 def partial_sums(arr)
   sums = [0]
@@ -157,7 +161,7 @@ def get_responses(arr)
   end
 end
 
-# p get_responses ['what','the','fuck']
+# p get_responses ['what','the','heck']
 
 def factorial(n)
   if n < 2
