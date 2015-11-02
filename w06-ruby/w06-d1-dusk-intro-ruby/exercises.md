@@ -14,13 +14,13 @@ Use a loop to do  the following:
 
 4.) Write a method called `print_contacts` that takes a `hash` of `name` and `phone-number` key-value pairs and puts the `name` with the contact info.
 
-5.) Write a method called `get_contact` that
+5.) Write a method called `add_contact` that
 
 * takes a `contacts` hash,
 * prints the contacts,
 * prompts the terminal for a **new** `name` and a `phone` number, 
 * and then adds the `name` and `phone` as a key value pair respectively if `name` is not already a contact. 
-* The `get_contact` method should `return` the `contacts` hash.
+* The `add_contact` method should `return` the `contacts` hash.
 
 ### List exercises
 
