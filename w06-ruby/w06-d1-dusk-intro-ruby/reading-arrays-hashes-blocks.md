@@ -42,7 +42,7 @@ numbers.push 5 # dun, dah nun dun dun dun, push it
 Similarly, we've got another old favorite – the shovel.
 
 ```ruby
-numbers << "six" # there no shovel puns to see here
+numbers << "six" # there are no shovel puns to see here
 # => [1,2,3,4,5,"six"]
 ```
 
