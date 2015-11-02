@@ -239,7 +239,7 @@ end
 some_method # => "donuts"
 ```
 
-Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it however many methods we need inside an object.
+Remember that it works this way, because when we get to Objects & Methods later this week, you'll see that instance variables let us store a variable once and use it with however many methods we need inside an object.
 
 
 #### Constant
