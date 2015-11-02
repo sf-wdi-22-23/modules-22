@@ -59,8 +59,8 @@ end
 
 # Exercise 4
 def print_contacts(contacts)
-  contacts.each do |k,v,l|
-    puts k, v
+  contacts.each do |key, value|
+    puts key, value
   end
 end
 
