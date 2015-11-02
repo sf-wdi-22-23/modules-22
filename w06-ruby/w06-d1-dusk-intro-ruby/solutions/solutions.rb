@@ -68,14 +68,18 @@ contacts_hash = {'michael' => '555-555-5555', 'del' => '666-666-6666'}
 # print_contacts contactsHash
 
 # Exercise 5
-def get_contact(contacts)
-  puts contacts
-  puts 'Name: '
-  name = gets.chomp
-  puts 'Phone: '
-  phone = gets.chomp
-  contacts[name] = phone
-  contacts
+def add_contact contacts
+	puts contacts
+	puts 'Name: '
+	name = gets.chomp
+	puts 'Phone: '
+	number = gets.chomp
+	if !contacts[name]
+		contacts[name] = number
+		puts "number added!"
+	else puts "name already in contacts"
+	end
+	puts print_contacts(contacts)
 end
 
 # puts get_contact contacts_hash
