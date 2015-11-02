@@ -33,14 +33,14 @@ end
 
 # Fancier solution to Exercise 2 using .each_char
 def letter_count string
-	frequency = {}
-	string.each_char do |char|
-		if frequency[char]
-			frequency[char] += 1
-		else frequency[char] = 1
-		end
-	end
-	frequency
+  frequency = {}
+  string.each_char do |char|
+    if frequency[char]
+      frequency[char] += 1
+    else frequency[char] = 1
+    end
+  end
+  frequency
 end
 
 # puts letterCount 'hello'
