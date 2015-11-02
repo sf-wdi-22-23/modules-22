@@ -69,7 +69,7 @@ Every time an instance of `Car` is assigned a color, it will have its *own* inst
 
 ### `initialize`
 
-In Ruby there's a built-in method named `initialize` that is invoked every time a class is instantiated. Let's prove that this is true by adding a method named `initialize`.
+Ruby classes recognize a special method named `initialize` and invoke it every time a class is instantiated. Let's prove that this is true by adding a method named `initialize`.
 
 ```ruby
 class Car
@@ -111,7 +111,7 @@ bmw = Car.new("black")
 bmw.color
 ```
 
-Since we don't *have* to put parentheses around method parameters when we call them, we can change a car's color with familiar syntax:
+Since we don't have to put parentheses around method parameters when we call them, we can change a car's color with familiar syntax:
 
 ```ruby
 bmw.color=("red")
@@ -155,7 +155,7 @@ end
 
 Every getter has a method with a name (`make` and `color`) that is included in the instance variable (`@make` and `@color`). The same is true for setters.  
 
-Ruby provides a syntax to shorten this common pattern: attributes. Attributes allow for the introduction of a different syntax for creating getters and setters. Let's demonstrate this by using Ruby's attributes to create a getter for `make`.
+Ruby provides a syntax to shorten this common pattern: attribute (or `attr`) methods. Attribute methods allow us to create getters and setters with a different syntax. Here's how we'd use an attribute method to create a getter for `make`.
 
 
 ```ruby
@@ -206,7 +206,7 @@ class Car
 end
 ```
 
-Finally, if we want both a getter (reader) and setter (writer), we can use attr_accessor:
+Finally, if we want both a getter (reader) and setter (writer), we can use `attr_accessor`:
 
 ```ruby
 class Car
@@ -224,7 +224,7 @@ end
 
 ### Class Methods, Class Variables, and Self
 
-Now, there may be moments where we want to get or set properties and behaviors that relate to all instances of a class, as a group. In this case, we need to explore class methods and class variables.
+Now, there may be moments where we want to get or set properties and behaviors that relate to all instances of a class, as a group.  In this case, we need to explore class methods and class variables.
 
 Class methods and class variables are used when data pertains to more than just an instance of a class. Let's imagine that we want to keep count of all cars that were instantiated. We use a class variable, indicated by `@@`.
 
@@ -242,7 +242,7 @@ end
 
 ```
 
-Adding the class variable was easy enough.  Next, we'll define a getter for it using the keyword `self`. We will explore `self` more during the next several days. For now, know that if you place the word `self` next to a method name, it places the method on the class instead of on a n instance of the class.
+Adding the class variable was easy enough.  Next, we'll define a getter for it using the keyword `self`. For now, know that if you place the word `self` next to a method name, it places the method on the class instead of on an instance of the class.
 
 ```ruby
 class Car
@@ -262,7 +262,6 @@ end
 Car.count
 # => 0
 ```
-
 
 Our car count isn't actually counting anything yet!  We'll update the count in the `initialize` method so that it increases each time a car is created.
 
@@ -296,7 +295,7 @@ Car.count
 
 ## Inheritance
 
-Inheritance lets us reuse code from one class as we create subtypes of that class.
+Inheritance lets us reuse code from one class as we create more specific or specialized types of that class.  
 
 
 ### Base Class
@@ -370,11 +369,11 @@ focus.ride_in_back
 
 ### Inheritance and Class Variables
 
-Class variables  in Ruby don't interact with inheritance in the way many people would expect.  All subclasses share the same class variable, so changing a class variable within a subclass changes the class variable for the base class and all other subclasses.  This can be good when, for instance, we want to update the total `Car` count whenever a new `Pickup` is created. However, `Pickup`'s `@@count` will always be equal to the total `Car` count.  
+Class variables in Ruby don't interact with inheritance in the way many people would expect.  All subclasses share the same class variable. This means changing a class variable from the perspective of a subclass actually changes that variable everywhere -- in the base class and all other subclasses!  This is partially what we expect.  We want to update the total `Car` count whenever a new `Pickup` is created. However, `Pickup`'s `@@count` will always be equal to the total `Car` count, too, so creating *any* car will increase the count of pickup trucks!   
 
-This connection can cause lots of issues if it's not intended. For example, a `Vehicle` class might have an `@@num_wheels` variable that stores a "default" number of wheels for a vehicle, say 4.  If `Boat` is later created as a subclass of `Vehicle`, and `Boat`'s `@@num_wheels` is set to 0, then all vehicles will now have their number of wheels set to 0, even `Motorcylces`, `Cars`, `EighteenWheelers` and any other instances of `Vehicle` subclasses. 
+This connection can cause lots of issues if it's not intended. For example, a `Vehicle` class might have an `@@num_wheels` variable that stores a "default" number of wheels for a vehicle, say 4.  If `Boat` is later created as a subclass of `Vehicle`, and `Boat`'s `@@num_wheels` is set to 0, then all vehicles will now have their number of wheels set to 0, even instances of other subclasses like `Motorcylce`, `Plane`, or `EighteenWheeler`. 
 
-A better pattern that fits this scenario uses "class instance variables". For the "class instance variable pattern", we create an instance variable for the shared data within the parent class itself (outside of a method definition). Then, we create a class getter method using within the parent class to access the class instance variable. Finally, we create a new version of the class instance variable for each subclass.  The data is no longer shared among multiple classes when we use this pattern. Let's see an example.
+A better pattern that fits this scenario uses "class instance variables". For the "class instance variable pattern", we create an *instance* variable within the parent class itself (outside of a method definition). Then, we create a getter method within the parent class to access the class instance variable, but we set that method up as a *class method* with `self`. Finally, we create a new version of the class instance variable for each subclass.  The data is no longer shared among multiple classes when we use this pattern. Let's see an example.
 
 ```ruby
 class Vehicle
