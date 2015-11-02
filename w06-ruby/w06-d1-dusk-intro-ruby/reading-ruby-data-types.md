@@ -202,7 +202,7 @@ Variables, of course, are just placeholders.
 
 Let's talk about the different types of variables you'll encounter in Ruby. You'll need to use all of them at some point, but some more than others.
 
-In these examples, we'll defined a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
+In these examples, we'll define a variable, and then we'll write a tiny quick method that just spits that variable out, to see if it works.
 
 #### Local Variable
 
@@ -286,7 +286,7 @@ Finally, run the file using:
 ruby my_first_ruby_file.rb
 ```
 
-Great! Now let's move on to some practise using IRB.
+Great! Now let's move on to some practice using IRB.
 
 
 ## Independent Practice (15 mins)
