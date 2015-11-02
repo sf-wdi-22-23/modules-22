@@ -3,6 +3,25 @@ class Monster
   # getters and setters for instance variables
   attr_accessor :threat_level, :habitat
 
+  @@THREAT_LEVELS = { 
+    :meh => 1,          # could also write these as new way
+    :danger => 2,       # ^ like   danger: 2,
+    :super_danger => 3, # super_danger: 3,
+    :midnight => 4      # midnight: 4
+  }.freeze      # freeze throws an exception if further changes are made
+                # best practice for using an array or hash a constant
+  MEH = 5
+
+  def self.fight(monster1, monster2)
+    puts self::MEH
+    puts Monster.THREAT_LEVELS
+    if Monster::THREAT_LEVELS[monster1.threat_level] > Monster.THREAT_LEVELS[monster2.threat_level]
+      monster1
+    else
+      monster2
+    end
+  end
+
   
   # class variables
   @@count = 0
@@ -78,13 +97,15 @@ class Werewolf < Monster
   end
 end
 
+kitten = Monster.new(:meh)
+p kitten
 
-# kitten = Monster.new(:meh)
-# p kitten
+rob = Zombie.new()
+p rob
 
-# rob = Zombie.new()
-# p rob
+teenwolf = Werewolf.new(:meh)
+puts teenwolf.check_threat_level
+puts teenwolf.check_threat_level(true)
 
-# teenwolf = Werewolf.new(:meh)
-# puts teenwolf.check_threat_level
-# puts teenwolf.check_threat_level(true)
+puts Monster::MEH
+puts Monster.fight(teenwolf, kitten)
