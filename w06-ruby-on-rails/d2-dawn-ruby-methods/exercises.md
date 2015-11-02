@@ -29,15 +29,11 @@
 
   **Challenge Set 3: Let's have a HTTParty!**
 
-4. Let's have an [HTTParty](https://github.com/jnunemaker/httparty)!
+4. Let's have an [HTTParty](https://github.com/jnunemaker/httparty) -- go ahead and open the docs!
 
-5. Install the httparty gem ```$ gem install httparty```.
+5. Install the httparty gem with `gem install httparty`.
 
-6. Now require it in a new ruby script file, and use it to call an album search on the word "White" to the spotify API.
-
-7. Can you require both ```httparty``` and ```awesome_print``` to have the output look nice? (remember just require awesome_print and then use ```ap``` instead of ```p```)
-
-5. In the same file, can you write a loop that returns an array of the album names from your search?
+6. Now require it in a new ruby script file, and use it to make a simple request to an external API you've used before, like giphy or Spotify.
 
 ###Stretch
 
@@ -72,7 +68,7 @@
 1. Write a method to `reverse` a string [*in-place*](https://en.wikipedia.org/wiki/In-place_algorithm). You can only use a little extra space - think one extra character's worth.  Do not use iterators; use only a `while` loop and indices.
 
 
-1. Make your `is_prime?` method more efficient. Three hints on how to proceed are spaced out below. Before implementing each hint, develop a short argument to convince yourself that it works.  **Note: There are more challenges after the white space!**
+1. Make your `is_prime?` method more efficient. Three hints on how to proceed are spaced out below. Before implementing each hint, develop a short argument to convince yourself that it works.  
 
    <br><br><br><br><br>
   * Hint: only check possible divisors up to half the original number
