@@ -52,7 +52,7 @@
 
 #### Define a method
 
-Ruby uses the `def` reserved word to create a method. The method definition must finish with the word `end`.
+Ruby uses the `def` reserved word to create a method. The method definition must finish with the word `end`.  In the console (and in these notes), the value returned by a function will have `=>` in front of it.  If you look at the first example below, the `say_hello` function returns `nil`. 
 
 ```ruby
 def say_hello
@@ -99,11 +99,11 @@ add_numbers(1,2)
 
 #### Define a method that returns true or false
 
-If a function returns true or false, we add a ```?``` to the end as a convention. The ```?``` doesn't "do" anything. Its just a convention.
+If a function returns true or false, we add a `?` to the end as a convention. The `?` doesn't "do" anything within the Ruby language, but it lets other programmers know this is a boolean function. It's just a convention.
 
 ```ruby
-def is_my_friend?(food)
-  if food.is_delicious?
+def can_vote?(age)
+  if age >= 18
     return true
   else
     return false
@@ -113,7 +113,7 @@ end
 
 #### Define a method that changes the input
 
-Another important convention is  adding a `!` to the name of methods that directly change the input. The `!` doesn't do anything, it just lets later developers know what's up.
+Another important convention is adding a `!` to the name of methods that directly change the input. Again, the `!` doesn't do anything within Ruby, but it lets later developers know what's up.
 
 ```ruby
 scores = [9, 3, 7, 8, 4, 6, 6, 5]
@@ -137,8 +137,6 @@ p scores
 #### Methods in Ruby always return the value of the last evaluated expression
 
 Why aren't we `return`ing anything from most of these methods?  Well, methods in Ruby automatically return the value of the last expression evaluated, so we almost never actually have to use the word `return`.
-
-In the console (and in these notes), the value returned by a function will have `=>` in front of it.  If you look at the last example, the `add_numbers` function returned `nil`.  
 
 
 ```ruby
