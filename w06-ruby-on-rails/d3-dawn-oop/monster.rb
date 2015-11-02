@@ -53,7 +53,7 @@ class Zombie < Monster
   # zombie version of class_description
   @class_description = "Shuffling, decaying flesh. Hungry and without remorse!"
 
-  # we'll use the reserved word super (shoutout Jason!)
+  # we'll use the reserved word super
   # to call Monster's initialize and keep our code more DRY
   def initialize(name="zombie", threat_level=:semi_danger)
     # note that zombies created without a threat level
