@@ -14,11 +14,13 @@
 ## Stretch Challenges
 
 # 1. Again using the same text, write a regexp to match the HTML tags
-# (`<p></p>` and `<span></span>`).
-/<[a-z]+>|<\/[a-z]+>/
+# like (`<p></p>` and `<span></span>`).
+/<\/?[a-z]+>/
+# or to only match <p> and <span> tags:
+/<\/?(p|span)>/
 
 # 2. Write a regexp to validate a phone number.
-/\A\d{3}(\s|-)\d{3}-\d{4}\z/
+\A\(?\d{3}\)?(\s|-)\d{3}-\d{4}\z
 
 # 3. Write a regexp to validate an email address.
 /[a-zA-Z0-9]+@[a-z]+.[a-z]+{2,}\z/
