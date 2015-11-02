@@ -72,7 +72,3 @@ You're encouraged to look up external information for these challenges, but not 
    **Hint:** The regex interpreter knows not to interpret escaped characters as regex symbols, so remember to escape characters like '[', ']', '(', ')', and '?'.
 
 3. Write a regexp to validate an email address. You can assume the format `test123@example.com`.
-
-### Extra Bonus Stretch Challenge
-
-* <a href="https://github.com/sf-wdi-19-20/w6_regex_craigslist_app" target="_blank">Fun web-scraping app involving puppies!</a>
