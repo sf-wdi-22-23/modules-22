@@ -63,11 +63,13 @@ Use <a href="http://rubular.com" target="_blank">Rubular</a> for all challenges 
 
 You're encouraged to look up external information for these challenges, but not to look for pre-written regex patterns that solve the challenges (you would have no trouble finding them!).  Instead, logically break down the string patterns, search for the individual regex ingredients your logic requires, and put them together.
 
-1. Again using the same paragraph from above, write a regexp to match the HTML tags (`<p></p>` and `<span></span>`). **Hint:** Inside the regex, you must "escape" all forward-slashes (`/`) with a back-slash (`\`), like this `\/`.  If you forget, the forward-slash will be interpreted as the end of the regex!
+1. Again using the same paragraph from above, write a regexp to match HTML tags (like the `<p></p>` and `<span></span>` above). **Hint:** Inside the regex, you must "escape" all forward-slashes (`/`) with a back-slash (`\`), like this: `\/`.  
 
-2. Write a regexp to validate a phone number. Think about the following formats:
+2. Write a regexp to validate a phone number. Think about the following formats:  
   * `(555) 555-5555`
   * `555-555-5555`
+   
+   **Hint:** The regex interpreter knows not to interpret escaped characters as regex symbols, so remember to escape characters like '[', ']', '(', ')', and '?'.
 
 3. Write a regexp to validate an email address. You can assume the format `test123@example.com`.
 
