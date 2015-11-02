@@ -1,1 +1,0 @@
-Git only tracks folders with files in them, so you can add a hidden file to an empty folder to get git to track it. The file name '.keep' is commonly used for these files!
