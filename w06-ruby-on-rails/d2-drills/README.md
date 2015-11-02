@@ -29,15 +29,15 @@ To test if a string matches the pattern of a regexp, we use `.match`. **For exam
 For a more complete list of basic regex patterns, see <a href="http://rubular.com" target="_blank">Rubular's Regex quick reference</a>.
 
 ```ruby
-/[abc]/ #=> a single character of: a, b, or c
+/[abc]/ # a single character of: a, b, or c
 
-/\A/ #=> start of string
+/\A/ # start of string
 
-/\s/ #=> any whitespace character
+/\s/ # any whitespace character
 
-/\d/ #=> any digit (number)
+/\d/ # any digit (number)
 
-/(a|b)/ # => a or b
+/(a|b)/ # a or b
 ```
 
 ## Challenges
