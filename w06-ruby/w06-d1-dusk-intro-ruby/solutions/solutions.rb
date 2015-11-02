@@ -45,14 +45,14 @@ end
 
 # puts letterCount 'hello'
 def mock_me
-  while true do
-    mock = gets.chomp
-    if mock == 'quit'
-      break
-    else 
-      puts mock
-    end
-  end
+	while true
+		input = gets.chomp
+		if input == "q" || input == "quit"
+			break
+		else
+			puts input
+		end
+	end
 end
 
 # mock_me
