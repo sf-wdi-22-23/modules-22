@@ -158,7 +158,7 @@ say('hello')
 say 'hello'
 ```
 
-If you don't have code that needs to use method result immediately, Ruby allows to specify parameters omitting parentheses:
+If you don't have code that needs to use method results immediately, Ruby allows to specify parameters omitting parentheses:
 
 ```ruby
 # calling method, not using parentheses
