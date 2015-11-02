@@ -20,7 +20,7 @@
 /<\/?(p|span)>/
 
 # 2. Write a regexp to validate a phone number.
-\A\(?\d{3}\)?(\s|-)\d{3}-\d{4}\z
+/\A\(?\d{3}\)?(\s|-)\d{3}-\d{4}\z/
 
 # 3. Write a regexp to validate an email address.
-/[a-zA-Z0-9]+@[a-z]+.[a-z]+{2,}\z/
+/\A[a-zA-Z0-9]+@[a-z]+.[a-z]+{2,}\z/
