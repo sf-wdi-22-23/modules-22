@@ -346,7 +346,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Username Generator Lab (Ben)</td>
    <td>OOP Lab (Alex)</td>
    <td>Intro Active Record (Ben)</td>
-   <td>Bog App (Brianna)</td>
+   <td></td>
  </tr>
  <tr>
    <td>HW</td>
@@ -354,7 +354,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>OOP Reading (Alex)</td>
    <td>Intro Rails Reading (Brianna)</td>
    <td>Rails Guides & Rails for Zombies(Ben)</td>
-   <td>Rails Checklist (Juliana)</td>
+   <td>Bog App (Braus/Brianna) & Rails Checklist (Juliana)</td>
 </tr>
 </table>
 
