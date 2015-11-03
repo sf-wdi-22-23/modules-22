@@ -243,7 +243,7 @@ end
 
 ```
 
-Adding the class variable was easy enough.  Next, we'll define a getter for it using the keyword `self`. We will explore `self` more during the next several days. For now, know that if you place the word `self` next to a method name, it places the method on the class instead of on a n instance of the class.
+Adding the class variable was easy enough.  Next, we'll define a getter for it using the keyword `self`. We will explore `self` more during the next several days. For now, know that if you place the word `self` next to a method name, it places the method on the class instead of on an instance of the class.
 
 ```ruby
 class Car
@@ -323,8 +323,8 @@ class Car
   end
 
   def accelerate(change)
-		@speed += change
-	end
+    @speed += change
+  end
 end
 ```
 
@@ -366,7 +366,9 @@ Inheritance doesn't go the other way, though -- new cars don't know how to use t
 
 ```ruby
 focus = Car.new("green", "Ford")
+#=> #<Car:0x007f8c4c1b3520 @speed=0, @color="green", @make="Ford">
 focus.ride_in_back
+#=> NoMethodError: undefined method `ride_in_back' for #<Car:0x007f8c4c1b3520 @speed=0, @color="green", @make="Ford">
 ```
 
 ### Inheritance and Class Variables
