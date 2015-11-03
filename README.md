@@ -342,7 +342,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
  </tr>
  <tr>
    <td>Module2</td>
-   <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/w06-d1-dusk-intro-ruby/w06-ruby/w06-d1-dusk-intro-ruby">Intro Ruby</a> (Alex)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d1-dusk-intro-ruby">Intro Ruby</a> (Alex)</td>
    <td>Username Generator Lab (Ben)</td>
    <td>OOP Lab (Alex)</td>
    <td>Intro Active Record (Ben)</td>
@@ -350,7 +350,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
  </tr>
  <tr>
    <td>HW</td>
-   <td>Ruby Language and IP Address Lab (Matt)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d1-homework">Ruby Language and IP Address Lab</a> (Matt)</td>
    <td>OOP Reading (Alex)</td>
    <td>Intro Rails Reading (Brianna)</td>
    <td>Rails Guides & Rails for Zombies(Ben)</td>
