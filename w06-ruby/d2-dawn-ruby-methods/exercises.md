@@ -1,45 +1,30 @@
 ## Ruby Method Exercises
 
-1. Make a folder called ruby-methods to keep all these Ruby scripts we're about to write!
+**Use a Gem**
 
-2. In a new file, write a method called `full_name` that takes in two arguments: `first` and `last` and returns a concatenated full name string.
+1. Let's have an [HTTParty](https://github.com/jnunemaker/httparty) -- go ahead and open the docs!
 
-  **Challenge Set 1: Primes**
+1. Install the httparty gem from your Terminal with `gem install httparty`.
 
-1. Write an `is_prime?` method to check if a number is prime. A prime number is:
-  * greater than 1
-  * evenly divisible by 1
-  * evenly divisible by itself
-  * not evenly divisible by any other numbers between 1 and itself
+1. Require the gem in a new ruby script file.
 
-1. Write a method that takes in a number and returns a list of **all** prime numbers less than the given number.
+1. Referencing the httparty docs and the spotify API docs, create a `spotify_album_search` method. It should use the gem to do an album search on the word "White" to the spotify API. 
 
-   **Challenge Set 2: Command Line Interaction**
+1. Update your method to return the response body, parsed as JSON.
 
-1. Write a method called `get_contact` that
+1. Update your method to loop through and print the album names from your search.
 
-  * takes in a `contacts` hash as a parameter, where the keys in `contacts` are names and the values are phone numbers,
-  * prompts the terminal for a **new** `name` and a `phone` number,
-  * and then adds the `name` and `phone` as a key value pair respectively **only if** `name` is not already a contact name,
-  * and `return`s the updated `contacts` hash.
-  
-   A sample contacts hash you could use to test would be `sample = {"Bob"=> 4152890045, "Emergency"=> 911, "Jenny"=> 8675309}`.
+1. Update your method to optionally take a parameter for the album name.
 
-1. Using `Array#map`, write a method called `get_responses` that takes an array of questions (strings) and returns an array of responses input from the console for each question. (Hint: you will need to use `gets.chomp` and `puts` ).
+**Guessing Game**
 
-  **Challenge Set 3: Let's have a HTTParty!**
+1. Create a program that runs in the Terminal and asks the user to guess a number between 1 and 100.  Hint: `gets.chomp`.
 
-4. Let's have an [HTTParty](https://github.com/jnunemaker/httparty) -- go ahead and open the docs!
+1. Once the user guesses a number, the program should respond with "higher" or "lower", or report that the number was correct.  The user should continue to make guesses until the correct number is found.  
 
-5. Install the httparty gem with `gem install httparty`.
+1. Once the user guesses correctly, the program should print the number of guesses needed to arrive at the correct answer. 
 
-6. Now require it in a new ruby script file, and use it to make a simple request to an external API you've used before, like giphy or Spotify.
-
-###Stretch
-
-1. Guessing Game
-
-   Create a program that asks the user to guess a number between 1 and 100.  Once the user guesses a number, the program should say higher or lower, or report that the number was correct.  The user should continue to make guesses until the correct number is found.  Also, once the user guesses correctly, the program should print the number of guesses needed to arrive at the correct answer. Below is sample output:
+Sample interaction:
 
    ```
    Guess a number between 1 and 100
@@ -59,14 +44,13 @@
    You got 19 in 7 tries!
    ```
 
-1. Rewrite `factorial` without recursion. For an extra challenge, write a recursive *and* an iterative version of a method that takes in a number `num` and calculate the `num`th [Fibionacci number](https://en.wikipedia.org/wiki/Fibonacci_number).
-  ```ruby
-  fibb(3)
-  => 2
-  ```
+**Test Primes (popular interview question!)**
 
-1. Write a method to `reverse` a string [*in-place*](https://en.wikipedia.org/wiki/In-place_algorithm). You can only use a little extra space - think one extra character's worth.  Do not use iterators; use only a `while` loop and indices.
-
+1. Write an `is_prime?` method to check if a number is prime. A prime number is:
+  * greater than 1
+  * evenly divisible by 1
+  * evenly divisible by itself
+  * not evenly divisible by any other numbers between 1 and itself
 
 1. Make your `is_prime?` method more efficient. Three hints on how to proceed are spaced out below. Before implementing each hint, develop a short argument to convince yourself that it works.  
 
