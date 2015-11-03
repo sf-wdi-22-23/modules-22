@@ -1,6 +1,6 @@
 ## Ruby Method Exercises
 
-**Use a Gem**
+**Using a Gem**
 
 1. Let's have an [HTTParty](https://github.com/jnunemaker/httparty) -- go ahead and open the docs!
 
