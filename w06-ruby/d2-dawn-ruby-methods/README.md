@@ -8,16 +8,16 @@
 ## Lesson Structure
 
 In this folder, there are three exercises that challenge you to:
-   * use a gem to make an http request (real-world)
+   * use a gem to make an http request (real-world problem)
    * write a simple number guessing game (logic practice)
-   * test whether a number is prime (interview problem)
+   * test whether a number is prime (common interview problem)
 
 Also, we have a <a href="" target="_blank">Ruby Methods Drills</a> activity focused on Test-Driven Development (TDD).
 
-Today, we'll:
-  * Do the "Using a Gem" exercise from <a href="exercises.md" target="_blank">exercises.md</a>.
-  * Do the "Primes" exercise from <a href="exercises.md" target="_blank">exercises.md</a>.
-  * Do Ruby Methods Drills!
+Today, we'll do:
+  * the "Using a Gem" exercise from <a href="exercises.md" target="_blank">exercises.md</a> (real world problem).
+  * the "Primes" exercise from <a href="exercises.md" target="_blank">exercises.md</a> (common interview problem).
+  * Ruby Methods Drills (lots of practice)!
 
 ## How to run a ruby script inside a file
 
