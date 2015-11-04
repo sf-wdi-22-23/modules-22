@@ -88,7 +88,7 @@ rabbit.habitat
 
 *Hint: Use the method `attr_accessor`*
 
-**Challenge:** Add a `threat_levl` instance variable to the Monster class. Allow the user to specify a threat level when the monster is created.
+**Challenge:** Add a `threat_level` instance variable to the Monster class. Allow the user to specify a threat level when the monster is created.
 
 ```ruby
 dalek = Monster.new(:high)
