@@ -59,7 +59,6 @@ ourhash.is_a? BasicObject
 
 Ruby uses **classes** for object-oriented programming.  Classes are data types used to create more data.  They are similar to the object types we manipulated with constructors and prototypes in JavaScript.  Classes are more common among programming languages than prototypes, so we'll go into more depth about OOP with Ruby than we did with JavaScript. (Also, JavaScript has classes as of its latest version: ECMAScript 6.)
 
-
 **Challenge:** create a `Monster` class and an instance of `Monster`.
 
 *Hint: you'll have to use the Ruby reserved words `class` and `new`.*
@@ -128,11 +127,11 @@ What if I wanted a running count of all the Monsters ever created?  Let's keep t
 **Challenge:** Enable this code...
 
 ```ruby
-predator = Monster.new(75)
+predator = Monster.new(:high)
 # Rawr!
 # 2 monsters now roam the world!
 
-alien = Monster.new(75)
+alien = Monster.new(:high)
 # Rawr!
 # 3 monsters now roam the world!
 ```
@@ -153,8 +152,10 @@ Monster.count
 **Stretch Challenge:** Add a check so that the allowed `threat_level` values at creation are`:low`, `:medium`, `:high`, or `:midnight`.   If another value is passed in as the initial threat_level, `raise` a runtime error.
 
 ```ruby
-rubber_duck = Monster.new(:super_dangerous)
-=>
+rubber_ducky = Monster.new(:friendly)
+# /monster_stretch.rb:31:in `initialize': cannot create monster - invalid threat level friendly (RuntimeError)
+#  from manual_test.rb:99:in `new'
+#  from manual_test.rb:99:in `<main>'
 ```
 
 **Stretch Challenge:** Create a class constant called `THREAT_LEVELS` that is an array containing all the allowed values of `threat_level`. 
@@ -163,13 +164,15 @@ rubber_duck = Monster.new(:super_dangerous)
 
 *Hint: Use `freeze` to make sure the value of `THREAT_LEVELS` isn't changed later.*
 
-**Stretch Challenge:** Create a `fight` class method for `Monster` that takes in two monster instances and compares their  `threat_level`s. The `fight` method should return the monster that has the higher threat level. 
+**Challenge:** Create a `fight` class method for `Monster` that takes in two monster instances and compares their  `threat_level`s. The `fight` method should return the monster that has the higher threat level. If they're tied, let the second monster win.
 
-*Hint:  Use `index` to with `THREAT_LEVELS` to make this code shorter/simpler.
+**Stretch Challenge:** Refactor `fight` to use `index` to with `THREAT_LEVELS` to make `fight` code shorter and simpler.
 
 **Stretch Challenge:** Include <a href="http://ruby-doc.org/core-2.2.3/Comparable.html" target="_blank">the `Comparable` mixin</a> in your `Monster` class and create a custom `<=>` method to compare monsters based on their threat levels. Refactor `fight` to use this comparison.
 
-**Compassion Challenge:** Give your `Monster` class a `name` instance variable!
+**Compassion Challenge:** Give your `Monster` class a `name` instance variable with a getter and a setter.
+
+*Hint: only modify `initialize` as a stretch (solution not provided). If you modify `initialize` so it takes a `name` argument, update the tests to give each monster instance a name.  Wondering how you could make the `name` argument optional like `threat_level`? Look up Ruby's "keyword arguments" syntax.*
 
 
 <img alt="monster" src="http://blog.spoongraphics.co.uk/wp-content/uploads/2009/furry-monster/monster.jpg" width=300px>
@@ -200,35 +203,83 @@ class Monster
   end
   
   def get_dangerous
-  	if @threat_level <= 90
-  	  @threat_level = @threat_level + 10
-  	else
-      @threat_level = 100
+    # ruby version of a switch statment is case
+    case @threat_level
+      when :low
+        @threat_level = :medium
+      when :medium
+        @threat_level = :high
+      when :high
+        @threat_level = :midnight
+      when :midnight
+        :midnight
     end
   end
 end
 ```
 
-... how could we make a `Werewolf` class and `Zombie` classes while being DRY and not duplicating the method `lets_get_dangerous` in each? 
+... let's make a `Werewolf` class and `Zombie` class that inherit from it.
 
-**Challenge:** Create a `Zombie` class that inherits from the base `Monster` class. Set it up so that all zombies (instances) start with a habitat of `"graveyard"`.
+**Challenge:** Create a `Zombie` class that inherits from the base `Monster` class. Set it up so that all zombies (instances) start with a habitat of `"graveyard"`. Enable this code:
 
-**Challenge:** Create a `Werewolf` class that inherits from the base `Monster` class.  Give werewolves a default initial threat level of `:low`. 
+```ruby
+rob = Zombie.new
+puts rob.habitat
+# "graveyard"
+puts rob.threat_level
+# :medium
+rob.name = "Rob Zombie"
+puts rob.name
+# "Rob Zombie"
+```
 
-**Challenge:** During a full moon, a werewolf's threat level jumps all the way to `:midnight`. Write an `update_threat_level` method for `Werewolf` that calculates a werewolf's threat level based on a boolean parameter `full_moon`. The `update_threat_level` method should update the werewolf's `@threat_level` and return its new value.
+**Challenge:** Create a `Werewolf` class that inherits from the base `Monster` class.  Give werewolves a default initial threat level of `:low`. Enable this code:
+
+```ruby
+teen_wolf = Werewolf.new
+puts teen_wolf.threat_level
+# :low
+```
+
+**Challenge:** During a full moon, a werewolf's threat level jumps all the way up to `:midnight`. Write an `update_threat_level` method for `Werewolf` that calculates a werewolf's threat level based on a boolean parameter `full_moon`. The `update_threat_level` method should update the werewolf's `@threat_level` and return its new value.
 
 **Challenge:** Use the class instance variable pattern to add a  `class_description` variable to the `Monster` class. The Monster class description should be `"A scary monster!"`.
 
 *Hint: Create an instance variable (`@class_description`) inside the Monster class, then create a class method getter for it.
 
-**Challenge:** Give zombies and werewolves their own class descriptions.
+**Challenge:** Give `Zombie` and `Werewolf` their own class descriptions.
+
+**Stretch Challenge:** Modify `get_dangerous` to use your `THREAT_LEVEL` class constant.
 
 ## Modules
 
-Ruby modules are like simplified classes that don't interact with inheritance in any way.  We can use them to store constants, or add methods into other classes.  
+Ruby <a href="http://ruby-doc.org/core-2.2.0/Module.html" target="_blank">`Module`</a>s group together related information (attributes and methods).  They're like simplified classes that can't have instances and don't have inheritance. Rubyists often use them for:
+  * "namespacing": encapsulation or bundling of related content, 
+  * "mixins": extra methods that can be added into classes without influencing the inheritance tree
 
-**Challenge:** Create a `Flying` module. Give it a method `fly` that `puts` a message saying `"it soars across the sky"`.
+**Challenge:** Using the `module` reserved word, create a `Flying` module. Inside the module, define a method `fly` that `puts` a message saying `"it soars across the sky"`. 
 
-**Challenge:** Add the module to the `Bird` class and the `Plane` class below.  
+**Challenge:** Create a very simple `Vampire` class that inherits from the `Monster` class. Remember to give this new subclass its own `@class_description`.
 
+**Challenge:** Enable the following code:
 
+```ruby
+vamp = Vampire.new
+vamp.fly
+# it soars through the air
+```
+
+*Hint: `include` the `Flying` module in the `Vampire` class.*
+
+**Challenge:** Enable the following code:
+
+```ruby
+dracula = Vampire.new(:high)
+dracula.name = "Count Dracula"
+dracula.fly  
+# Count Dracula soars through the air
+```
+
+*Hint: when included in a class, modules can access instance variables with `self`. For example: `self.threat_level`.*
+
+This module example may not seem great alone, but you can reuse the same `Flying` module to add a fly method to a `Bird` subclass of `Animal`, a `Plane` subclass of `Vehicle`, or a `SuperHero` class. Many of Ruby's powerful built-in modules (like `Comparable`) are used as "mixins" this way.  Modules help keep code DRY and organized.

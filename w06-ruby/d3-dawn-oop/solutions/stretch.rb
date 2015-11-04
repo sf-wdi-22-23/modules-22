@@ -4,7 +4,7 @@ class Monster
   THREAT_LEVELS = [:low, :medium, :high, :midnight].freeze
 
   # getters and setters for instance variables
-  attr_accessor :threat_level, :habitat
+  attr_accessor :threat_level, :habitat, :name
 
   # class variable
   @@count = 0
@@ -25,7 +25,7 @@ class Monster
   # initial behavior
   def initialize(threat_level=:medium)
   	# check that threat_level argument is valid
-    if Monster::THREAT_LEVELS.include? threat_level
+    if THREAT_LEVELS.include? threat_level
       @threat_level = threat_level
     else
       raise "cannot create monster - invalid threat level #{threat_level}"
@@ -75,7 +75,7 @@ class Monster
   # class method
   def self.fight(monster1, monster2)
   	# ruby has a ternary operator 
-    monster1 >= monster2 ? monster1 : monster2
+    monster1 > monster2 ? monster1 : monster2
   end
 end
 
@@ -96,7 +96,6 @@ class Zombie < Monster
 end
 
 class Werewolf < Monster
-
   # werewolf version of class_description
   @class_description = "A man... a wolf... a monster!"
 
@@ -104,9 +103,10 @@ class Werewolf < Monster
     # werewolves created without a threat level
     # will have a default threat_level of :low
     super(threat_level)  
+    @name = name
   end
 
-  def update_threat_level(full_moon=false)
+  def update_threat_level(full_moon)
     if full_moon
       @threat_level = :midnight
     else
@@ -116,16 +116,15 @@ class Werewolf < Monster
   end
 end
 
-kitten = Monster.new(:low)
-kitten.get_dangerous
-p kitten
-
-rob = Zombie.new
-p rob
-
-teenwolf = Werewolf.new(:low)
-puts teenwolf.update_threat_level
-puts teenwolf.update_threat_level(true)
 
 
-puts Monster.fight(teenwolf, kitten)
+module Flying
+  def fly
+    puts "#{self.name || "it"} soars through the air"
+  end
+end
+
+class Vampire < Monster
+  @class_description = "Dark and sparly."
+  include Flying
+end
