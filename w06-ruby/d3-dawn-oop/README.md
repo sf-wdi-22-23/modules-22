@@ -66,7 +66,7 @@ Ruby uses **classes** for object-oriented programming.  Classes are data types u
 
 ## `initialize`
 
-Update the `Monster` class so that a monster goes "Rawr!" when it's first initialized.
+**Challenge** Update the `Monster` class so that a monster goes "Rawr!" when it's first initialized.
 
 ![monster rawr gif](https://s-media-cache-ak0.pinimg.com/originals/8e/dd/5d/8edd5de39a2c832745df9f8dfca15547.jpg)
 
