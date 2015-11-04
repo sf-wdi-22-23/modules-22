@@ -222,3 +222,13 @@ end
 *Hint: Create an instance variable (`@class_description`) inside the Monster class, then create a class method getter for it.
 
 **Challenge:** Give zombies and werewolves their own class descriptions.
+
+## Modules
+
+Ruby modules are like simplified classes that don't interact with inheritance in any way.  We can use them to store constants, or add methods into other classes.  
+
+**Challenge:** Create a `Flying` module. Give it a method `fly` that `puts` a message saying `"it soars across the sky"`.
+
+**Challenge:** Add the module to the `Bird` class and the `Plane` class below.  
+
+
