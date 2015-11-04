@@ -8,10 +8,10 @@ def binary_search(array, target)
 end
 
 sample = [0, 1, 3, 5, 8, 13, 21]
-target = 3
+target = 1
 
 binary_search(sample, 1)
-#=> 2 (the index it is located at in the sample array)
+#=> 1 (the index it is located at in the sample array)
 ```
 
 The binary search algorithm begins by comparing the target value to the value of the middle element of the sorted array.
