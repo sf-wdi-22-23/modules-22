@@ -19,9 +19,9 @@ In a different directory (outside `2x-homework`), read and complete the tutorial
 
 1. What is a "controller"? How is it different from a "route"?
 
-1. What is a "migration"?
+1. In Express, `server.js` contained our routes. Where was controller logic defined in our Express projects?
 
-1. In Express, our server.js defined our routes. Where was controller logic defined in our Express projects?
+1. What is a "migration"?
 
 1. Look at `app/views/layouts/application.html.erb`. What does this file remind you of / what does it contain?
 
