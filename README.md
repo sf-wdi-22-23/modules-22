@@ -344,7 +344,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Module2</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d1-dusk-intro-ruby" target="_blank">Intro Ruby</a> (Alex)</td>
    <td><a href="https://github.com/sf-wdi-22-23/username_generator/tree/solution" target="_blank">Username Generator Lab</a> (Ben)</td>
-   <td>OOP Lab (Alex)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/car-racing-lab">OOP Lab</a> (Alex)</td>
    <td>Intro Active Record (Ben)</td>
    <td></td>
  </tr>
