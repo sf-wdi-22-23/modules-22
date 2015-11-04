@@ -328,7 +328,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Drills</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/d1-dawn-peer-review/README.md" target="_blank">Peer Review (Ben)</a></td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-drills" target="_blank">Regex Drills</a> (Brianna)</td>
-   <td>Ruby Binary Search (Brianna)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-drills-binary-search" target="_blank">Ruby Binary Search</a> (Brianna)</td>
    <td>Ruby Bubble Sort (Alex)</td>
    <td>Rails Drills (Brianna)</td>
  </tr>
