@@ -23,7 +23,7 @@ Recall: Hashes are simple key value stores. They look a lot like JavaScript's ob
  # => {:name=>"Napoleon", :fav_food=>"steak", :skills=>["archery", "combat", "egg farming"]}
 ```
 
-Recall that there are 2 notations for hashes, a colon (`:`) notation and a hash rocket (`=>`) notation.  The colon notation always results in your keys being symbols. The hash rocket notation gives you more control over the types of your keys. 
+Recall that there are 2 notations for hashes, a colon (`:`) notation and a hash rocket (`=>`) notation.  The colon notation always results in your keys being symbols, which is usually what we want. The hash rocket notation gives you more control over the types of your keys. 
 
 ##Objects
 
@@ -57,7 +57,7 @@ ourhash.is_a? BasicObject
 
 ##Classes
 
-Ruby uses **classes** for object-oriented programming.  Classes are data types used to create more data.  They are similar to the object types we manipulated with constructors and prototypes in JavaScript.  Classes are more common among programming languages than prototypes, so we'll go into more depth about OOP with Ruby than we did with JavaScript. (Also, JavaScript is adding classes soon.)
+Ruby uses **classes** for object-oriented programming.  Classes are data types used to create more data.  They are similar to the object types we manipulated with constructors and prototypes in JavaScript.  Classes are more common among programming languages than prototypes, so we'll go into more depth about OOP with Ruby than we did with JavaScript. (Also, JavaScript has classes as of its latest version: ECMAScript 6.)
 
 
 **Challenge:** create a `Monster` class and an instance of `Monster`.
@@ -81,22 +81,29 @@ Enable this code...
 
 ```ruby
 rabbit = Monster.new
+# Rawr
 rabbit.habitat = "Cave of Caerbannog"
 rabbit.habitat
-=> "Cave of Caerbannog"
+# => "Cave of Caerbannog"
 ```
 
 *Hint: Use the method `attr_accessor`*
 
-**Challenge:** Add a `threat_level` instance variable to the Monster class. Allow the user to specify a threat level when the monster is created.  (The threat levels used in later challenges will be `:meh`, `:semi_danger`, `:super_danger`, and `:threat_level_midnight`.)
+**Challenge:** Add a `threat_levl` instance variable to the Monster class. Allow the user to specify a threat level when the monster is created.
 
 ```ruby
-dalek = Monster.new(:super_danger)
+dalek = Monster.new(:high)
 dalek.threat_level
-=> :super_danger
+=> :high
 ```
 
-**Challenge:** Allow the user to create an instance of `Monster` without specifying a threat level. The default threat level for a new monster should be `:meh`.
+**Challenge:** Allow the user to create an instance of `Monster` without specifying a threat level. The default threat level for a new monster should be `:medium`.
+
+```ruby
+teletubby = Monster.new
+teletubby.threat_level
+=> :medium
+```
 
 ##Instance Methods
 
@@ -104,27 +111,28 @@ dalek.threat_level
 
 ```ruby
 yeti = Monster.new
+# Rawr!
 yeti.habitat = "tundra"
 yeti.habitat?("swamp")
-=> false
+# => false
 yeti.habitat?("tundra")
-=> true
+# => true
 ```
 
 *Hint: use `def` to define a new method inside the class*
 
 ##Class Variables and Class Methods
 
-What if I wanted a running counter for all the monsters I've ever created?  Let's keep track and print a monster `count` message each time a new monster spawns.
+What if I wanted a running count of all the Monsters ever created?  Let's keep track with a class variable and print a message each time a new monster spawns.
 
 **Challenge:** Enable this code...
 
 ```ruby
-predator = Monster.new(:semi_danger)
+predator = Monster.new(75)
 # Rawr!
 # 2 monsters now roam the world!
 
-alien = Monster.new(:semi_danger)
+alien = Monster.new(75)
 # Rawr!
 # 3 monsters now roam the world!
 ```
@@ -133,13 +141,31 @@ alien = Monster.new(:semi_danger)
 
 **Challenge:** Create a class method to get the current value of the monster count.
 
+```ruby
+Monster.count
+# => 3
+```
+
 *Hint: Use the reserved word `self`*
 
 **Note** Class variables are used much less often than instance variables!
 
-**Stretch Challenge:** Create a `fight` class method for `Monster` that takes in two monster instances and compares their  `threat_level`s. The `fight` method should return the monster that has the higher threat level. Remember, the threat levels to consider are `:meh`, `:semi_danger`, `:super_danger`, and `:threat_level_midnight`.
+**Stretch Challenge:** Add a check so that the allowed `threat_level` values at creation are`:low`, `:medium`, `:high`, or `:midnight`.   If another value is passed in as the initial threat_level, `raise` a runtime error.
 
-<!--*Hint: One way to do this is to create a hash with keys that are threat level symbols and values that are easier to compare. Another idea is to look into using ruby's modules to create "enums". <a href="http://stackoverflow.com/a/76046" target="_blank">Relevant Stack Overflow</a>*-->
+```ruby
+rubber_duck = Monster.new(:super_dangerous)
+=>
+```
+
+**Stretch Challenge:** Create a class constant called `THREAT_LEVELS` that is an array containing all the allowed values of `threat_level`. 
+
+*Hint: Access the class constant with `Monster::THREAT_LEVELS`.*
+
+*Hint: Use `freeze` to make sure the value of `THREAT_LEVELS` isn't changed later.*
+
+**Stretch Challenge:** Create a `fight` class method for `Monster` that takes in two monster instances and compares their  `threat_level`s. The `fight` method should return the monster that has the higher threat level. 
+
+*Hint:  Use `index` to with `THREAT_LEVELS` to make this code shorter/simpler.
 
 **Stretch Challenge:** Include <a href="http://ruby-doc.org/core-2.2.3/Comparable.html" target="_blank">the `Comparable` mixin</a> in your `Monster` class and create a custom `<=>` method to compare monsters based on their threat levels. Refactor `fight` to use this comparison.
 
@@ -154,14 +180,17 @@ alien = Monster.new(:semi_danger)
     - What is an attribute?
     - What is a method?
   * What is the difference between:
-    - an instance variable,
+    - an instance variable
     - a class variable
+  * What is the difference between:
+    - an instance mthod
+    - a class method
   * Why do we use classes?
   * What is inheritance?
 
 ## Inheritance
 
-**Challenge:** Given a `Monster` class that contains a method `lets_get_dangerous` & attribute `threat_level`...
+**Challenge:** Given a `Monster` class that contains a method `get_dangerous` & attribute `threat_level`...
 
 ```ruby
 class Monster
@@ -170,14 +199,12 @@ class Monster
   	@threat_level = threat_level
   end
   
-  def lets_get_dangerous()
-  	if @threat_level == :meh
-  	  @threat_level = :semi_danger
-  	elsif @threat_level == :semi_danger
-  	  @threat_level = :super_danger
+  def get_dangerous
+  	if @threat_level <= 90
+  	  @threat_level = @threat_level + 10
   	else
-  	  @threat_level = :threat_level_midnight
-  	end
+      @threat_level = 100
+    end
   end
 end
 ```
@@ -186,32 +213,12 @@ end
 
 **Challenge:** Create a `Zombie` class that inherits from the base `Monster` class. Set it up so that all zombies (instances) start with a habitat of `"graveyard"`.
 
-**Challenge:** Create a `Werewolf` class that inherits from the base `Monster` class.  The threat of werewolves changes a lot.  Write a custom `check_threat_level` method for `Werewolf` that calculates a werewolf's threat level based on a boolean parameter that says whether the moon is full. The `check_threat_level` method should update the werewolf's `@threat_level` and return its new value.
+**Challenge:** Create a `Werewolf` class that inherits from the base `Monster` class.  Give werewolves a default initial threat level of `:low`. 
 
-## Stretch Challenges: The Animal Kingdom
+**Challenge:** During a full moon, a werewolf's threat level jumps all the way to `:midnight`. Write an `update_threat_level` method for `Werewolf` that calculates a werewolf's threat level based on a boolean parameter `full_moon`. The `update_threat_level` method should update the werewolf's `@threat_level` and return its new value.
 
-People are animals too! In this exercise, you'll define:
+**Challenge:** Use the class instance variable pattern to add a  `class_description` variable to the `Monster` class. The Monster class description should be `"A scary monster!"`.
 
-  1. An `Animal` class, with the following:
-    * Instance Variables:
-      * `kind`: A string that holds the type of animal
-      * `state`: Used to track whether the animal is awake or sleeping (see `sleep` and `wake` below).
-    * Instance Methods:
-      * `eat`: Takes a parameter `food` to eat and prints out a message that the animal is eating `food`
-      * `sleep` & `wake`: These two methods should NOT be passed any arguments. Instead, they will set an instance variable `@state` to the string `"asleep"` or `"awake"` respectively.
+*Hint: Create an instance variable (`@class_description`) inside the Monster class, then create a class method getter for it.
 
-  2. A `Person` class, with the following characteristics:
-    * Inherits from `Animal`
-    * Automatically sets `kind` to `"person"`
-    * Adds 3 new instance vars:
-      * age
-      * gender
-      * name
-    - Also, people aren't cannibals! Make sure your `Person` class *overrides* the existing `eat` method (in `Animal`) so that a `Person` cannot eat a `"person"`.
-
-**Bored? More!**
-
-* People can speak, and it's good to be polite. Add an instance method called `greet` that:
-* Print out a person's name, age, and gender in the following format: "Hi, I'm Teddy. I'm a person, and I'm 156 years old."
- * Add a class variable that keeps track of `all` the people you create.
- * Add a class method to print out the names of existing people.
+**Challenge:** Give zombies and werewolves their own class descriptions.

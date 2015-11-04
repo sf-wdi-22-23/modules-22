@@ -1,4 +1,8 @@
 class Monster
+
+  # class constant - freeze freezes the value of an array or hash
+  THREAT_LEVELS = [:low, :medium, :high, :midnight].freeze
+
   # getters and setters for instance variables
   attr_accessor :threat_level, :habitat
 
@@ -20,10 +24,27 @@ class Monster
 
   # initial behavior
   def initialize(threat_level=:medium)
-    @threat_level = threat_level
+  	# check that threat_level argument is valid
+    if Monster::THREAT_LEVELS.include? threat_level
+      @threat_level = threat_level
+    else
+      raise "cannot create monster - invalid threat level #{threat_level}"
+    end
+    # other initialization tasks
     puts "Rawr!"
     @@count = @@count + 1
     puts "#{@@count} monsters now roam the world!"
+  end
+
+
+  # custom setter to restrict possible threat levels
+  def threat_level=(new_threat_level)
+  	# check that threat_level argument is valid
+    if Monster::THREAT_LEVELS.include? threat_level
+      @threat_level = threat_level
+    else
+      raise "cannot set threat level to #{new_threat_level} - invalid"
+    end
   end
 
   # instance method
@@ -33,7 +54,7 @@ class Monster
   
   # instance method
   def get_dangerous
-    # ruby version of a switch statment is case
+    # ruby version of a switch statment uses case
     case @threat_level
       when :low
         @threat_level = :medium
@@ -46,25 +67,15 @@ class Monster
     end
   end
 
+  include Comparable
+  def <=>(other_monster)
+    Monster::THREAT_LEVELS.index(@threat_level) <=> Monster::THREAT_LEVELS.index(other_monster.threat_level)
+  end
+
   # class method
   def self.fight(monster1, monster2)
-    if monster1.threat_level == monster2.threat_level
-      monster2
-    elsif monster1.threat_level == :low
-      monster2
-    elsif monster1.threat_level == :medium
-      if monster2.threat_level == :low
-        monster1
-      else
-        monster2
-      end
-    else # monster1.threat_level is :high or :midnight
-      if monster2.threat_level == :midnight
-        monster2
-      else
-        monster1
-      end
-    end
+  	# ruby has a ternary operator 
+    monster1 >= monster2 ? monster1 : monster2
   end
 end
 
@@ -78,7 +89,7 @@ class Zombie < Monster
   # to call Monster's initialize and keep our code more DRY
   def initialize (threat_level=:medium)
     # note that zombies created without a threat level
-    # will still have a default threat_level of :medium
+    # will have a default threat_level of :medium
     super(threat_level)  
     @habitat = "graveyard"
   end
@@ -95,7 +106,7 @@ class Werewolf < Monster
     super(threat_level)  
   end
 
-  def update_threat_level(full_moon)
+  def update_threat_level(full_moon=false)
     if full_moon
       @threat_level = :midnight
     else
@@ -104,3 +115,17 @@ class Werewolf < Monster
     @threat_level
   end
 end
+
+kitten = Monster.new(:low)
+kitten.get_dangerous
+p kitten
+
+rob = Zombie.new
+p rob
+
+teenwolf = Werewolf.new(:low)
+puts teenwolf.update_threat_level
+puts teenwolf.update_threat_level(true)
+
+
+puts Monster.fight(teenwolf, kitten)
