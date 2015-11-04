@@ -1,4 +1,4 @@
-class Monster
+# Monster class
   # getters and setters for instance variables
 
   # class variable for count
