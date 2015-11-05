@@ -50,13 +50,17 @@ rails g controller records index show new create
 `config/routes.rb`.
 
 ```ruby
-get "/records" => "records#index"
-get "/records/new" => "records#new"
-post "/records" => "records#create"
-get "/records/:id" => "records#show"
+  # route to show all records 
+  get "/records" => "records#index"
+  # route to show new record form
+  get "/records/new" => "records#new"
+  # route to create a record in the database
+  post "/records" => "records#create"
+  # route to show a single message
+  get "/records/:id" => "records#show", as: "record"
 ```
 
-* Generate a record model with the attributes `title` `artist` `year` `cover_art` and `song_count`
+* Generate a record model with the attributes `title` `artist` `year` `cover_art` and `song_count`. The new `app/models/record.rb` file won't have any real content yet, but check out the new migration file the generator makes inside `db/migrate/`.
 
 ```bash
 rails g model record title:string artist:string year:integer cover_art:string song_count:integer
@@ -68,7 +72,7 @@ rails g model record title:string artist:string year:integer cover_art:string so
 rake db:create
 ```
 
-* Run the migration that was generated to create a new table in the database.
+* Run the migration that was generated to create a new table in the database. Afterword, check `db/shema.rb` to see the current state of your database. (Never directly edit `schema.rb`; migrations do it for you!)
 
 ```bash
 rake db:migrate
@@ -82,7 +86,7 @@ rails console
 > Record.create({title: "Test Record"})
 ```
 
-* In `db/seeds.rb` create some records!
+* In `db/seeds.rb`, create some records!
 
 `db/seeds.rb`.
 
@@ -148,7 +152,7 @@ end
 
 **See a single record on `record#show`**
 
-* For each record in the `record#index` view let's create an anchor tag that will link to `records/:id`
+* For each record in the `record#index` view let's use `link_to` to create an anchor tag that will link to `records/:id`.  The `link_to` URL helper takes the name of a path -- you can see your app's paths prefixes in the refix column when you run `rake routes`. The full path name is the prefix plus `_path`.  We added `as:` to the route for a single record path so we could give it the prefix `record`. Now we can link to it as the `record_path` and pass it the data for each record.
 
 `views/records/index.html.erb`.
 
@@ -158,9 +162,9 @@ end
   <p>Title: <%= record.title %></p>
   <p>Artist: <%= record.artist %></p>
   <img src="<%= record.cover_art %>">
-  <!-- anchor tag that links to a show page -->
+  <!-- link to a show page -->
   <br>
-  <a href="/records/<%= record.id %>">Show page</a>
+  <%= link_to "Show page", record_path(record) %>
 <% end %>
 ``` 
 
@@ -186,13 +190,13 @@ records_controller.rb
 
 **See a form to create a new record on `record#new`**
 
-* Let's create a link on *every* page that will get us to a form that creates a new record, which lives on `/records/new`. We can edit the `application.html.erb` file which lives in `views/layouts/` to accomplish this. Inside the file add an anchor tag just about the `yield` statement in the `<body>`.
+* Let's create a link on *every* page that will get us to a form that creates a new record, which lives on `/records/new`. We can edit the `application.html.erb` file which lives in `views/layouts/` to accomplish this. Inside the file add a `link_to` just about the `yield` statement in the `<body>`.
 
 ```html
 <body>
 
 <!--Every page will have this link to create a new record-->
-<a href="/records/new">Make a New Record</a><br>
+<%= link_to "Make a New Record", records_new_path %><br>
 
 <%= yield %>
 
@@ -229,7 +233,9 @@ records_controller.rb
 
 **Submit the new record form to `record#create` to create a new record and then be redirected back to record index.**
 
-* Now that our forms works, it will automatically `POST` to `/records` which hits our action#controller `records#create`. Nothing is happening in that controller as of yet so we need to actually create a new record there. In order to do that we must pull out the data submitted from our form from the `params` object and create a new record with it.
+* Now that our form works, it will automatically `POST` to `/records`, which hits our action#controller `records#create`. Nothing is happening in that controller as of yet, so Rails assumes we want to render `views/records/create.html.erb` view, which was created for us when we used rails generate to make the controller (`rails g controller records index show new create`). Remember, the default behavior of a controller method is to render the corresponding view! Go ahead and remove `views/records/create.html.erb`. 
+
+* Instead of displaying a view, we want to actually create a new record with this route. In order to do that we must pull out the data submitted from our form -- it will be in the `params` object -- and create a new record with it. We'll then have it redirect to the main records route, where our new record should appear at the bottom of the list!
 
 `app/controllers/records_controller.rb`.
 
@@ -239,6 +245,7 @@ records_controller.rb
       # this is known as strong parameters, and is done for security purposes
       params.require(:record).permit(:title, :artist, :year, :cover_art, :song_count)
     )
+    redirect_to('/records')
   end
 ```
 
