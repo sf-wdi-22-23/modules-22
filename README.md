@@ -354,7 +354,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-homework" target="_blank">OOP Reading</a> (Alex)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-homework" target="_blank">Intro Rails Guide</a> (Brianna)</td>
    <td>Rails for Zombies(Ben)</td>
-   <td>Bog App (Braus/Brianna) & Rails Checklist (Juliana)</td>
+   <td>Bog App (Braus/Brianna) & <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/rails-checklist.md">Rails Checklist</a> (Juliana)</td>
 </tr>
 </table>
 
