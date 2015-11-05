@@ -1,6 +1,6 @@
 ## Intro to Rails
 
-###Learning Objetives
+###Learning Objectives
 By the end of this lecture you should be able to...
 
 - Articulate the Rails philosophy & the MVC pattern
@@ -44,26 +44,24 @@ The **client** is a customer eating in the restaurant, **rails** is the kitchen,
 But then it says, bundle install at the end, so, it's created all the files, and now it's telling bundler to install all of the gems that might be missing.
 
 ##Gems
-Gems are like NPMs. You have to put any gem you want to use in your Gemfile. You have to run bundle anytime you change your Gemfile. Your rails server needs to be restarted after any changes to your Gemfile.
+Gems are like Node packages. You have to put any gem you want to use in your Gemfile. You have to run bundle anytime you change your Gemfile. Your rails server needs to be restarted after any changes to your Gemfile.
 
 ### Bundler
 
-Bundler is a separate gem from Rails, and can be used outside of
-Rails, but Rails is going to depend on it to manage the RubyGems that the application needs. The first thing that you need to know is that there are two files that matter to bundler: `Gemfile` and `Gemfile.lock`. Gemfile contains configuration information about what
-gems are part of our project, it is similar to the `package.json` file in Node.
+Bundler is a separate gem from Rails and can be used outside of Rails, but Rails is going to depend on it to manage the RubyGems that the application needs. The first thing that you need to know is that there are two files that matter to bundler: `Gemfile` and `Gemfile.lock`. Gemfile contains configuration information about what gems are part of our project; it is similar to the `package.json` file in Node.
 
-Bundler looks at the `Gemfile` loading all the included gems in addition to each's dependencies. It then generates a manifest file that is stored in Gemfile.lock. **Never** edit Gemfile.lock!
+Bundler looks at the `Gemfile`, loading all the included gems in addition to each gem's dependencies. It then generates a manifest file that is stored in Gemfile.lock. **Never** edit Gemfile.lock!
 
-So how do you tell Bundler to take your Gemfile and turn it into Gemfile.lock? Run: `bundle install`. When we create a rails application it will run this command for us unless we specify otherwise.
+So how do you tell Bundler to take your Gemfile and turn it into Gemfile.lock? Run: `bundle install`. When we create a rails application, it will run this command for us unless we specify otherwise.
 
 ## Running Rails (5m)
 
 - Create a new rails app with `rails new railsFun --skip-activerecord`
-    - the last flag tells the application not use activerecord
-    - activerecord is our ORM that manages our Models and our database, we'll learn more about it this afternoon
-- `cd` into your `railsFun` folder and run
+    - the last flag tells the application not use ActiveRecord
+    - ActiveRecord is our ORM that manages our Models and our database, we'll learn more about it this afternoon
+- `cd` into your `railsFun` folder
 - run `rails server` or just `rails s` and see what happens
-- This will start a server on `localhost:3000` head there and see what it says...
+- This will start a server on `localhost:3000` head there in the browser and see what it says...
 
 ## Rails File Structure (10m)
 
@@ -71,7 +69,7 @@ So how do you tell Bundler to take your Gemfile and turn it into Gemfile.lock? R
 
 ## Routing (10m)
 
-- In routes.rb we write logic to map our paths to controllers we will make.
+- In routes.rb we write logic to map our routes to controllers we will make.
 - Let's say when a user sends a `GET` request to the root route, `/`, we want the `welcome` controller's `index` method to run. In order to do that we could write:
 
 route.rb
@@ -100,7 +98,7 @@ class WelcomeController < ApplicationController
 end
 ```
 
-Wow another error! `*Missing template welcome/index...*` Since we have a `welcome` controller and an `index` method, Rails automatically will try to render a view with the path `app/views/welcome/index.html.erb`.  A directory `/welcome` should already exist, it was generated when the welcome controller was generated (thanks rails!). Inside of there add the file `index.html.erb` and inside of the file add some html:
+Wow, another error! `*Missing template welcome/index...*` Since we have a `welcome` controller and an `index` method, Rails automatically will try to render a view with the path `app/views/welcome/index.html.erb`.  A directory called `app/views/welcome` should already exist; it was generated when the welcome controller was generated (thanks Rails!). Inside of that directory, create the file `index.html.erb`. Inside `index.html.erb`, add some html:
 
 app/views/welcome/index.html.erb
 
@@ -108,7 +106,7 @@ app/views/welcome/index.html.erb
 <h1>I make internets with Rails</h1>
 <img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
 ```
-Checkout out your root route one more time.
+Check out out your root route in the browser one more time.
 
 ## View (5m)
 
@@ -136,11 +134,11 @@ Let's say we want to pass a random number to our view from 0-100... Try adding t
 <img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
 ```
 
-Woah, what is happening? Ruby is being evaluated first and the result is printed into our html. the `<%` symbols escape our html. Remember from previous lessons we've seen on templating `<%` will *evaluate* the code while `<%=` will *interpolate* the result.
+Woah, what is happening? Ruby code is being evaluated, and the result is printed into our html. The `<%` symbols escape our html. Remember from previous lessons we've seen on templating `<%` will *evaluate* the code while `<%=` will *interpolate* the result.
 
 ## Passing Data to our View (10m)
 
-There's certainly some business logic happening in our View. This is bad. Our view should only be concerned with presenting the data, but not actually generating it, that is a violation of **separation of concerns**. To fix this let's move the `Random.new.rand(100)` code to our controller and set that equal to a variable we will pass into our view.
+There's certainly some business logic happening in our View. This is bad. Our view should only be concerned with presenting the data, but not actually generating it. We currently have a violation of **separation of concerns**. To fix this, let's move the `Random.new.rand(100)` code to our controller and save it to a variable. Then, we will pass the variable into our view.
 
 app/controllers/welcome_controller.rb
 
@@ -153,9 +151,9 @@ class WelcomeController < ApplicationController
 end
 ```
 
-Notice we did not create a variable named `random` instead we created an instance variable named `@random`, the **@** is VERY important. Normal variables' scope do not reach the view, only **instance variables**' scope reach the view.
+Notice we did not create a variable named `random`. Instead we created an instance variable named `@random`. The **@** is VERY important. Normal variables' scope do not reach the view; only **instance variables**' scope reach the view.
 
-Finally we can refactor the `welcome/index.html.erb` file so that it will use this new variable.
+Finally, we can refactor the `welcome/index.html.erb` file so that it will use this new variable.
 
 ```html
 <h1>I make internets with Rails</h1>
@@ -166,8 +164,9 @@ Wooo, nice!
 
 ##Challenge(15m)
 
-* Create a new route: `/about` that with a `GET` request will hit the controller#action `welcome#about`.
-* Have `welcome#about` render a view in `welcome/about.html.erb`
-* Set a variable equal to your favorite computing language in your `welcome#about` controller, have that variable passed into the view.
+* Create a new route: a GET request to `/about` will hit the controller#action `welcome#about`.
+* Have `welcome#about` render a view in `welcome/about.html.erb`.
+* Set a variable equal to your favorite computing language in your `welcome#about` controller, and have the controller pass that variable into the view.  
+* Update the `welcome/about.html.erb` view template to show the variable you passed in.
 * Your view should now display your favorite language!
 * Bonus: create an array of your favorite languages in your controller. Pass them into your view and iterate through each of them inside a `<ul>`. Create an `<li>` tag for each favorite language.

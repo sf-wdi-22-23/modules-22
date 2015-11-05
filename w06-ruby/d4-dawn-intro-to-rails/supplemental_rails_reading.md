@@ -2,7 +2,7 @@
 
 Rails was created in 2003 by David Heinemeier Hansson, while working on the code base for Basecamp, a project management tool by 37signals. David extracted Ruby on Rails and officially released it as open source code in July of 2004.
 
-Rails was created with the goal of increasing programmers' happiness and productivity levels. In short, with Rails you can get started with a full-stack web application by quickly creating pages, templates and even query functions. Even though Rails comes with its own set of tools and settings, you're certainly not limited to library of rails commands and configurations. Developers are free to configure their applications however they wish, though adopting conventions is certainly recommended.
+Rails was created with the goal of increasing programmers' happiness and productivity levels. In short, with Rails you can get started with a full-stack web application by quickly creating pages, templates and even query functions. Even though Rails comes with its own set of tools and settings, you're certainly not limited to library of Rails commands and configurations. Developers are free to configure their applications however they wish, though adopting conventions is certainly recommended.
 
 ##[Understanding Rails Guiding Principles](http://railsapps.github.io/what-is-ruby-rails.html)
 The popularity of Rails is an outgrowth of the Rails “philosophy” or guiding principles.
@@ -25,16 +25,17 @@ Understanding that Rails is omakase means accepting that many of the opinions en
 ####Don’t Repeat Yourself
 Known by the acronym DRY, “Don’t Repeat Yourself” is a principle of software development formulated by Andy Hunt and Dave Thomas and widely advocated among Rails developers. In its simplest form, it is an admonition to avoid duplication. When code is duplicated, an application becomes more complex, making it more difficult to maintain and more vulnerable to unintended behavior (bugs). The DRY principle can be extended to development processes as well as code. For example, manual testing is repetititive; automated testing is DRY. Software design patterns that introduce abstraction or indirection can make code more DRY; for example, by eliminating repetitive if-then logic.
 
-Code reuse is a fundamental technique in software development. It existed long before Andy Hunt and Dave Thomas promoted the DRY principle. Rails takes advantage of Ruby’s metaprogramming features to not just reuse code but eliminate code where possible. With a knowledge of Rails conventions, it’s possible to create entire simple web applications with only a few lines of code.
+Code reuse is a fundamental technique in software development. It existed long before Andy Hunt and Dave Thomas promoted the DRY principle. Rails takes advantage of Ruby’s metaprogramming features to not just reuse code but eliminate code where possible. With a knowledge of Rails conventions, it’s possible to create entire simple web applications by writing only a few lines of code.
 
 ##[The MVC Architecture](http://guides.rubyonrails.org/v3.2.21/getting_started.html#the-mvc-architecture)
-At the core of Rails is the Model, View, Controller architecture, usually just called MVC. MVC benefits include:
+Rails embraces Model, View, Controller architecture, usually just called MVC. MVC benefits include:
 
 * Isolation of business logic from the user interface
 * Ease of keeping code DRY
 * Making it clear where different types of code belong for easier maintenance
 
 ![MVC img](https://camo.githubusercontent.com/f315ed8c47a7f129e1ba190352a3fef313b266d1/687474703a2f2f656c6962696c646e65722e66696c65732e776f726470726573732e636f6d2f323031322f30362f73637265656e2d73686f742d323031322d30362d30352d61742d322d31322d31382d616d2e706e67)
+
 
 #### Models
 A model represents the information (data) of the application and the rules to manipulate that data. In the case of Rails, models are primarily used for managing the rules of interaction with a corresponding database table. In most cases, each table in your database will correspond to one model in your application. The bulk of your application’s business logic will be concentrated in the models.
@@ -75,7 +76,7 @@ Controllers provide the “glue” between models and views. In Rails, controlle
 
 **app/helpers:** The helpers subdirectory holds any helper classes used to assist the model, view, and controller classes. This helps to keep the model, view, and controller code small, focused, and uncluttered.
 
-**app/models:** The models subdirectory holds the classes that model and wrap the data stored in our application's database. In most frameworks, this part of the application can grow pretty messy, tedious, verbose, and error-prone. Rails makes it dead simple!
+**app/models:** The models subdirectory holds the classes that model and wrap the data stored in our application's database. In most frameworks, this part of the application can grow messy, tedious, verbose, and error-prone. Rails makes it dead simple!
 
 **app/view:** The views subdirectory holds the display templates to fill in with data from our application, convert to HTML, and return to the user's browser.
 
@@ -87,7 +88,7 @@ Controllers provide the “glue” between models and views. In Rails, controlle
 
 **db:** Usually, your Rails application will have model objects that access relational database tables. You can manage the relational database with scripts you create and place in this directory.
 
-**doc:** Ruby has a framework, called RubyDoc, that can automatically generate documentation for code you create. You can assist RubyDoc with comments in your code. This directory holds all theR ubyDoc-generated Rails and application documentation.
+**doc:** Ruby has a framework, called RubyDoc, that can automatically generate documentation for code you create. You can assist RubyDoc with comments in your code. This directory holds all the RubyDoc-generated Rails and application documentation.
 
 **lib:** You'll put libraries here, unless they explicitly belong elsewhere (such as vendor libraries).
 
