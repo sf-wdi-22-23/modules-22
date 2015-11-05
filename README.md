@@ -344,8 +344,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Module2</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d1-dusk-intro-ruby" target="_blank">Intro Ruby</a> (Alex)</td>
    <td><a href="https://github.com/sf-wdi-22-23/username_generator/tree/solution" target="_blank">Username Generator Lab</a> (Ben)</td>
-   <td><a href="https://github.com/sf-wdi-22-23/car-racing-lab">OOP Lab</a> (Alex)</td>
-   <td>Intro Active Record (Ben)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/car-racing-lab" target="_blank">OOP Lab</a> (Alex)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-dusk-activerecord" target="_blank">Intro Active Record</a> (Ben)</td>
    <td></td>
  </tr>
  <tr>
@@ -353,7 +353,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d1-homework" target="_blank">Ruby Language and IP Address Lab</a> (Matt)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-homework" target="_blank">OOP Reading</a> (Alex)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-homework" target="_blank">Intro Rails Guide</a> (Brianna)</td>
-   <td>Rails for Zombies(Ben)</td>
+   <td><a>Rails for Zombies</a>(Ben)</td>
    <td>Bog App (Braus/Brianna) & <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/rails-checklist.md">Rails Checklist</a> (Juliana)</td>
 </tr>
 </table>
