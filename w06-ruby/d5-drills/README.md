@@ -50,9 +50,13 @@ rails g controller records index show new create
 `config/routes.rb`.
 
 ```ruby
+  # route to show all records 
   get "/records" => "records#index"
+  # route to show new record form
   get "/records/new" => "records#new"
+  # route to create a record in the database
   post "/records" => "records#create"
+  # route to show a single message
   get "/records/:id" => "records#show", as: "record"
 ```
 
@@ -148,7 +152,7 @@ end
 
 **See a single record on `record#show`**
 
-* For each record in the `record#index` view let's create an anchor tag that will link to `records/:id`
+* For each record in the `record#index` view let's use `link_to` to create an anchor tag that will link to `records/:id`.  The `link_to` URL helper takes the name of a path -- you can see your app's paths prefixes in the refix column when you run `rake routes`. The full path name is the prefix plus `_path`.  We added `as:` to the route for a single record path so we could give it the prefix `record`. Now we can link to it as the `record_path` and pass it the data for each record.
 
 `views/records/index.html.erb`.
 
@@ -160,7 +164,7 @@ end
   <img src="<%= record.cover_art %>">
   <!-- link to a show page -->
   <br>
-  <%= link_to "Show page", record %>
+  <%= link_to "Show page", record_path(record) %>
 <% end %>
 ``` 
 
@@ -186,7 +190,7 @@ records_controller.rb
 
 **See a form to create a new record on `record#new`**
 
-* Let's create a link on *every* page that will get us to a form that creates a new record, which lives on `/records/new`. We can edit the `application.html.erb` file which lives in `views/layouts/` to accomplish this. Inside the file add an anchor tag just about the `yield` statement in the `<body>`.
+* Let's create a link on *every* page that will get us to a form that creates a new record, which lives on `/records/new`. We can edit the `application.html.erb` file which lives in `views/layouts/` to accomplish this. Inside the file add a `link_to` just about the `yield` statement in the `<body>`.
 
 ```html
 <body>
