@@ -50,10 +50,10 @@ rails g controller records index show new create
 `config/routes.rb`.
 
 ```ruby
-get "/records" => "records#index"
-get "/records/new" => "records#new"
-post "/records" => "records#create"
-get "/records/:id" => "records#show"
+  get "/records" => "records#index"
+  get "/records/new" => "records#new"
+  post "/records" => "records#create"
+  get "/records/:id" => "records#show", as: "record"
 ```
 
 * Generate a record model with the attributes `title` `artist` `year` `cover_art` and `song_count`
@@ -158,9 +158,9 @@ end
   <p>Title: <%= record.title %></p>
   <p>Artist: <%= record.artist %></p>
   <img src="<%= record.cover_art %>">
-  <!-- anchor tag that links to a show page -->
+  <!-- link to a show page -->
   <br>
-  <a href="/records/<%= record.id %>">Show page</a>
+  <%= link_to "Show page", record %>
 <% end %>
 ``` 
 
@@ -192,7 +192,7 @@ records_controller.rb
 <body>
 
 <!--Every page will have this link to create a new record-->
-<a href="/records/new">Make a New Record</a><br>
+<%= link_to "Make a New Record", records_new_path %><br>
 
 <%= yield %>
 
@@ -229,7 +229,9 @@ records_controller.rb
 
 **Submit the new record form to `record#create` to create a new record and then be redirected back to record index.**
 
-* Now that our forms works, it will automatically `POST` to `/records` which hits our action#controller `records#create`. Nothing is happening in that controller as of yet so we need to actually create a new record there. In order to do that we must pull out the data submitted from our form from the `params` object and create a new record with it.
+* Now that our form works, it will automatically `POST` to `/records`, which hits our action#controller `records#create`. Nothing is happening in that controller as of yet, so Rails assumes we want to render `views/records/create.html.erb` view, which was created for us when we used rails generate to make the controller (`rails g controller records index show new create`). Remember, the default behavior of a controller method is to render the corresponding view! Go ahead and remove `views/records/create.html.erb`. 
+
+* Instead of displaying a view, we want to actually create a new record with this route. In order to do that we must pull out the data submitted from our form -- it will be in the `params` object -- and create a new record with it. We'll then have it redirect to the main records route, where our new record should appear at the bottom of the list!
 
 `app/controllers/records_controller.rb`.
 
@@ -239,6 +241,7 @@ records_controller.rb
       # this is known as strong parameters, and is done for security purposes
       params.require(:record).permit(:title, :artist, :year, :cover_art, :song_count)
     )
+    redirect_to('/records')
   end
 ```
 
