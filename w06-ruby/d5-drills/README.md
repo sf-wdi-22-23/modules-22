@@ -60,7 +60,7 @@ rails g controller records index show new create
   get "/records/:id" => "records#show", as: "record"
 ```
 
-* Generate a record model with the attributes `title` `artist` `year` `cover_art` and `song_count`
+* Generate a record model with the attributes `title` `artist` `year` `cover_art` and `song_count`. The new `app/models/record.rb` file won't have any real content yet, but check out the new migration file the generator makes inside `db/migrate/`.
 
 ```bash
 rails g model record title:string artist:string year:integer cover_art:string song_count:integer
@@ -72,7 +72,7 @@ rails g model record title:string artist:string year:integer cover_art:string so
 rake db:create
 ```
 
-* Run the migration that was generated to create a new table in the database.
+* Run the migration that was generated to create a new table in the database. Afterword, check `db/shema.rb` to see the current state of your database. (Never directly edit `schema.rb`; migrations do it for you!)
 
 ```bash
 rake db:migrate
@@ -86,7 +86,7 @@ rails console
 > Record.create({title: "Test Record"})
 ```
 
-* In `db/seeds.rb` create some records!
+* In `db/seeds.rb`, create some records!
 
 `db/seeds.rb`.
 
