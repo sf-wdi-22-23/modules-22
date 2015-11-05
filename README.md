@@ -337,7 +337,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Peer Review  (Ben)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-dawn-ruby-methods" target="_blank">Ruby Method Drills</a> (Brianna)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-dawn-oop" target="_blank">Ruby OOP</a>(Brianna)</td>
-   <td>Intro Rails Framework (Alex)</td>
+   <td><a href'https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-dawn-intro-to-rails'>Intro Rails Framework</a> (Alex)</td>
    <td>Review (Brianna)</td>
  </tr>
  <tr>
