@@ -106,7 +106,7 @@ app/views/welcome/index.html.erb
 <h1>I make internets with Rails</h1>
 <img src="http://i.giphy.com/SPZFhfUJjsJO0.gif" alt="learning internet" style="width: 300px">
 ```
-Checkout out your root route in the browser one more time.
+Check out out your root route in the browser one more time.
 
 ## View (5m)
 
