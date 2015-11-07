@@ -24,7 +24,7 @@ Relational databases were invented in the 1970's as a way to structure data so t
 | :---  | :---  | :---  | :---  | :---  |
 | 1 | The Jungle Book | 1894 | 9788497896696 | 1 |
 | 2 | Alice's Adventures in Wonderland | 1865 | 9781552465707 | 2 |
-| 3 | Rikki-Tikki-Tavi | 1894 | 1484123689 | 1 |
+| 3 | Rikki-Tikki-Tavi | 1894 | 9781484123689 | 1 |
 | 4 | Through the Looking-Glass | 1871 | 9781489500182 | 2 |
 | 5 | The Time Machine |  1895  | 9781423794417 | 3 |
 
@@ -109,10 +109,12 @@ CREATE TABLE author (
   created_at TIMESTAMP NOT NULL DEFAULT now()
 );
 ```
-- `SERIAL TYPE`
-- `Primary Key`
-- `MORE DATA TYPES`
 
+
+Take a moment to look at a few Data Types:
+- [Serial Types](http://www.postgresql.org/docs/9.1/static/datatype-numeric.html#DATATYPE-SERIAL)
+- [Primary Keys](http://www.postgresql.org/docs/9.1/static/ddl-constraints.html#AEN2519)
+- [More Data Types](http://www.postgresql.org/docs/9.1/static/datatype.html)
 
 #Altering Tables and Columns
 
