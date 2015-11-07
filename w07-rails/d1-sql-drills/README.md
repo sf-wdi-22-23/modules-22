@@ -2,12 +2,13 @@
 #An introduction to SQL
 ####In which we suffer through databases to appreciate Active Record
 
+*Why should we care about this?* Great question. This is exactly what's happening under the hood of [Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html) Please enjoy the drills and then come back to read the linked document.
+
 <hr>
 
 ##What is a Relational Database (RDB)?
 
 Relational databases were invented in the 1970's as a way to structure data so that it can be queried by a "relational algebra." The basic idea of relational model, though, was to use collections of data called *tables*, where each *database* manages relations among the data in various tables. Each table is organized like a spreadsheet with a *Row* (also known as a "record") for each data item and with attributes of those items arranged in *Columns*.
-
 
 **Authors Table**
 
