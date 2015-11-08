@@ -416,6 +416,6 @@ end
 
 ## Read the RSpec Rails Docs and one of the other readings below. 
 
-* [RSpec Rails Docs](https://github.com/rspec/rspec-rails" target="_blank)
+* [RSpec Rails Docs](https://github.com/rspec/rspec-rails)
 * [Rails Girls Guides](http://guides.railsgirls.com/testing-rspec/)
 * [EveryDayRails.com](http://everydayrails.com/2012/03/12/testing-series-intro.html)
