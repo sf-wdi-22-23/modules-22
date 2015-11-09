@@ -1,5 +1,13 @@
 # One-to-Many Challenges
 
+If you haven't yet, set up a new Rails app in the terminal called `practice_associations`:
+
+  ```
+  $ rails new practice_associations -d postgresql
+  $ cd practice_associations
+  $ rake db:create
+  ```
+
 Imagine we're creating an online order system for an e-commerce site. A customer loads up their shopping cart with *items*, and a new *order* is created when they check out. So we know we'll have an `Order` model and an `Item` model (don't worry about the customer model for now).
 
 Here's what our models' attributes might look like:
@@ -50,6 +58,6 @@ some_order.items.where() # your code to check "price < ..." goes inside the ()
 
 **Important: SQL Injection**
 
-You'll notice the Ruby Guide lnked above has a warning about "SQL injection." With SQL injection attacks, users can trick your site into running SQL commands on your database. To protect against these attacks, Rails gives us a syntax for queries that uses `?`s instead of the regular string interpolation `#{}`. The `?` syntax plugs values into our SQL command strings, but it FIRST checks that the values don't contain SQL code. If you're done with this challenge set early, check out the hilarious (but scary) section on SQL injection in the ["Security" Rails Guide](http://guides.rubyonrails.org/security.html#sql-injection), and this well-known comic on the problem from XKCD:
+You'll notice the Ruby Guide lnked above has a warning about "SQL injection." With SQL injection attacks, users can trick your site into running SQL commands on your database. To protect against these attacks, Rails gives us a syntax for queries that uses `?`s instead of the regular string interpolation `#{}`. The `?` syntax plugs values into our SQL command strings, but it FIRST checks that the values don't contain SQL code. If you're done with this challenge set early, check out the hilarious (but scary) section on SQL injection in the ["Security" Rails Guide](http://guides.rubyonrails.org/security.html#sql-injection), and of course this well-known comic on the problem from XKCD:
 
 ![xkcd exploits of a mom](http://imgs.xkcd.com/comics/exploits_of_a_mom.png)
