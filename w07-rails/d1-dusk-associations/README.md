@@ -22,11 +22,11 @@
 
 ### Set Up
 
-1. In the terminal, set up a new Rails app called `practice`:
+1. In the terminal, set up a new Rails app called `practice_associations`:
 
   ```
-  $ rails new practice -d postgresql
-  $ cd practice
+  $ rails new practice_associations -d postgresql
+  $ cd practice_associations
   $ rake db:create
   ```
 
