@@ -2,7 +2,7 @@
 
 ## Workflow & Submission
 
-Tonight you'll look over some code for signup, login, and logout *without necessarily implementing it in an app*.  We'll look at putting everything into a Rails app in class. For tonight, create a `rails-auth-concepts.md` file in your `2x-homework/USERNAME` directory.  As you read this document and look over the code samples, answer the questions below in `rails-auth-concepts.md`. Keep your answers brief, and if you don't know, note that for us.  When you're finished, `git add .`, `git commit`, `git push origin master`, and submit your homework with a pull request as described in your class's homework repo README.
+Tonight you'll look over some code for signup, login, and logout *without necessarily implementing it in an app*.  We'll look at putting everything into a Rails app in class. For tonight, create a `rails-auth-concepts.md` file in your `2x-homework/USERNAME` directory.  As you read this document and look over the code samples, answer the questions below in `rails-auth-concepts.md`. Keep your answers brief (and if you don't know, it's okay to say that!).  When you're finished, `git add .`, `git commit`, `git push origin master`, and submit your homework with a pull request as described in your class's homework repo README.
 
 **Secure Passwords and the User Model**
 
