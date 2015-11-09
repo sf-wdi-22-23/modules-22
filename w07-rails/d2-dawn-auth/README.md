@@ -330,7 +330,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    # TODO: once the controller is implimented don't forget to also signin the user
+    # TODO: once the controller is implemented don't forget to also signin the user
   end
 
   def show
