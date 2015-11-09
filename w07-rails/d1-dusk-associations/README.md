@@ -3,7 +3,7 @@
 | Objectives |
 | :--- |
 | Create one-to-many and many-to-many relationships in Rails |
-|  Modify migrations to add foreign keys to tables |
+| Modify migrations to add foreign keys to tables |
 | Create a join table for a many-to-many relationship |
 | Create model instances with associations |
 
@@ -13,6 +13,29 @@
 | :--- | :--- | :--- | :--- |
 | One-to-Many | 1:N | Parent model is associated with many children from another model | One author can have many books. |
 | Many-to-Many | N:N | Two models that can both be associated with many of the other. | Libraries and books. One library can have many books, while one book can be in many libraries. |
+
+
+
+# SQL `JOIN`S
+
+## Joins
+
+Each table in a relational database is considered a relation. All of the table's data is naturally related by single set of attributes defined for it. However, in order to be relational, we need to be able to make queries between relations or tables of data.
+
+**JOIN**s are our means of implementing queries that combine data and show results from multiple tables.
+
+There are many kinds of joins, based on how you want to combine data.
+
+![](https://raw.githubusercontent.com/sf-wdi-18/notes/master/lectures/week-07/day-1-intro-sql/dawn-simple-queries/images/join.png)
+
+## Foreign Key
+
+To implement a `JOIN` between two tables, one of our tables must have a **foreign key**. A foreign key is a field in one table that uniquely identifies a row of another table. We use the foreign key to **establish and enforce a link between the data in two tables**.
+
+The foreign key always goes on the table with the data that belongs to data from another table. In the example below, a person **has_many** pets, and a pet **belongs_to** a person. The foreign key `person_id` goes on the `pets` table to indicate which person the pet belongs to.
+
+![](https://raw.githubusercontent.com/sf-wdi-18/notes/master/lectures/week-07/day-1-intro-sql/dawn-simple-queries/images/primary_foreign_key.png)
+
 
 ## One-To-Many (1:N) Relationship
 
@@ -132,6 +155,7 @@
   # What will be returned when we do this?
   fido.owner.name
   ```
+  
 
   **Note:** We just saw that in Rails, we can associate two model **instances** together using the `<<` operator.
 
