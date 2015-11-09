@@ -305,7 +305,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>HW</td>
-    <td><a >Auth Reading (Brianna)</a> </td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-homework" target="_blank">Auth Reading</a> (Brianna) </td>
     <td>Rspec Reading (Alex)</td>
     <td>Collaborating with Git and Github (Ben)</td>
     <td>Vagabond</td>
