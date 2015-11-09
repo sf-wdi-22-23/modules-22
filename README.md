@@ -297,7 +297,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a >Relationships</a> (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-dusk-associations" target="_blank">Rails Associations</a> (Brianna)</td>
     <td><a >Views, Validations and Errors</a> (Ben)</td>
     <td>Library App Lab (Alex)</td>
     <td>Vagabond</td>
