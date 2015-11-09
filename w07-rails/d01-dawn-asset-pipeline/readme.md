@@ -153,7 +153,7 @@ Now look inside `public/assets/` and you'll see _minified_ and _fingerprinted_ v
 To run your application "in production" you can add the following flag:
 
 ```bash
-rails s -e production
+SECRET_KEY_BASE=shhhh RAILS_SERVE_STATIC_FILES=true rails server -environment production
 ```
 
 To destroy all your precompiled assets, simply run:
