@@ -281,31 +281,31 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td><a href>SQL Drills</a> (Ben)</td>
-    <td><a href>Merge Sort</a> (Brianna)</td>
+    <td><a >SQL Drills</a> (Ben)</td>
+    <td><a >Merge Sort</a> (Brianna)</td>
     <td>Recursion (Alex)</td>
     <td>Intro to Vagabond </td>
     <td>Vagabond </td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href>Asset Pipeline</a> (Alex)</td>
-    <td><a href>Auth</a> (Brianna)</td>
+    <td><a >Asset Pipeline</a> (Alex)</td>
+    <td><a >Auth</a> (Brianna)</td>
     <td>Testing with Rspec (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond </td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href>Relationships</a> (Brianna)</td>
-    <td><a href>Views, Validations and Errors</a> (Ben)</td>
+    <td><a >Relationships</a> (Brianna)</td>
+    <td><a >Views, Validations and Errors</a> (Ben)</td>
     <td>Library App Lab (Alex)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href>Auth Reading</a> </td>
+    <td><a >Auth Reading</a> </td>
     <td>Rspec Reading (Alex)</td>
     <td>Collaborating with Git and Github </td>
     <td>Vagabond</td>
