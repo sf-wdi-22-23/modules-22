@@ -102,14 +102,14 @@ The foreign key always goes on the table with the data that belongs to data from
         t.string :name
         t.timestamps
 
-        # add this line
-        t.integer :owner_id
+        # add this line (MOST CORRECT)
+        t.belongs_to :owner
 
         # OR this line
         t.references :owner
-
+        
         # OR... this line
-        t.belongs_to :owner
+        t.integer :owner_id
 
         # but NOT all three!
       end
@@ -122,7 +122,7 @@ The foreign key always goes on the table with the data that belongs to data from
   * `t.integer`: adds an integer column to the table for the foreign key
   * `t.references`: more *rails-y* and semantic with a few benefits:
     * Defines the name of the foreign key column (in this case, `owner_id`) for us
-    * Adds a **foreign key constraint** which ensures **referential data integrity**  in our Postgres database
+    * Adds a **foreign key constraint** which ensures **referential data integrity**  in our database
   * `t.belongs_to`: even more *rails-y* and semantic, with the same functionality as `t.references`
 
 ### Using Your Associations
@@ -177,13 +177,14 @@ class AddOwnerIdToPets < ActiveRecord::Migration
 
   change_table :pets do |t|
     # only add ONE OF THESE THREE to your new migration
-    t.integer :owner_id
+    t.belongs_to :owner #(MOST CORRECT)
 
     # OR...
     t.references :owner
 
     # OR...
-    t.belongs_to :owner
+    t.integer :owner_id
+   
   end
 
 end
@@ -294,6 +295,8 @@ To create N:N relationships in Rails, we use this pattern: `has_many :related_mo
 
   # associate our model instances
   sally.courses << algebra
+  # ^ same as:
+  # sally.courses.push(algebra)
   sally.courses << french
 
   fred.courses << science
