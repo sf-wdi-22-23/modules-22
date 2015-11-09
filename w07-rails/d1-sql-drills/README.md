@@ -2,7 +2,7 @@
 #An introduction to SQL
 ####In which we suffer through databases to appreciate Active Record
 
-*Why should we care about this?* Great question. This is exactly what's happening under the hood of [Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html) Please enjoy the drills and then come back to read the linked document.
+*Why should we care about this?* Great question. This is exactly what's happening under the hood of [Active Record Querying](http://guides.rubyonrails.org/active_record_querying.html) (please enjoy the drills first and then come back to read the linked document).
 
 <hr>
 
@@ -46,6 +46,7 @@ SQL, Structured Query Language, is a specialized language used to create, manipu
 	- UPSERT (attempts an UPDATE, or on failure, INSERT) is part of SQL 3 but not yet in Postgres
 	- Queries
 	- Aggregation: GROUP BY, SUM, AVG, MIN
+
 - Data Control Language (beyond our scope)
 	- GRANT access to parts of the table
 
@@ -53,7 +54,7 @@ SQL, Structured Query Language, is a specialized language used to create, manipu
 
 #Database Setup
 
-Let's create our first relational database (RDB) using the Terminal.
+Let's create a practice relational database (RDB) using the Terminal.
 
   `createdb practice`
   
@@ -72,11 +73,11 @@ To quit/exit the database console, type:
 **Console Tips**
 
 * Don't forget to close your SQL Commands with a semi-colon (";")!
-* If you see `practice-#` you're stuck in the middle of inputting a sql command (and likely forgot the trailing semi-colon). Just type `ctrl+c` to start fresh.
+* If you see `practice-#` (with `-#` instead of `=#`) you're stuck in the middle of inputting a SQL command (and likely forgot the trailing semi-colon). Just type `ctrl+c` to start fresh.
   
 #Workflow Setup
 
-To save your progress on the in-class examples and the challenges, I suggest creating files that store your SQL commands. To run a `.sql` file, use the following command in your terminal:
+To save your progress on the challenges, I suggest creating files that store your SQL commands. To run a `.sql` file, use the following command in your terminal:
 
   `psql -f <file_name>`
 
@@ -91,7 +92,15 @@ DROP DATABASE IF EXISTS database_name;
 CREATE DATABASE database_name;
 ```
 
-Feel free to use the `pqsl` console to try out the following. Once you're comfortable with it, try using a `.sql` file.
+A quick note: like most programming languages, SQL allows comments.
+
+```sql
+-- SQL comments start with two dashes, or
+/*  comments that span multiple lines
+can be enclosed with asterisk and slash */
+```
+
+Feel free to use the `pqsl` console to try out the following exercises. Save the commands you figure out in a `practice.sql` file.  Once you're comfortable with the process, try running the commands from that file.
 
 If you would like to load, execute, and save `.sql` files in a safe, nurturing sandbox environment, head on over to this [online SQL interpreter](http://kripken.github.io/sql.js/GUI/). It's handy!
 
@@ -180,7 +189,7 @@ Let's add a few more items to our products table
 
 #Reading Data from RDB
 
-To retrieve data from inside our database, we use the command SELECT.
+To retrieve data from inside our database, we use the command `SELECT`.
 
 ```sql
 SELECT * FROM products;
@@ -192,13 +201,13 @@ Let's look at only some attributes of each product.
 SELECT name, price FROM products;
 ```
 
-We can use ORDER BY to sort the selected items.
+We can use `ORDER BY` to sort the selected items.
 
 ```sql
 SELECT name FROM products ORDER BY price;
 ```
 
-The WHERE keyword allows us to narrow down our query results. We can grab just the bookmark record.
+The `WHERE` keyword allows us to narrow down our query results. We can grab just the bookmark record.
 
 ```sql
 SELECT * FROM products
@@ -213,7 +222,7 @@ SELECT * FROM products
   ORDER BY price;
 ```
   
-We can even use regular expressions to find products with "book" at the start of their names.
+We can even use regular expressions with the `LIKE` command, for example: to find products with "book" at the start of their names.
 
 ```sql
 SELECT * FROM products
@@ -222,7 +231,7 @@ SELECT * FROM products
 
 #Updating Simple Data in the RDB
 
-So far we've had a great time using SELECT to read data from our TABLE. We can also change data. Here comes our first sale, a bookmark!
+So far we've had a great time using `SELECT` to read data from our TABLE. We can also change data. Here comes our first sale, a bookmark!
 
 ```sql
 UPDATE products
@@ -238,7 +247,7 @@ UPDATE products
   WHERE name = 'book bag';
 ```
 
-You might wonder why you don't see anything change after you update an entry. If you'd like, you can tell Postgres to return the modified record. It just isn't the standard behavior.
+You might wonder why you don't see anything change after you update an entry. If you'd like, you can tell PostgreSQL to return the modified record. It just isn't the standard behavior.
 
 ```sql
 UPDATE products
@@ -257,14 +266,14 @@ DELETE FROM products
   RETURNING *;
 ```
 
-We could also DELETE everything but the bookmarks with the <> (not equal) operator.
+We could also `DELETE` everything but the bookmarks with the `<>` (not equal) operator.
 
 ```sql
 DELETE FROM products
   WHERE name <> 'bookmark';
 ```
 
-You can DELETE everything from a table using
+You can `DELETE` everything from a table using
 
 ```sql
 DELETE FROM products;
@@ -277,7 +286,7 @@ DELETE FROM products;
 
 #ALIAS
 
-You can make your queries easier to read using an alias. Aliases in SQL use the keyword AS.
+You can make your queries easier to read using an alias. Aliases in SQL use the keyword `AS`.
 
 ```sql
 SELECT * FROM products
@@ -290,7 +299,8 @@ SELECT name, price AS cost, quantity  -- alias for the price column only
   FROM products
   WHERE name = 'bookmark';
 ```
-Note also that `--` starts a SQL comment.
+
+Remember, that `--` starts a SQL comment.
 
 #DISTINCT
 
@@ -321,9 +331,9 @@ GROUP BY name
 ORDER BY lowest_avaialable_price;
 ```
 
-#Basic Challenges
+#Base Challenges
 
-1. Use SQL aggregators to get the total value of the inventory, calculated as the sum of the price*quantity for each item.
+1. Use SQL aggregators to get the total value of the inventory, calculated as the sum of the `price*quantity` for each item.
 
 2. Create a books table based on the printed table above. It should have attributes for `id`, `title`, `pub_year`, `isbn`, and `author_id`. For now, just make the `author_id` an INTEGER.
 
