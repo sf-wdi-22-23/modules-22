@@ -305,9 +305,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>HW</td>
-    <td><a >Auth Reading</a> </td>
+    <td><a >Auth Reading (Brianna)</a> </td>
     <td>Rspec Reading (Alex)</td>
-    <td>Collaborating with Git and Github </td>
+    <td>Collaborating with Git and Github (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
   </tr>
