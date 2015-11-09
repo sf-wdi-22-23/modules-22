@@ -4,7 +4,7 @@ If you haven't yet, set up a new Rails app in the terminal called `practice_asso
 
   ```
   $ rails new practice_associations -d postgresql
-  $ cd practice
+  $ cd practice_associations
   $ rake db:create
   ```
 
