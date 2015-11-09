@@ -269,49 +269,49 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
-<!--##Week 7 - Rails-->
-<!--<table>-->
-<!--  <tr>-->
-<!--    <th></th>-->
-<!--    <th>Monday</th>-->
-<!--    <th>Tuesday</th>-->
-<!--    <th>Wednesday</th>-->
-<!--    <th>Thursday</th>-->
-<!--    <th>Friday</th>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Drills</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/csv_challenge">CSV Challenge</a> (Nathan)</td>-->
-<!--    <td><a href="https://github.com/sf-wdi-21/csv_challenge">CSV Challenge</a> (Nathan)</td>-->
-<!--    <td>SQL Drills (Justin)</td>-->
-<!--    <td>SQL Drills (Justin)</td>-->
-<!--    <td>Review (Team)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Module1</td>-->
-<!--    <td><a href="week-07/day-01-models-auth/dawn-models">Migrations &amp; Validations</a> (Nathan)</td>-->
-<!--    <td><a href="week-07/day-02-sql/dawn-intro-sql">SQL</a> (Justin)</td>-->
-<!--    <td>Rails Views (Ilias)</td>-->
-<!--    <td>Intro Rspec (Ilias)</td>-->
-<!--    <td>Review (Team)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Module2</td>-->
-<!--    <td><a href="week-07/day-01-models-auth/dusk-auth/readme.md">Auth</a> (Ilias)</td>-->
-<!--    <td><a href="week-07/day-02-sql/dusk-sql-relationships">Relationships</a> (Justin)</td>-->
-<!--    <td>Asset Pipeline Lab (Nathan)</td>-->
-<!--    <td>Testing Rails (Nathan / Ilias)</td>-->
-<!--    <td>Weekend Lab (Team)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>HW</td>-->
-<!--    <td><a href="/week-07/day-02-sql/dawn-intro-sql/README.md">Intro SQL</a> (Justin)</td>-->
-<!--    <td>Rails Guides (Ilias)</td>-->
-<!--    <td>Rails Guides (Ilias)</td>-->
-<!--    <td>Rails Guides (Ilias)</td>-->
-<!--    <td></td>-->
-<!--  </tr>-->
-<!--</table>-->
+##Week 7 - Rails
+<table>
+  <tr>
+    <th></th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  <tr>
+    <td>Drills</td>
+    <td><a href="">SQL Drills</a> (Ben)</td>
+    <td><a href="">Merge Sort</a> (Brianna)</td>
+    <td>Recursion (Alex)</td>
+    <td>Intro to Vagabond </td>
+    <td>Vagabond </td>
+  </tr>
+  <tr>
+    <td>Module1</td>
+    <td><a href="">Asset Pipeline</a> (Alex)</td>
+    <td><a href="">Auth</a> (Brianna)</td>
+    <td>Testing with Rspec (Ben)</td>
+    <td>Vagabond</td>
+    <td>Vagabond </td>
+  </tr>
+  <tr>
+    <td>Module2</td>
+    <td><a href="">Relationships</a> (Brianna)</td>
+    <td><a href="">Views, Validations and Errors</a> (Ben)</td>
+    <td>Library App Lab (Alex)</td>
+    <td>Vagabond</td>
+    <td>Vagabond</td>
+  </tr>
+  <tr>
+    <td>HW</td>
+    <td><a href="">Auth Reading</a> </td>
+    <td>Rspec Reading (Alex)</td>
+    <td>Collaborating with Git and Github </td>
+    <td>Vagabond</td>
+    <td>Vagabond</td>
+  </tr>
+</table>
 
 ##Week 6 - Ruby on Rails
 
