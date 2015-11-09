@@ -1,6 +1,11 @@
 #### Read this over first, then go [to the exercise](https://github.com/sf-wdi-22-23/asset_pipeline_poem)
 # Asset Pipeline
 
+## Objectives:
+- Describe the Asset Pipeline, what it does and why
+- Require assets in Rails 
+- Precompile assets for running in production
+
 #### Overview
 The goal of the asset pipeline is to:
 
