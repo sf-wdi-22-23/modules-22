@@ -75,7 +75,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-Rather than rolling our own auth, we can take a more concise, "rails-y" approach with <a href="http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html" target="_blank">`has_secure_password`</a>, which adds authentication methods for us.  Take a look at the `has_secure_password` <a href="https://github.com/rails/rails/blob/869a90512f36b04914d73cbf58317d953caea7c5/activemodel/lib/active_model/secure_password.rb#L53"source code</a> to see that does a lot of the same things we did!
+Rather than rolling our own auth, we can take a more concise, "rails-y" approach with <a href="http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html" target="_blank">`has_secure_password`</a>, which adds authentication methods for us.  Take a look at the `has_secure_password` <a href="https://github.com/rails/rails/blob/869a90512f36b04914d73cbf58317d953caea7c5/activemodel/lib/active_model/secure_password.rb#L53">source code</a> to see that does a lot of the same things we did!
 
 ## Sessions
 
