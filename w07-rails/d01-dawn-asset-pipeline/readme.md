@@ -128,7 +128,7 @@ It will look for the name of the file (e.g. "jquery") in the following directori
 3. `vendor/assets/` -- third party libraries
 
 
-#### Precompiling Assets (in production)
+#### Precompiling Assets
 So far we've been working on our applications _in development_. You may have noticed that when you create a rails application it has three databases: `development`, `test`, and `production`.
 
 The assets pipeline is designed for _production_ applications. That's when we care about _speed_!
@@ -150,19 +150,11 @@ Now look inside `public/assets/` and you'll see _minified_ and _fingerprinted_ v
 <link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" rel="stylesheet" />
 ```
 
-To run your application "in production" you can add the following flag:
-
-```bash
-SECRET_KEY_BASE=shhhh RAILS_SERVE_STATIC_FILES=true rails server -environment production
-```
-
 To destroy all your precompiled assets, simply run:
 
 ``` bash
 rake assets:clobber
 ```
-
-**Warning**: Watch out that you're not using _OLD_ precompiled assets! If you're not seeing your changes in production, you likely need to update your precompiled assets.
 
 ## Reference
 For more info, hit the docs:
