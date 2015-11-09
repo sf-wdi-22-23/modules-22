@@ -323,6 +323,11 @@ To create N:N relationships in Rails, we use this pattern: `has_many :related_mo
 
 Head over to the [Many-To-Many Challenges](many_to_many_challenges.md) and work together in pairs.
 
+
+## Stretch Challenge: Self-Referencing Assocations
+
+Lots of real-world apps create assocations between items that are the same type of resource.  Read (or reread) <a href="http://guides.rubyonrails.org/association_basics.html#self-joins" target="_blank">the "self joins" section of the Associations Basics Rails Guide</a> and try to create a self-referencing association in your `practice_associations` app.  (Classic use cases are friends and following, where both related resources would be users.) No solution provided.
+
 ## Migration Workflow
 
 Getting your models and tables synced up is a bit tricky. Pay close attention to the following workflow, especially the rake tasks.
