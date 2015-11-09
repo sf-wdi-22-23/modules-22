@@ -13,9 +13,8 @@ Our library of choice for password obfuscation is `BCrypt`. We'll add it to our 
 To "roll our own" authentication system with BCrypt, we'll add instance methods and class methods to our `User` model. The methods below handle creating a user with a secure password and authenticating a user:
 
 ```ruby
-#
 # app/models/user.rb
-#
+
 class User < ActiveRecord::Base
   BCrypt::Engine.cost = 12
 
