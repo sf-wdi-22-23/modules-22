@@ -30,18 +30,7 @@ INT_ENGLISH_MAPPER = {
   }
 
 def in_words(int)
-	if int <= 20
-	  INT_ENGLISH_MAPPER[int]
-	elsif int < 100
-	  tens, ones = (int/10)*10, int % 10
-	  "#{INT_ENGLISH_MAPPER[tens]} #{in_words(ones)}"
-	elsif int < 1000
-	  hundreds, tens = (int/100), int % 100
-	  "#{INT_ENGLISH_MAPPER[hundreds]} hundred #{in_words(tens)}".strip
-	else
-		thousands, hundreds = (int/1000), int % 1000
-		"#{INT_ENGLISH_MAPPER[thousands]} thousand #{in_words(hundreds)}".strip
-	end
+	# Your code here
 end
 
 puts in_words(0)
