@@ -3,7 +3,7 @@ As you follow the instructions in [the README](README.md), you'll be asked to re
 ```ruby
 require "rails_helper"
 
-describe User, type: :model do
+describe :User, type: :model do
 
   it "can create a new user" do
     expect(User.new).to be_a User
