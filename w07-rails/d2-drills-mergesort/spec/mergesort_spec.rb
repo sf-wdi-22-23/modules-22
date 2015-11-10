@@ -1,5 +1,6 @@
 require "rspec"
-require "./solution.rb"	
+# require "./solution.rb"	
+require "./in_class.rb"
 
 
 RSpec.describe "#merge" do 
