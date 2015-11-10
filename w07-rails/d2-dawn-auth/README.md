@@ -38,6 +38,7 @@ Let's uncomment `bcrypt` at the bottom of our `Gemfile`. We use it to obscure th
 	gem 'bcrypt', '~> 3.1.7'
 ```
 
+
 Then run `bundle` to finish installation of `bcrypt` and the other gems.
 
 ### Playing With `BCrypt`
@@ -69,7 +70,7 @@ Hopefully this helps you begin to think about how to set up an **authenticate** 
 
 ## Test Setup
 
-* Add the rspec gem to both test and development environments, then run `bundle`
+* Add testing the three testing gems below to both test and development environments, then run `bundle`
 
 ```ruby
 group :development, :test do
@@ -78,6 +79,9 @@ group :development, :test do
 
   # Use rspec tests for rails
   gem 'rspec-rails'
+  gem 'rails_helper'
+  
+  gem 'minitest'
 end
 ```
 
