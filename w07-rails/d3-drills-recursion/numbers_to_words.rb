@@ -35,6 +35,8 @@ end
 
 puts in_words(0)
 
+# Use the RSPEC, but here's a nice testing script in vanilla Ruby. This is not practical for large applications, but is a perfectly good way to test out little scripts and stand along methods. 
+
 puts "My totally sweet testing script:"
 puts ""
 puts "input | expected                              | actual"
