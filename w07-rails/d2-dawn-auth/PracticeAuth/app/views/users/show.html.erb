@@ -1,2 +1,2 @@
-<h1>Hello <%= @user.email %></h1>
+<h1>Hello <% if @user && @user.email %><%= @user.email %><% end %></h1>
 
