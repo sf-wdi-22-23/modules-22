@@ -7,6 +7,8 @@
 | Enable signup, login, and logout |
 | Build routes, controllers, and views for each user story |
 
+A similar app tutorial is available <a href="https://gist.github.com/thebucknerlife/10090014" target="_blank">here</a>.
+
 
 ## App Setup
 
