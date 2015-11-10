@@ -65,4 +65,5 @@ Strategy:
 #### Further Reading
 
 [The Bastard's Book of Ruby - Recursion](http://ruby.bastardsbook.com/chapters/recursion/)
+
 [A video explaining recursion](https://www.youtube.com/watch?v=72hal4Cp_2I) #pro-tip: watch videos on 1.5x or 2x speed. 
