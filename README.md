@@ -290,7 +290,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline">Asset Pipeline</a> (Alex)</td>
-    <td><a >Auth</a> (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d2-dawn-auth/README.md" target="_blank">Auth</a> (Brianna)</td>
     <td>Testing with Rspec (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond </td>
