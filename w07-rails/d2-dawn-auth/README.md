@@ -604,4 +604,4 @@ end
 
 ##Solution
 
-A sample solution is provided [here](https://github.com/sf-wdi-22-23/rails-auth).
+A sample solution is provided [here](https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-dawn-auth/PracticeAuth).
