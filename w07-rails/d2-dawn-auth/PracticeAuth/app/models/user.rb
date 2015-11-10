@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
   end
 
 
-  authenticate the user (check password) using bcrypt
+  # authenticate the user (check password) using bcrypt
   def authenticate(unencrypted_password)
     # create a new `secure_password` object with special `==`
     secure_password = BCrypt::Password.new(self.password_digest)
