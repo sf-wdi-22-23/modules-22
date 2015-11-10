@@ -1,6 +1,6 @@
 
 # Using recursion to solve a practical problem
-#### Creating a ruby method to convert numbers english words
+#### Creating a ruby method to convert numbers English words
 
 *Why should we care about this?* Great question. Recursion is a powerful tool in programming, so powerful it is used by life itself!
 
@@ -20,16 +20,16 @@ end
 
 <hr>
 
-## Fibbonacci: A quick example. 
+## Fibonacci: A quick example. 
 
-#### It's only natural to teach the example of generating fibbonacci numbers using reccursion because the are **defined recursively**
+#### It's only natural to teach the example of generating fibonacci numbers using recursion because the are **defined recursively**
 By definition, the first two numbers in the Fibonacci sequence are either 1 and 1, or 0 and 1, depending on the chosen starting point of the sequence, and each subsequent number is the sum of the previous two.
 
-Check out an iterative and recursive solution [here](fibbonacci.rb).
+Check out an iterative and recursive solution [here](fibonacci.rb).
 
 <hr>
 
-## An integer to english word converter!
+## An integer to English word converter!
 
 Our goal is to pass in an integer to our function and have it return the correct English words as follows:
 
@@ -38,7 +38,7 @@ Our goal is to pass in an integer to our function and have it return the correct
 `in_words 1508 //=> "one thousand five hundred eight"`
 
 
-#### Whiteboarding! Spend 10 minutes with a partner on a whiteboard. Don't worry about using recursion yet! Break down the problem into its simplest tasks. 
+#### White-boarding! Spend 10 minutes with a partner on a whiteboard. Don't worry about using recursion yet! Break down the problem into its simplest tasks. 
 Make it work first for numbers under:
 - 10
 - 20
