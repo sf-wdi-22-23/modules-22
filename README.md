@@ -289,7 +289,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline">Asset Pipeline</a> (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline" target="_blank">Asset Pipeline</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d2-dawn-auth/README.md" target="_blank">Auth</a> (Brianna)</td>
     <td>Testing with Rspec (Ben)</td>
     <td>Vagabond</td>
@@ -306,7 +306,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-homework" target="_blank">Auth Reading</a> (Brianna) </td>
-    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md">Rspec Reading </a>(Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md" target="_blank">Rspec Reading </a>(Alex)</td>
     <td>Collaborating with Git and Github (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
@@ -337,7 +337,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td>Peer Review  (Ben)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-dawn-ruby-methods" target="_blank">Ruby Method Drills</a> (Brianna)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-dawn-oop" target="_blank">Ruby OOP</a>(Brianna)</td>
-   <td><a href='https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-dawn-intro-to-rails'>Intro Rails Framework</a> (Alex)</td>
+   <td><a href='https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-dawn-intro-to-rails' target="_blank">Intro Rails Framework</a> (Alex)</td>
    <td>Review (Brianna)</td>
  </tr>
  <tr>
@@ -354,9 +354,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d2-homework" target="_blank">OOP Reading</a> (Alex)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-homework" target="_blank">Intro Rails Guide</a> (Brianna)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-homework" target="_blank">Rails for Zombies</a>(Ben)</td>
-   <td><a href="https://github.com/sf-wdi-22-23/bog_app" target="_blank">Bog App, </a> (Braus/Brianna) & <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/rails-checklist.md">Rails Checklist, </a>
-   Check out Rails Guides on <a href="http://guides.rubyonrails.org/active_model_basics.html">Models</a> and 
-    <a href="http://guides.rubyonrails.org/association_basics.html"> AR Associations</a>(Juliana)</td>
+   <td><a href="https://github.com/sf-wdi-22-23/bog_app" target="_blank">Bog App, </a> (Braus/Brianna) & <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/rails-checklist.md" target="_blank">Rails Checklist, </a>
+   Check out Rails Guides on <a href="http://guides.rubyonrails.org/active_model_basics.html" target="_blank">Models</a> and 
+    <a href="http://guides.rubyonrails.org/association_basics.html" target="_blank"> AR Associations</a>(Juliana)</td>
 </tr>
 </table>
 

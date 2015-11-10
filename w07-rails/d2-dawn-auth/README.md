@@ -69,7 +69,7 @@ Hopefully this helps you begin to think about how to set up an **authenticate** 
 
 ## Test Setup
 
-* Add testing the three testing gems below to both test and development environments, then run `bundle`
+* Add `rspec-rails` to both test and development environments, then run `bundle`
 
 ```ruby
 group :development, :test do
@@ -78,14 +78,15 @@ group :development, :test do
 
   # Use rspec tests for rails
   gem 'rspec-rails'
-  gem 'rails_helper'
-  
-  gem 'minitest'
+ 
 end
 ```
 
 * `bundle` and then run the command `rails g rspec:install` to initialize rspec as your testing suite.
 	* Now a `spec` directory has been created for you
+
+
+If you run into errors, you may need to add `minitest` or `rails_helper` gems.
 
 ## Test Setup
 

@@ -123,4 +123,6 @@ Add the above code to your form, right below the `form_for` opening tag. With ou
 
 Now that you've seen how to implement validations and propagate the ActiveRecord errors from your database models to the controller and then pass that into the view, it's your turn!
 
-[Exercise repo](https://github.com/sf-wdi-22-23/rails-forms-validations)
+[Exercise repo](https://github.com/benhulan/rails-forms-validations)
+
+<!-- real repo: (https://github.com/sf-wdi-22-23/rails-forms-validations) -->
