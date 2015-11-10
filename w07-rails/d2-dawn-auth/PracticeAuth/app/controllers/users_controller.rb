@@ -18,9 +18,17 @@ class UsersController < ApplicationController
     end
 
     def show
-        @user = current_user
+        # find the user for this url from database
+        @user = User.find(params[:id])
+        # check if this is the currently logged in user's profile page
+        if session[:user_id] == @user.id
+            @my_profile = true
+        end
+        # show the page
         render :show
     end
+
+
 
     private
     

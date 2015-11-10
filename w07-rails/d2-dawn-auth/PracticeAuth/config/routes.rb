@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  resources :food
   root to: "welcome#index"
   # to enable this route, can generate a controller in Terminal with
           # rails g controller welcome
@@ -12,6 +13,8 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new", as: "login"
 
   post "/sessions", to: "sessions#create"
+
+  delete "/sessions/:id", to: "sessions#destroy"
 
   get "/sign_up", to: "users#new", as: "sign_up"
 
