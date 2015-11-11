@@ -283,7 +283,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
     <td><a >Merge Sort</a> (Brianna)</td>
-    <td>Recursion (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion">Recursion </a> (Alex)</td>
     <td>Intro to Vagabond </td>
     <td>Vagabond </td>
   </tr>
