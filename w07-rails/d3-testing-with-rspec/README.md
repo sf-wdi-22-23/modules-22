@@ -6,7 +6,7 @@
 | Test model methods using rspec-rails. |
 | Test controller actions using rspec-rails. |
 
-Reference: [Testing Pre-reading](https://github.com/sf-wdi-22-23/modules-23/tree/master/w07-ruby-on-rails-cont/d2-homework)
+Reference: [Testing Pre-reading](https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md)
 
 ## rspec-rails
 
@@ -70,7 +70,7 @@ end
 
 ### Running rspec-rails Tests
 
-Typical spec folders for a Rails project include:
+Typical spec folders and files for a Rails project include:
 
 * `spec/models/user_spec.rb`
 * `spec/controllers/users_controller_spec.rb`
@@ -132,7 +132,7 @@ Then run `bundle` in your terminal. -->
 
 ### Testing Models
 
-We can set up a `@user` for testing purposes with `User.create`:
+We can set up a `@user` for testing purposes with `User.create`. Wrapping this in `before do` makes a `@user` object available to the tests:
 
   ```ruby
   #
@@ -176,7 +176,7 @@ Assuming we've already set a `@user` variable with first and last names, we can 
 
 ### Testing Controllers
 
-To test authentication, we need to define some `@current_user` before each of our tests run. The `allow_any_instance_of(...` line gives us access to the `@current_user` we just created in the controller methods we want to test.
+To test authentication, we need to define some `@current_user` before each of our tests run. The last line in this `before do` block --   `allow_any_instance_of(...` -- creates a "stub" (fake) `current_user` instance method for the ApplicationController and sets it up as a getter that only every returns the `@current_user` we made with ffaker.
 
   ```ruby
   #
