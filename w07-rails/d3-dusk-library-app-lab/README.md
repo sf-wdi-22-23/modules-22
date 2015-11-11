@@ -446,7 +446,7 @@ Then we need to add a view for the `sessions/new.html.erb`.
 touch app/views/sessions/new.html.erb
 ```
 
-Then very similarly to what did before for sign up we create a form for sign in.
+Then very similarly to what we did before for sign up, we create a form for sign in.
 
 ```html
 
@@ -533,7 +533,7 @@ end
 
 ## A Library Model
 
-Let's add our second model a `Library` model that will later have books.
+Let's add our second model, a `Library` model that will later have books.
 
 ```bash
 rails g model library name:string floor_count:integer floor_area:integer
@@ -548,7 +548,7 @@ Thus we need a `library_user` model.
 rails g model library_user user:references library:references
 ```
 
-In the future we can store other things on the `library_user` model that a relevant to someone's memembership to a library.
+In the future we can store other things on the `library_user` model that are relevant to someone's membership to a library.
 
 We will also need two different controllers for each of these models. Let's start by being able to do CRUD with Libraries.
 
@@ -646,7 +646,7 @@ Finally, we can add a view for `new` library.
 <% end %>
 ```
 
-This form has nowhere to go if we try to submit it we get an error because there is no `POST /libraries` route.
+This form has nowhere to go. If we try to submit it we get an error because there is no `POST /libraries` route.
 
 Let's add one.
 
@@ -688,7 +688,7 @@ class User < ActiveRecord::Base
   ...
 end
 ``` 
-And We do something similar for a Library.
+And we do something similar for a Library.
 
 ```ruby
 class Library < ActiveRecord::Base
@@ -697,7 +697,7 @@ class Library < ActiveRecord::Base
 end
 ``` 
 
-But notice here that both models are connected through as `library_users` model. Hence we need to make sure that model know it belongs to both of those.
+But notice here that both models are connected through our `library_users` model. Hence we need to make sure that model knows it belongs to both of those.
 
 
 ```ruby
@@ -725,7 +725,7 @@ You should now test this out in the console.
 > user.libraries
 #=> [ <#Library ... @name="SFPL" @id=1> ] 
 ```
-Joining a library from our web application requires creating `library_users` controller
+Joining a library from our web application requires creating a `library_users` controller
 
 ```bash
 rails g controller library_users
@@ -776,7 +776,7 @@ We can test this by going to `localhost:/users/1/libraries`.
 
 ## Add A User Lib
 
-So now that we can view, which libraries a `user` has joined we can go ahead and make a button that allows a user to `join` a library.
+So now that we can view which libraries a `user` has joined, we can go ahead and make a button that allows a user to `join` a library.
 
 
 Let's go back to `libraries#index` and add a button to do just that.
@@ -794,7 +794,7 @@ Let's go back to `libraries#index` and add a button to do just that.
   <br>
 <% end %>
 ```
-We will have to define `library_user_path` to `POST /libraries/:library_id/users` later. But first  we need to update the `library#index` method.
+We will have to define `library_user_path` to `POST /libraries/:library_id/users` later. But first we need to update the `library#index` method.
 
 ```ruby
 class LibrariesUsersController < ApplicationController
@@ -864,9 +864,9 @@ end
 
 ### Exercise
 
-1. Make it so a user has to be `logged_in?` before viewing anything of the `LibrariesController` actions or the `LibraryUsers` actions.
+1. Make it so a user has to be `logged_in?` before viewing any of the `LibrariesController` actions or the `LibraryUsers` actions.
 
-2. Modify exercise one such anyone can view `libraries#index`, but cannot `create` or view `new` without being logged in.
+2. Modify exercise one such that anyone can view `libraries#index`, but cannot `create` or view `new` without being logged in.
 
 
 ## Refactoring Params
