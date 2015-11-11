@@ -283,7 +283,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
     <td><a >Merge Sort</a> (Brianna)</td>
-    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion">Recursion </a> (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion" target="_blank">Recursion </a> (Alex)</td>
     <td>Intro to Vagabond </td>
     <td>Vagabond </td>
   </tr>
@@ -291,7 +291,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline" target="_blank">Asset Pipeline</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d2-dawn-auth/README.md" target="_blank">Auth</a> (Brianna)</td>
-    <td>Testing with Rspec (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-testing-with-rspec" target="_blank">Testing with Rspec</a> (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond </td>
   </tr>
