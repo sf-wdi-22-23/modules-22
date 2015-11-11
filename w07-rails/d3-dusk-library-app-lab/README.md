@@ -797,7 +797,7 @@ Let's go back to `libraries#index` and add a button to do just that.
 We will have to define `library_user_path` to `POST /libraries/:library_id/users` later. But first we need to update the `library#index` method.
 
 ```ruby
-class LibrariesUsersController < ApplicationController
+class LibraryUsersController < ApplicationController
   
   def index
     @libraries = Library.all
