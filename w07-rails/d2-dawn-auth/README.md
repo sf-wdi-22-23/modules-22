@@ -603,7 +603,8 @@ end
 
 ##Solution
 
-A sample solution is provided [here](https://github.com/sf-wdi-22-23/rails-auth/solution).
+A sample solution is provided <a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-dawn-auth/solution" target="_blank">here</a>
+<!--  [here](https://github.com/sf-wdi-22-23/rails-auth/solution). -->
 
 
 A similar app tutorial is available <a href="https://gist.github.com/thebucknerlife/10090014" target="_blank">here</a>.
