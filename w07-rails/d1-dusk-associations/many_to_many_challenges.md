@@ -12,7 +12,7 @@ For these challenges, continue to work in your `practice` Rails app.
 
 1. Create models and migrations for three tables: `actors`, `movies`, and a *join* table. Think about what you should name your join table and what columns it should have.
 2. Implement a many-to-many relationship between `actors` and `movies`.
-3. Use the Rails console to create at least three `actors` and two `movies`. Each movie should have at least two starring actors associated.
+3. Use the Rails console to create at least three `actors` and two `movies`. Each movie should have at least one actor associated with it. 
 
 ## Stretch Challenges
 
@@ -28,6 +28,3 @@ For these challenges, continue to work in your `practice` Rails app.
   # => What does this return?
   ```
 
-## Super Stretch Challenge
-
-Set up routes and views for `actors` and `models`. Remember "route-side-in"! Start with reading and creating (`index`, `new`, `create`, `show`), then move onto update and delete if time permits.

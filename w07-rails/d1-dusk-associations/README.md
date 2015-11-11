@@ -45,11 +45,11 @@ The foreign key always goes on the table with the data that belongs to data from
 
 ### Set Up
 
-1. In the terminal, set up a new Rails app called `practice`:
+1. In the terminal, set up a new Rails app called `practice_associations`:
 
   ```
-  $ rails new practice -d postgresql
-  $ cd practice
+  $ rails new practice_associations -d postgresql
+  $ cd practice_associations
   $ rake db:create
   ```
 
@@ -102,14 +102,14 @@ The foreign key always goes on the table with the data that belongs to data from
         t.string :name
         t.timestamps
 
-        # add this line
-        t.integer :owner_id
+        # add this line (MOST CORRECT)
+        t.belongs_to :owner
 
         # OR this line
         t.references :owner
-
+        
         # OR... this line
-        t.belongs_to :owner
+        t.integer :owner_id
 
         # but NOT all three!
       end
@@ -122,7 +122,7 @@ The foreign key always goes on the table with the data that belongs to data from
   * `t.integer`: adds an integer column to the table for the foreign key
   * `t.references`: more *rails-y* and semantic with a few benefits:
     * Defines the name of the foreign key column (in this case, `owner_id`) for us
-    * Adds a **foreign key constraint** which ensures **referential data integrity**  in our Postgres database
+    * Adds a **foreign key constraint** which ensures **referential data integrity**  in our database
   * `t.belongs_to`: even more *rails-y* and semantic, with the same functionality as `t.references`
 
 ### Using Your Associations
@@ -177,13 +177,14 @@ class AddOwnerIdToPets < ActiveRecord::Migration
 
   change_table :pets do |t|
     # only add ONE OF THESE THREE to your new migration
-    t.integer :owner_id
+    t.belongs_to :owner #(MOST CORRECT)
 
     # OR...
     t.references :owner
 
     # OR...
-    t.belongs_to :owner
+    t.integer :owner_id
+   
   end
 
 end
@@ -294,6 +295,8 @@ To create N:N relationships in Rails, we use this pattern: `has_many :related_mo
 
   # associate our model instances
   sally.courses << algebra
+  # ^ same as:
+  # sally.courses.push(algebra)
   sally.courses << french
 
   fred.courses << science
@@ -322,6 +325,11 @@ To create N:N relationships in Rails, we use this pattern: `has_many :related_mo
 ## Challenges, Part 2: Many-To-Many
 
 Head over to the [Many-To-Many Challenges](many_to_many_challenges.md) and work together in pairs.
+
+
+## Stretch Challenge: Self-Referencing Assocations
+
+Lots of real-world apps create assocations between items that are the same type of resource.  Read (or reread) <a href="http://guides.rubyonrails.org/association_basics.html#self-joins" target="_blank">the "self joins" section of the Associations Basics Rails Guide</a> and try to create a self-referencing association in your `practice_associations` app.  (Classic use cases are friends and following, where both related resources would be users.) No solution provided.
 
 ## Migration Workflow
 

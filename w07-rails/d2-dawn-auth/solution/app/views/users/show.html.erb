@@ -1,0 +1,14 @@
+<h1>This is the page for 
+	<% if @user && @user.email %>
+		<%= @user.email %>!
+	<% end %>
+</h1>
+
+<% if @my_profile %>
+	<p>This is your profile!</p>
+	<%= link_to "Logout", { controller: :sessions, action: "destroy", id: current_user.id }, :method => :delete %>
+<% end %>
+
+
+
+
