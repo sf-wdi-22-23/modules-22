@@ -13,7 +13,3 @@ class ApplicationController < ActionController::Base
   # make current_user method available in views
   helper_method :current_user 
 end
-
-class ApplicationController < ActionController::Base
-  
-end
