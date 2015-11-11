@@ -11,7 +11,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
-    <th>Wednesday</th>
+    <th>Wednesday</th>m
     <th>Thursday</th>r
     <th>Friday</th>
   </tr>
@@ -282,7 +282,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
-    <td><a >Merge Sort</a> (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-drills-mergesort" target="_blank">Merge Sort</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion" target="_blank">Recursion </a> (Alex)</td>
     <td>Intro to Vagabond </td>
     <td>Vagabond </td>
