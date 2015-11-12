@@ -307,7 +307,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-homework" target="_blank">Auth Reading</a> (Brianna) </td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md" target="_blank">Rspec Reading </a>(Alex)</td>
-    <td>Collaborating with Git and Github (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d3-homework/how-to-collaborate-with-github.md" target="_blank">Collaborating with Git and Github</a> (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
   </tr>
