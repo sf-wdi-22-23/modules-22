@@ -1,5 +1,7 @@
 # Project Vagabond
 
+HEY GUYS!
+
 ## Weeklong project
 
 You have been commissioned to build a travel community, codenamed Vagabond for now, for users to share tips (aka posts) about their favorite locations around the world.
