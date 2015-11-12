@@ -8,33 +8,33 @@ Working in teams of 3-4, using pair programming and agile development methodolog
 
 #### Groups:
 
-Team 1 (Brianna)
-Chris
-Laura B.
-Uriel
-Will
+Team 1 -- Brianna  
+Chris   
+Laura B.   
+Uriel   
+Will   
 
-Team 2 (Alex)
-Brian
-Dani
-Riley
+Team 2 -- Alex  
+Brian   
+Dani   
+Riley   
 
-Team 3 (Brianna)
-Francesca
-Jamey
-Jennifer
-Josh
+Team 3 -- Brianna    
+Francesca   
+Jamey   
+Jennifer   
+Josh   
 
-Team 4 (Alex)
-Angelo
-Margaux
-Mikey
-Racha
+Team 4 -- Alex     
+Angelo   
+Margaux   
+Mikey   
+Racha   
 
-Team 5 (Alex)
-Laura E.
-Matt
-Sam
+Team 5 -- Alex     
+Laura E.   
+Matt   
+Sam   
 
 
 #### Please refer to the Project Vagabond Repo for instructions:
