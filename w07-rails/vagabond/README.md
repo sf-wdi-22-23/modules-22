@@ -8,7 +8,6 @@ Working in teams of 3-4, using pair programming and agile development methodolog
 
 #### Groups:
 
-
 Team 1 (Brianna)
 Chris
 Laura B.

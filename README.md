@@ -11,7 +11,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
-    <th>Wednesday</th>
+    <th>Wednesday</th>m
     <th>Thursday</th>r
     <th>Friday</th>
   </tr>
@@ -282,8 +282,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
-    <td><a >Merge Sort</a> (Brianna)</td>
-    <td>Recursion (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-drills-mergesort" target="_blank">Merge Sort</a> (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion" target="_blank">Recursion </a> (Alex)</td>
     <td>Intro to Vagabond </td>
     <td>Vagabond </td>
   </tr>
@@ -291,7 +291,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline" target="_blank">Asset Pipeline</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d2-dawn-auth/README.md" target="_blank">Auth</a> (Brianna)</td>
-    <td>Testing with Rspec (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-testing-with-rspec" target="_blank">Testing with Rspec</a> (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond </td>
   </tr>
@@ -299,7 +299,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-dusk-associations" target="_blank">Rails Associations</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-views-and-validation" target="_blank">Views, Validations and Errors</a> (Ben)</td>
-    <td>Library App Lab (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-dusk-library-app-lab">Library App Lab </a>(Alex)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
   </tr>
