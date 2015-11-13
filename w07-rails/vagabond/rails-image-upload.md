@@ -4,6 +4,8 @@
 
 ## Paperclip & AWS S3
 
+<a href="https://devcenter.heroku.com/articles/paperclip-s3" target="_blank">Another source</a>
+
 
 1. Install `imagemagick`
 
