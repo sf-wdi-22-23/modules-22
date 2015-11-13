@@ -51,7 +51,7 @@
   Post.find(params[:id])
   ```
   
-becomes
+    becomes
 
   ```ruby
   Post.friendly.find(params[:id])
