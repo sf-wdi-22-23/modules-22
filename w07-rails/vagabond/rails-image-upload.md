@@ -72,7 +72,7 @@
 
 1. This should work to save images now locally, but it won't work in heroku. In order to save images in heroku you'll need to setup an S3 bucket.
 
-1. Sign into an Amazon Web Services (AWS) account and select S3. Create a new bucket. Get your API keys.  **PROTECT THIS API KEY -- DO NOT COMMIT TO GITHUB**
+1. Sign into an Amazon Web Services (AWS) account and select S3. Create a new bucket. Get your API keys.  **PROTECT THIS API KEY -- DO NOT COMMIT TO GITHUB!!**
 
 1. Add the [dotenv](https://github.com/bkeepers/dotenv) gem to your `Gemfile` and add a `.env` file to the root of your project. Now add your AWS_BUCKET, AWS_PUBLIC_KEY, and AWS_SECRET to the `.env` file.
 
