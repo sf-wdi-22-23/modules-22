@@ -284,8 +284,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-drills-mergesort" target="_blank">Merge Sort</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion" target="_blank">Recursion </a> (Alex)</td>
-    <td>Intro to Vagabond </td>
-    <td>Vagabond </td>
+    <td>Intro to <a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/vagabond" target="_blank">Vagabond</a> </td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/vagabond" target="_blank">Vagabond</a> </td>
   </tr>
   <tr>
     <td>Module1</td>
