@@ -1,6 +1,6 @@
 # PROJECT 2 BRAINSTORM
 
-## This weekend in addition to continuing to work on Vagabond, spend some time to brainstorm ideas for project 2!
+## This weekend in addition to continuing to work on Vagabond, spend some time brainstorming ideas for project 2!
 
 	Please write down 5 ideas, with a sentence or two about each and submit them via the usual method. 
 
