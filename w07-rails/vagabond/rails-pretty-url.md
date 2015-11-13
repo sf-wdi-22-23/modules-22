@@ -2,6 +2,8 @@
 
 ## FriendlyId
 
+<a href="https://github.com/norman/friendly_id" target="_blank">Docs on GitHub</a>
+
 1. Add the gem to your gemfile.
 
   ```console
