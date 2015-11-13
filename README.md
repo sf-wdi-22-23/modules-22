@@ -309,7 +309,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md" target="_blank">Rspec Reading </a>(Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d3-homework/how-to-collaborate-with-github.md" target="_blank">Collaborating with Git and Github</a> (Ben)</td>
     <td>Vagabond</td>
-    <td>Vagabond</td>
+    <td>Vagabond + <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/project_2_brainstorm.md"> Project 2 Brainstorm </a></td>
   </tr>
 </table>
 
