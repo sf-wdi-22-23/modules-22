@@ -181,49 +181,6 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
-<!-- ##Week 8 -->
-<!-- <table>
-  <tr>
-    <th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
-  </tr>
-</table> -->
 
 ## Week 8 - Project 2 
  <table>
@@ -239,9 +196,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Drills</td>
     <td>Project Vagabond</td>
     <td>Project Vagabond</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
   <tr>
     <td>Module1</td>
