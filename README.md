@@ -225,7 +225,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
- ##Week 8 - Project 2 
+## Week 8 - Project 2 
  <table>
   <tr>
     <th></th>
