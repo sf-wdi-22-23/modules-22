@@ -225,8 +225,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
-<!-- ##Week 7 -->
-<!-- <table>
+ ##Week 8 - Project 2 
+ <table>
   <tr>
     <th></th>
     <th>Monday</th>
@@ -237,37 +237,37 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
+    <td>Project Vagabond</td>
+    <td>Project Vagabond</td>
     <td>Drill (tbd)</td>
     <td>Drill (tbd)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Project Vagabond</td>
+    <td> Vagabond Presentations  & Project 2 Pitches</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Heroku Deploy / Project Vagabond</td>
+    <td>Project 2 Groups Assigned & Planning </td>
+    <td>Project 2 / Breakout: Photo Uploading (Braus)</td>
+    <td>Project 2/ Breakout: Pretty URLs (Juliana)</td>
+    <td>Project 2 / Outcomes</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
-</table> -->
+</table>
 
 ##Week 7 - Rails
 <table>
