@@ -1,5 +1,5 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) WDI PROJECT 2
-For the second project, you will use your knowledge of front and back-end web development to produce an awesome web application that can be used by friends, family or the wider community online -- and that will benefit your portfolio. The type of web application you create is your choice: utilities, social networks, games, mashups, etc. Ensure, however, that the scope of your project is not too large. You should be able to create a simple but complete version of the app in the allotted time.
+For the second project, you will use your knowledge of front and back-end web development to produce an awesome web application that can be used by friends, family or the wider community online -- and that will benefit your portfolio. The type of web application you create is your choice: utilities, social networks, games, mashups, etc. Ensure, however, that the scope of your project is not too large. You should be able to create a simple but polished app in the allotted time.
 
 **The objective of this project is to:**
 
@@ -80,7 +80,7 @@ We may not have covered all of these in class, but if you want to push yourself 
 ## TIMELINE
 
 * **Tuesday, November 17** - Project pitches; groups assigned
-* **Tuesday, November 24** - Completed project deliverables due at 10am
+* **Tuesday, November 24** - Completed project deliverables due at 10:00am
 
 ## PRESENTATIONS
 
