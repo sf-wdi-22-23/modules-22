@@ -184,9 +184,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
 
 |  | Monday | Tuesday | Wednesday | Thursday | Friday |
 | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| **Dawn 10:00am** | Project 2, 11AM Action Mailer Breakout (Brianna) | Project 2 | Thanksgiving Break | Thanksgiving Break | Thanksgiving Break |
-| **Dusk** | Project 2 | Project 2 Presentations  | | | |
-| **HW** | Project 2 |  Angular Preparation Homework (Alex)  | | | |
+| Dawn (10:00am) | Project 2, 11AM Action Mailer Breakout (Brianna) | Project 2 | Thanksgiving Break | Thanksgiving Break | Thanksgiving Break |
+| Dusk | Project 2 | Project 2 Presentations  | | | |
+| HW | Project 2 |  Angular Preparation Homework (Alex)  | | | |
 
 ## Week 8 - Project 2 
  <table>
@@ -199,15 +199,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
-    <td>Project Vagabond</td>
-    <td>Project Vagabond</td>
-    <td>Project 2</td>
-    <td>Project 2</td>
-    <td>Project 2</td>
-  </tr>
-  <tr>
-    <td>Module1</td>
+    <td>Dawn (10:00am)</td>
     <td>Project Vagabond</td>
     <td> Vagabond Presentations  & Project 2 Pitches</td>
     <td>Project 2</td>
@@ -215,7 +207,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Project 2</td>
   </tr>
   <tr>
-    <td>Module2</td>
+    <td>Dusk</td>
     <td>Heroku Deploy / Project Vagabond</td>
     <td>Project 2 Groups Assigned & Planning </td>
     <td>Project 2 / Breakout: Photo Uploading (Braus)</td>
