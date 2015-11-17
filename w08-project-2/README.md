@@ -13,7 +13,6 @@ You will be working in **groups of 3-4** for this project.
 ## CORE REQUIREMENTS
 
 * **PostgreSQL** Use PostgreSQL for your database in development and production.
-* **Testing** All custom model methods should have test specs, and some controllers should also have specs. Start writing tests early, or you will struggle to get them done.
 * **Validation** Your application should validate incoming data before entering it into the database.
 * **Error Handling** Forms in your application should also validate data, handle incorrect inputs, and provide user feedback on the client side.
 * **Views** Use **partials** to follow DRY (Don’t Repeat Yourself) development in your views.
@@ -31,10 +30,12 @@ In addition to those base requirements, complete at least 3 of the following 5 g
 * **External APIs** Use HTTParty or an external API's gem to add functionality to your app.
 * **Paperclip** Upload files with Paperclip.
 
+
 ## OTHER IDEAS
 
 We may not have covered all of these in class, but if you want to push yourself and learn something new, optionally consider doing some of the following with your app.
 
+* **Testing** Write test specs for model methods, controllers, and/or views.
 * **Charting** Visualize your data! Possibilities include D3, Morris.js, highcharts, charts.js, and google charts.
 * **Job Scheduling** Find a way to include Sidekiq (or Delayed Job or Resque) to your project.
 * **Emails** Use ActionMailer to send your users email updates!
