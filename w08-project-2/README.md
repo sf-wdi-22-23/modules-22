@@ -92,3 +92,34 @@ Each group will present their project on **Tuesday, November 24** starting at **
   * What parts of the project did you work on?
   * What was the most challenging aspect? Was there anything that was surprisingly easy to implement?
   * What did you learn?
+
+
+## Groups
+
+**Ben**    
+* Jen   
+* Laura B   
+* Margaux   
+* Uriel   
+
+**Brianna**  
+* Francesca   
+* Chris    
+* Racha   
+
+**Ben**   
+* Jamey   
+* Will     
+* Brian   
+* Dani   
+
+**Alex**   
+* Riley   
+* Sam   
+* Angelo  
+
+
+**Brianna**   
+* Mikey   
+* Matt   
+* Laura E  
