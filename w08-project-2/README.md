@@ -118,7 +118,7 @@ Each group will present their project on **Tuesday, November 24** starting at **
 * Brian
 * Dani
 
-**Reimbursr**   
+**Reimbursr**
 (report to Alex)
 * Riley
 * Sam
@@ -126,8 +126,8 @@ Each group will present their project on **Tuesday, November 24** starting at **
 * Josh
 * Matt
 
-~~**Workout Challenge**  
-(report to Brianna)   
-* Mikey   
-* Matt   
-* Laura E~~
+~~**Workout Challenge**~~
+~~(report to Brianna)~~
+~~* Mikey~~
+~~* Matt~~
+~~* Laura E~~
