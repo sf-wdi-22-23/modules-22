@@ -96,30 +96,34 @@ Each group will present their project on **Tuesday, November 24** starting at **
 
 ## Groups
 
-**Ben**    
+**It Happened Here**
+(report to Ben)
 * Jen   
 * Laura B   
 * Margaux   
 * Uriel   
 
-**Brianna**  
+**Gift Suggestr**
+(report to Brianna)
 * Francesca   
 * Chris    
 * Racha   
 
-**Ben**   
+**Tell me where to eatr**
+(report to Ben)
 * Jamey   
 * Will     
 * Brian   
 * Dani   
 
-**Alex**   
+**Reimbursr**   
+(report to Alex)
 * Riley   
 * Sam   
 * Angelo  
 
-
-**Brianna**   
+**Workout Challenge**  
+(report to Brianna)   
 * Mikey   
 * Matt   
 * Laura E  
