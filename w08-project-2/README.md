@@ -121,6 +121,7 @@ Each group will present their project on **Tuesday, November 24** starting at **
 * Riley   
 * Sam   
 * Angelo  
+* Josh   
 
 **Workout Challenge**  
 (report to Brianna)   
