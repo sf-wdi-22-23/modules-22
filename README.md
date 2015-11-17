@@ -3,7 +3,7 @@
 Look here for all things related to lesson notes, exercises, and solutions as well as the schedule.
 
 [JS and jQuery Screencasts](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa)
-<br>B
+<br>
 [ExpressJS Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUkPTztJ8zEJsuTOMdxZshO8) (note: a few of these use a different templating solution called Handlebars instead of ejs, so those portions don't reflect what we've seen)
 <!-- ##Week 12 -->
 <!-- <table>
@@ -180,7 +180,13 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>LEAVE BLANK</td>
   </tr>
 </table> -->
+## Week 9 - Project 2
 
+|  | Monday | Tuesday | Wednesday | Thursday | Friday |
+| :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
+| **Dawn 10:00am** | Project 2, 11AM Action Mailer Breakout (Brianna) | Project 2 | Thanksgiving Break | Thanksgiving Break | Thanksgiving Break |
+| **Dusk** | Project 2 | Project 2 Presentations  | | | |
+| **HW** | Project 2 |  Angular Preparation Homework (Alex)  | | | |
 
 ## Week 8 - Project 2 
  <table>
