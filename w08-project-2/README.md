@@ -111,7 +111,7 @@ Each group will present their project on **Tuesday, November 24** starting at **
 * Racha
 * Mikey
 
-**Tell me where to eatr**
+**Playr**
 (report to Ben)
 * Jamey   
 * Will     
@@ -126,8 +126,8 @@ Each group will present their project on **Tuesday, November 24** starting at **
 * Josh
 * Matt
 
-~~**Workout Challenge**~~
-~~(report to Brianna)~~
-~~* Mikey~~
-~~* Matt~~
-~~* Laura E~~
+~~**Workout Challenge**~~    
+~~(report to Brianna)~~   
+~~* Mikey~~   
+~~* Matt~~   
+~~* Laura E~~   
