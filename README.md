@@ -3,7 +3,7 @@
 Look here for all things related to lesson notes, exercises, and solutions as well as the schedule.
 
 [JS and jQuery Screencasts](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa)
-<br>B
+<br>
 [ExpressJS Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUkPTztJ8zEJsuTOMdxZshO8) (note: a few of these use a different templating solution called Handlebars instead of ejs, so those portions don't reflect what we've seen)
 <!-- ##Week 12 -->
 <!-- <table>
@@ -11,7 +11,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
-    <th>Wednesday</th>
+    <th>Wednesday</th>m
     <th>Thursday</th>r
     <th>Friday</th>
   </tr>
@@ -180,9 +180,16 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>LEAVE BLANK</td>
   </tr>
 </table> -->
+## Week 9 - Project 2
 
-<!-- ##Week 8 -->
-<!-- <table>
+|  | Monday | Tuesday | Wednesday | Thursday | Friday |
+| :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
+| Dawn (10:00am) | Project 2, 11AM Action Mailer Breakout (Brianna) | Project 2 | Thanksgiving Break | Thanksgiving Break | Thanksgiving Break |
+| Dusk | Project 2 | Project 2 Presentations  | | | |
+| HW | Project 2 |  Angular Preparation Homework (Alex)  | | | |
+
+## Week 8 - Project 2 
+ <table>
   <tr>
     <th></th>
     <th>Monday</th>
@@ -192,82 +199,30 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Dawn (10:00am)</td>
+    <td>Project Vagabond</td>
+    <td> Vagabond Presentations  & Project 2 Pitches</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
   <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Dusk</td>
+    <td>Heroku Deploy / Project Vagabond</td>
+    <td>Project 2 Groups Assigned & Planning </td>
+    <td>Project 2 / Breakout: Photo Uploading (Braus)</td>
+    <td>Project 2/ Breakout: Pretty URLs (Juliana)</td>
+    <td>Project 2 / Outcomes</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
-</table> -->
-
-<!-- ##Week 7 -->
-<!-- <table>
-  <tr>
-    <th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
-  </tr>
-</table> -->
+</table>
 
 ##Week 7 - Rails
 <table>
@@ -282,16 +237,16 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-sql-drills" target="_blank">SQL Drills</a> (Ben)</td>
-    <td><a >Merge Sort</a> (Brianna)</td>
-    <td>Recursion (Alex)</td>
-    <td>Intro to Vagabond </td>
-    <td>Vagabond </td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-drills-mergesort" target="_blank">Merge Sort</a> (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-drills-recursion" target="_blank">Recursion </a> (Alex)</td>
+    <td>Intro to <a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/vagabond" target="_blank">Vagabond</a> </td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/vagabond" target="_blank">Vagabond</a> </td>
   </tr>
   <tr>
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d01-dawn-asset-pipeline" target="_blank">Asset Pipeline</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d2-dawn-auth/README.md" target="_blank">Auth</a> (Brianna)</td>
-    <td>Testing with Rspec (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-testing-with-rspec" target="_blank">Testing with Rspec</a> (Ben)</td>
     <td>Vagabond</td>
     <td>Vagabond </td>
   </tr>
@@ -299,7 +254,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-dusk-associations" target="_blank">Rails Associations</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d2-views-and-validation" target="_blank">Views, Validations and Errors</a> (Ben)</td>
-    <td>Library App Lab (Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d3-dusk-library-app-lab">Library App Lab </a>(Alex)</td>
     <td>Vagabond</td>
     <td>Vagabond</td>
   </tr>
@@ -307,9 +262,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w07-rails/d1-homework" target="_blank">Auth Reading</a> (Brianna) </td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d02-homework/readme.md" target="_blank">Rspec Reading </a>(Alex)</td>
-    <td>Collaborating with Git and Github (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/d3-homework/how-to-collaborate-with-github.md" target="_blank">Collaborating with Git and Github</a> (Ben)</td>
     <td>Vagabond</td>
-    <td>Vagabond</td>
+    <td>Vagabond + <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w07-rails/project_2_brainstorm.md"> Project 2 Brainstorm </a></td>
   </tr>
 </table>
 
