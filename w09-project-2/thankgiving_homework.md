@@ -2,6 +2,7 @@
 
 ![](http://i.giphy.com/26BkN7pWkMq29fpSM.gif)
 
+
 For homework over the break you should:
 1. Review Express
 2. Read POODR
