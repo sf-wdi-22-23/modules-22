@@ -4,6 +4,7 @@
 
 
 For homework over the break you should:
+
 1. Review Express
 2. Read POODR
 3. Introduce yourself to Angular
