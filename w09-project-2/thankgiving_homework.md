@@ -16,6 +16,7 @@ For homework over the break you should:
 - This [Express Complete Tutorial](https://codeforgeek.com/2014/10/express-complete-tutorial-part-1/)
 
 #### Angular:
+- the [sample MEAN stack project skeleton](https://github.com/sf-wdi-22-23/seed-mean-html)
 - [Braus's angular tutorial](https://www.youtube.com/playlist?list=PLNcEnkMSwDUmKzFoqOwClxw6OIgKxa5sM)
 - Code School's [Shaping up with Angular](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
 - Angularjs.org's [PhoneCat Tutorial](https://docs.angularjs.org/tutorial)
