@@ -14,7 +14,7 @@ In computer science, graphs are collections of **vertices** or **nodes**, which 
 
 A sequence of edges is called a "path".
 
-<img src="images/paths.jpg" width="300px">
+<!--<img src="images/paths.jpg" width="300px">-->
 
 ## Trees
 
@@ -83,12 +83,12 @@ PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO
 
 Assume for the following challenges that you have a binary search tree data structure. The structure will be recursive, meaning each node is actually represented as a full subtree, an instance of `BinarySearchTree`. 
 
-The constructor for a `BinarySearchTree` instance requires that you specify the value for the current node, and it sets the left and right subtrees/nodes to  `"None"`.
+The constructor for a `BinarySearchTree` instance requires that you specify the value for the current node, and it sets the left and right subtrees/nodes to  `None` (or `nil` or `null` depending on what programming language you're using; the "pseudocode" solutions use `None`).
 
 The data structure allows you to do the following:
 
 * given a tree called `my_bst`, access the "root node" with `my_bst`
-* given any node, find the parent of that node with `my_node.parent` (the parent of the root node is `"None"`)
+* given any node, find the parent of that node with `my_node.parent` (the parent of the root node is `None`)
 * given any node, find the left child node/subtree of that node with `.left`
 * given any node, find the right child node/subtree of that node with `.right`
 * given any node, find its value with `.value`
@@ -99,16 +99,16 @@ The data structure allows you to do the following:
 
 	```python
 
-	def min(tree)
+	def min(tree):
 		current_node = tree
-		while current_node.left != "None"
+		while current_node.left is not None:
 			current_node = current_node.left
 		return current_node.value
 
 
-	def max(tree)
+	def max(tree):
 		current_node = tree
-		while current_node.right != "None"
+		while current_node.right is not None:
 			current_node = current_node.right
 		return current_node.value
 	```
@@ -125,14 +125,14 @@ The data structure allows you to do the following:
 	```python
 
 
-	def search(tree, val)
+	def search(tree, val):
 		current_node = tree
-		while current_node != "None"
-			if current_node.value > val 
+		while current_node is not None:
+			if current_node.value > val:
 				current_node = current_node.left
-			else if current_node.val < val
+			else if current_node.val < val:
 				current_node = current_node.right
-			else 
+			else:
 				return true
 		return false
 	```
@@ -142,17 +142,17 @@ The data structure allows you to do the following:
 
 	```python
 
-	def insert(tree, val)
+	def insert(tree, val):
 		current_node = tree
-		while current_node != "None"
-			if current_node.val > val 
-				if current_node.right != "None"
+		while current_node is not None:
+			if current_node.val > val: 
+				if current_node.right is not None:
 					current_node = current_node.right
-				else
+				else:
 					current_node.right = new BinarySearchTree(val)
-			else if current_node.left != "None"
+			else if current_node.left is not None:
 				current_node = current_node.left
-			else 
+			else: 
 				current_node.left = new BinarySearchTree(val)
 	```
 
@@ -168,38 +168,38 @@ The data structure allows you to do the following:
 
 	def lower_than(value)
 		current_node = tree
-		while current_node != "None"
+		while current_node is not None
 			if current_node.val >= val
 				current_node = current_node.left
 			else
 				current_node = current_node.right
  -->
 <!-- 
-1. Every royal your kingdom is assigned a unique "distance from the throne" score that helps determine the line of succession should something happen to the current monarch.  A royal cousin has asked you to find out, if he were to take the throne and then have to leave it, who would replace him. The royal cousin gives you access to his score, so you have his node in the "distance from the throne" binary search tree. Pseudocode a `successor` function to find the person (node) who is next in line after him.  If there is no one with a higher "distance from the throne" score, return "None". 
+1. Every royal your kingdom is assigned a unique "distance from the throne" score that helps determine the line of succession should something happen to the current monarch.  A royal cousin has asked you to find out, if he were to take the throne and then have to leave it, who would replace him. The royal cousin gives you access to his score, so you have his node in the "distance from the throne" binary search tree. Pseudocode a `successor` function to find the person (node) who is next in line after him.  If there is no one with a higher "distance from the throne" score, return None. 
 
-	Old: Pseudocode a `successor` function to find the next-highest-valued node in a binary search tree, given one node/subtree. If there is no higher-valued node, return "None". (The corresponding term for the next-lowest is `predecessor`).
+	Old: Pseudocode a `successor` function to find the next-highest-valued node in a binary search tree, given one node/subtree. If there is no higher-valued node, return None. (The corresponding term for the next-lowest is `predecessor`).
 
 	```python
 
-	def successor(node)
-		if node.right == "None" && node.parent == "None"
-			return "None"
-		if node.right != "None"
+	def successor(node):
+		if node.right is None and node.parent is None:
+			return None
+		if node.right is not None:
 			current_node = node.right
-			while current_node.left
+			while current_node.left:
 				current_node = current_node.left
 			return current_node
-		else if node.parent.left == node
+		else if node.parent.left is node:
 			return node
-		else 
+		else: 
 			current_node = node
-			while current_node.parent != "None" && current_node.parent.right == current_node
-				current_node == current_node.parent
-			if current_node.parent == "None"
-				return "None"
-			else
+			while current_node.parent is not None and current_node.parent.right is current_node:
 				current_node = current_node.parent
-				while current_node.left
+			if current_node.parent is None:
+				return None
+			else:
+				current_node = current_node.parent
+				while current_node.left:
 					current_node = current_node.left
 				return current_node
 
@@ -216,46 +216,46 @@ The constructor for a `Tree` instance requires that you specify the value for th
 The data structure allows you to do the following:
 
 * given a tree called `my_tree`, access the "root node" with `my_tree`
-* given any node, find the parent of that node with `my_node.parent` (the parent of the root node is `"None"`)
+* given any node, find the parent of that node with `my_node.parent` (the parent of the root node is `None`)
 * given any node, find an array containing all its children with `.children`
 * given any node, find its value with `.value`
 
-1. Given the names of two people in a military group, and a tree that represents the military heirarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return "None".  
+1. Given the names of two people in a military group, and a tree that represents the military heirarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  
 
-	Pseudocode a `lowest_common_ancestor` function that, given two nodes/subtrees, finds their lowest common ancestor, excluding themselves, or returns "None".
+	Old: Pseudocode a `lowest_common_ancestor` function that, given two nodes/subtrees, finds their lowest common ancestor, excluding themselves, or returns `None`.
 
 	```python
 
-	def lowest_common_ancestor(node1, node2)
+	def lowest_common_ancestor(node1, node2):
 		current1 = node1
 		current2 = node2
-		node1_ancestors = new Set()
-		node2_ancestors = new Set()
+		node1_ancestors = set()  # a set is a list that doesn't allow duplicates; usually implemented as a hash
+		node2_ancestors = set()  # we'll pretend the set() function creates a new empty set
 
-		while current1.parent != "None" && curent2.parent != "None"
+		while current1.parent is not None and curent2.parent is not None:
 			current1 = current1.parent
-			if current1 in node2_ancestors
+			if current1 in node2_ancestors:
 				return current1
-			else
+			else:
 				node1_ancestors.add(current1)
 
 			current2 = current2.parent
-			if current2 in node1_ancestors
+			if current2 in node1_ancestors:
 				return current2
-			else
+			else:
 				node2_ancestors.add(current2)
 
-		while current1.parent != "None"
+		while current1.parent is not None
 			current1 = current1.parent
-			if current1 in node2_ancestors
+			if current1 in node2_ancestors:
 				return current1
 
-		while current2.parent != "None"
+		while current2.parent is not None
 			current2 = current2.parent
-			if current2 in node1_ancestors
+			if current2 in node1_ancestors:
 				return current2
 
-		return "None"
+		return None
 	```
 
 1. A "min heap" is another abstract data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's value is less than the values of its children. What is special about the root of a min heap?  
