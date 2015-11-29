@@ -54,71 +54,67 @@ PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO
 
 ### Binary Search Tree
 
-1. You have a binary search tree containing the records for every student in your class, where the key stored in each node is the timestamp when the student enrolled in the class.  Pseudocode a function to find the first student who enrolled in the class.  Pseudocode a function to find the last student who enrolled in the class.
-
-  Jargon: Pseudocode a `min` function to find the minimum-keyed node in a binary search tree. Pseudocode a `max` function to find the maximum-keyed node in a binary search tree. 
+1. You follow a favorite literary critic's book ratings very closely.  In particular, you keep a self-balancing binary search tree of all the critic's reviews, where each node's key is the rating given by the critic to that node's book.  Every time the critic publishes a new book review, you add it to the tree. Every time you finish reading your current book, you read the next highest-rated book. As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its argument. (If you were also deleting the item, this is how you'd use a binary search tree as a 'priority queue'.)
+   
 
   ```python
-
-  def min(tree):
-    current_node = tree
-    while current_node.left is not None:
-      current_node = current_node.left
-    return current_node.key
-
-
   def max(tree):
     current_node = tree
     while current_node.right is not None:
       current_node = current_node.right
-    return current_node.key
+    return current_node
   ```
 
 
-1.  What is another data structure you could use to find the minimum or maximum key in a set of numbers? How does using a binary search tree compare to using an unsorted array? A sorted array? Does it matter if the binary search tree is balanced?
+1. For the book priority problem above, how does using a binary search tree compare to using a sorted array?  Does it matter whether the binary search tree is balanced?
 
-  *Two other possibilities are a sorted array and an unsorted array. A sorted array is pretty clearly better than an unsorted array because we can find the min by just looking at the first element or the max by looking at the last, either in `O(1)` time.  In an unsorted array, we'd have to check all the values, meaning `O(n)` time if there are `n` values.  In a binary search tree, we have to start at the root and follow a path all the way down to the leftmost or rightmost leaf. So the number of nodes we look at could be up to the height of the tree.  A non-balanced binary search tree would still potentially have us looking at all `n` values if it's just a chain of nodes (a sorted linked list).  But, with a balanced binary search tree, the height will be `O(log`<sub>`2`</sub>`n)`.*
+  There are three main things we need to be able to do for this problem: find the highest-rated (max key) book, insert new books in the correct sorted location in the data structure, and delete the highest-rated book once we've decided to read it.
+  
+  With a sorted array, we can find the max by looking at the last element. This is O(1) time assuming the array tracks its length. If we want to delete the max, that's also O(1) if the array tracks its length. When we want to insert a book by rating, we can use binary search to find where it belongs in O(log n) time. However, inserting it into the array will be O(n) because every element after the insertion point will have to move over one.
+  
+  To find the max in a binary search tree, we have to start at the root and follow a path all the way down to the rightmost node in the tree. So the number of nodes we look at could be up to the height of the tree.  A non-balanced binary search tree would still potentially have us looking at all `n` values if it's just a chain of nodes.  But, with a balanced binary search tree, the height will be O(log<sub>2</sub>n).  Inserting into the binary search tree is also O(log<sub>2</sub>n).  Deleting the max node, as a separate operation, would require us to find it again at O(log<sub>2</sub>n) time cost. If we do in the same pass through the tree as when we find the max, though, we can delete in O(1) extra time.
+  
+  The choice whether to use a balanced binary search tree or a sorted array boils down to which kind of operation we'll do more often. If books are going to be inserted far more quickly than we can read them, maybe we'd don't want to pay the potentially O(n) cost to insert into a sorted array. On the other hand, if books are inserted at a slower pace, or if we're worried about O(n) being too long to wait for any one operation, it could make sense to go with a self-balancing binary search tree and pay the O(log n) cost for every operation. 
 
-1. You have a binary search tree where the key of each node is the difficulty rating of a quiz stored in that node.  Pseudocode a `has_key` function to check if any of the quizzes have a particular difficulty rating. Your function should return `true` if there is a quiz with that difficulty rating and `false` if not.
-
-  Jargon: Pseudocode a `has_key` function to check if any node in the binary search tree has a given key. Your function should return `true` if the key is in the tree and `false` if not. 
-
-  ```python
-
-
-  def has_key(tree, val):
-    current_node = tree
-    while current_node is not None:
-      if current_node.key > val:
-        current_node = current_node.left
-      else if current_node.val < val:
-        current_node = current_node.right
-      else:
-        return true
-    return false
+1. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is the hex code of its color (for example: `#30af99`, `#c0ffee`). Each node also contains the name assigned to the color, the username of the user who named it, and the date and time when it was named. Users shouldn't be able to change the name of a color.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the hex color key as arguments.
+  
+   ```python
+   def has_key(tree, key):
+     current_node = tree
+     while current_node is not None:
+       if current_node.key > key:
+         current_node = current_node.left
+       else if current_node.key < key:
+         current_node = current_node.right
+       else:
+         return true
+     return false
   ```
 
 
-1. You're keeping track of this month's temperatures in a binary search tree. Pseudocode an `insert` function to insert a new node into the binary search tree with a given temperature key. The result must still be a binary search tree, but don't worry about keeping it balanced.  (If the binary search tree were balanced, how much time would it take to insert something into a tree with n nodes? How much time would it take to insert something into a sorted array of length n?)
 
-  ```python
-
-  def insert(tree, val):
-    current_node = tree
-    while current_node is not None:
-      if current_node.val > val: 
-        if current_node.right is not None:
-          current_node = current_node.right
-        else:
-          current_node.right = new BinarySearchTree(val)
-      else if current_node.left is not None:
-        current_node = current_node.left
-      else: 
-        current_node.left = new BinarySearchTree(val)
+	Stretch Version: Pseudocode an `insert_if_free` function to check if the color exists *and* insert it if it's not already in the tree. If the key is not in the tree, your function should add it to the tree and return `true` (notice this is the reverse of what `has_key` returns).  If the key is already in the tree, your function should return `false`. Your function should take the tree as one argument and the information about the new color as one or more other arguments.  Don't worry about maintaining the balance of the tree; just insert the new node at any valid location.
+	
+    ```python
+    def insert_if_free(tree, key):
+        current_node = tree
+        while current_node is not None:
+            if current_node.key == key:
+                return false
+            else if current_node.key > key: 
+                if current_node.left is not None:
+                    current_node = current_node.left
+                else:
+                    current_node.left = new BinarySearchTree(key, new_node_data)
+            else:  # current_node.key < key
+                if current_node.right is not None:
+                    current_node = current_node.right
+                else: 
+                    current_node.right = new BinarySearchTree(key, new_node_data)
   ```
+  
+  
 
-
-  *For a balanced binary search tree, the time would be on the order of the height, so `O(log(n))`.
 
 ### Tree
 
