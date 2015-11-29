@@ -37,7 +37,7 @@ The edges in a tree are sometimes referred to as "branches".  Nodes of the tree 
 Tree data structures adopt language from family trees. If an edge in a tree connects two nodes, the one closer to the root is the "parent", and the other is a "child".  From the perspective of a single node, some other nodes will be on the path between that node and the root. These are the node's "ancestors." Other nodes might be children of the  node, or children of the node's children. These are called the node's "descendants."  Nodes that share the same "parent" can be called "siblings," but that's rarer.
 
 
-## Trees to Know for Interviews
+## Trees to Know for the Job Search
 
 ### Balanced Binary Search Trees
 
@@ -77,6 +77,73 @@ Tries, also called prefix trees, store data differently than other trees we'll l
 Usually the end of each word in a trie will be marked, or there will be special end of word nodes that signify the end of a word.
 
 Specialized tries that store data in binary format (as sequences of 0s and 1s) are used by most hardware routers to send data across the internet. They allow for fast lookup within their limited set of stored sequences, so they're often used with words (sequences of letters!) for autocomplete, spell checking, or other string matching scenarios.
+
+
+## Why Are Binary Search Trees Even a Thing?
+
+Below you'll find a table of speeds of common operations for a few of the data structures we've seen: unsorted arrays, sorted arrays, hashes, and binary search trees. The big O notation in the table shows the amortized worst case run time. You may not have a lot of context for big O yet, so before we jump into the main table here's an example. 
+
+Twitter handles hundreds of millions of tweets each day.  (Computers can halde about a billion operations per second, but an algorithm usually requries more than one operation to handle each input.)  If Twitter has an <i>O</i>(<i>n</i>) algorithm that somehow processes all these tweets in about 40 seconds, changing to an <i>O</i>(log&nbsp;<i>n</i>) algorithm could reduce that time to just over 5 seconds (that kind of savings adds up!). An <i>O</i>(<i>n</i>&nbsp;log&nbsp;<i>n</i>) algorithm might take about 3.5 minutes. 
+
+<table>
+<tbody>
+<tr>
+	<th></th>
+	<th>Insert</th>
+	<th>Delete</th>
+	<th>Get ith by index</th>
+	<th>Select kth in order of value</th>
+	<th>Search</th>
+	<th>Find minimum</th>
+	<th>Find maximum</th>
+</tr>
+<tr>
+	<td>Unsorted array</td>
+	<td><i>O</i>(<i>n</i>)<sup>*</sup></td>
+	<td><i>O</i>(<i>n</i>)<sup>*</sup></td>
+	<td><a href="/wiki/Constant_time" title="Constant time" class="mw-redirect"><i>O</i>(1)</a></td>
+	<td><i>O</i>(<i>n</i>&nbsp;log&nbsp;<i>n</i>)<sup>**</sup></td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(<i>n</i>)</td>
+</tr>											
+<tr>
+	<td>Sorted array</td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(1)</td>
+	<td><i>O</i>(1)</td>
+	<td><i>O</i>(log&nbsp;<i>n</i>)</td>
+	<td><i>O</i>(1)</td>
+	<td><i>O</i>(1)</td>
+</tr>
+<tr>
+	<td>Hash</td>
+	<td><i>O</i>(1)</td>
+	<td><i>O</i>(1)</td>
+	<td>N/A</td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(1)</td>
+	<td><i>O</i>(<i>n</i>)</td>
+	<td><i>O</i>(<i>n</i>)</td>
+</tr>
+<tr>
+	<td>Binary Search Tree<sup>+</sup></td>
+	<td><i>O</i>(<i>height</i>)</td>
+	<td><i>O</i>(<i>height</i>)</td>
+	<td>N/A</td>
+	<td><i>O</i>(<i>n</i>)<sup>++</sup></td>
+	<td><i>O</i>(<i>height</i>)</td>
+	<td><i>O</i>(<i>height</i>)</td>
+	<td><i>O</i>(<i>height</i>)</td>
+</tr>
+</tbody></table>
+
+<sup>\*</sup> Insertion or deletion at the end of an array is <i>O</i>(1)  (constant time).    
+<sup>\*\*</sup>  Sort and then binary search. A faster <i>O</i>(<i>n</i> + <i>k</i>&nbsp;log&nbsp;<i>n</i>) algorithm exists using the heap data structure, which we haven't talked about yet.  There are also faster sorts if you have information about your input.   
+<sup>+</sup> For a <a href="/wiki/Self-balancing_binary_search_tree" title="Self-balancing binary search tree" class="mw-redirect">Self-balancing binary search tree</a>, the height is <i>O</i>(log&nbsp;<i>n</i>). If the tree is not balanced, the height can be up to <i>O</i>(<i>n</i>).   
+<sup>++</sup> Can reduce to <i>O</i>(<i>h</i>) by augmenting each node to keep track of the size of its subtree.   
+
 
 
 ## Vocab Practice 
