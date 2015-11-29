@@ -93,7 +93,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
- ## Week 10 - MEAN
+## Week 10 - MEAN
  <table>
   <tr>
     <th></th>
