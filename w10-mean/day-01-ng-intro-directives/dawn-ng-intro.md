@@ -225,16 +225,3 @@ There are many more directives. For now, know that they exist and why they may b
 * Sort the Pokemon by nDex number.
 * Create an input tag so that I can search for a particular Pokemon.
 
-##Custom Filters
-
-We've been notified that there is a new set of Pokemon in an alternate universe consisting of arch-nemeses. Pikachu's arch nemesis is Uhcakip, while Snorlax's is Xalrons. Let's construct a table that displays all the arch-nemeses.
-
-Angular doesn't have a `reverse` filter, so let's create one.
-
-```js
-app.filter('reverse', function() {
-  return function(items) {
-    return items.slice().reverse();
-  };
-});
-```
