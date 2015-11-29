@@ -93,8 +93,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
-<!-- ##Week 10 -->
-<!-- <table>
+ ## Week 10 - MEAN
+ <table>
   <tr>
     <th></th>
     <th>Monday</th>
@@ -105,81 +105,39 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Trees & Tries Intro (Brianna, Matt)</td>
+    <td>Breadth-First Search (Brianna, Matt)</td>
+    <td>Depth-First Search (Brianna, Braus)</td>
+    <td>Tree Traversal (Brianna, Braus)</td>
+    <td>String Matching(Alex, Matt)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>NG Intro & Base Native Directives (Alex, Juliana)</td>
+    <td>NG Routing with UI router (Brianna, Matt)</td>
+    <td>Services and ng-resource (Alex, Juliana)</td>
+    <td>Custom Services (Brianna, Braus)</td>
+    <td>Review (Alex, Juliana)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
+    <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben, Braus)</td>
+    <td>NG $http other verbs & stealthy semi-review (Ben, Juliana)</td>
+    <td>Custom ng directives (Ben, Matt)</td>
+    <td>Intro weekend lab (Braus)</td>
     <td>Weekend Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
+    <td>Angular Routing (Alex)</td>
+    <td>ng-resources (Juliana)</td>
+    <td>services (Brianna)</td>
+    <td>CRUD Weekend Lab (Angular Prototype)</td>
+    <td>Lightning Talk Assignment / Research (Brianna)</td>
   </tr>
 </table> -->
 
-<!-- ##Week 9 -->
-<!-- <table>
-  <tr>
-    <th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
-  </tr>
-</table> -->
+
 ## Week 9 - Project 2
 
 |  | Monday | Tuesday | Wednesday | Thursday | Friday |
