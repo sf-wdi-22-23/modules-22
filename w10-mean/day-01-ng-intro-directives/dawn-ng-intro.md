@@ -238,39 +238,3 @@ app.filter('reverse', function() {
   };
 });
 ```
-
-###Challenge
-
-* Create a new table of Pokemon with the names reversed representing their arch nemeses.
-
-##Pro-tip: Minification in Angular
-
-Remember the main goal in [minification](https://en.wikipedia.org/wiki/Minification_(programming)) is to save space and deliver the file quickly. A variable `myVariableName` may be renamed to `A` during minification. A computer doesn't care what the name is as long as they are consistent.
-
-However, if you ever minify your angular code when delivering it to a client your variables will be renamed and this may cause problems because of this variable renaming. Currently, we're used to seeing code like this.
-
-```js
-app.controller("PokemonCtrl", function() {
-  
-});
-```
-
-To allow minifiers to rename the function parameters and have them still map to the correct injected services, we need to explicitly `$inject` the parameters we want into our controller as strings, which importantly do not get minified (only variables do).
-
-```js
-var PokemonCtrl = function($scope) {
-  
-};
-PokemonCtrl.$inject = ['$scope'];
-app.controller('PokemonCtrl', PokemonCtrl);
-```
-
-**or** we can pass our controller an array that contains an array of our dependencies as strings and a function, whose arguments have a 1 to 1 correspondence to the array's items. This is the more common method.
-
-```js
-app.controller('PokemonCtrl', ['$scope', function($scope) {
-  ...
-}]);
-```
-
-Again, while our parameters will get minified, the strings will not. The names of parameters are therefore preserved in the strings so that the injector can still them up as dependencies appropriately.
