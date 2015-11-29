@@ -135,7 +135,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>CRUD Weekend Lab (Angular Prototype)</td>
     <td>Lightning Talk Assignment / Research (Brianna)</td>
   </tr>
-</table> -->
+</table>
 
 
 ## Week 9 - Project 2
