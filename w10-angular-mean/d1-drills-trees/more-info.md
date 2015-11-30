@@ -22,12 +22,12 @@ A sequence of edges is called a "path".
 Trees are a special kind of graph with some extra rules about their nodes and edges. First, every tree has a unique, special start node called the "root" node. 
 (We usually draw trees vertically with the "root" node at the top of the tree.)Second, each node in a tree can only ever have one "parent". This means there's only ever one direct path from any node to the root of the tree.  One classic example of a tree is a file sytem, where directories contain other directories and/or files. The `/` directory is called the "root" directory because it's literally the root of the computer's directory tree.  Here are a few other example use cases of trees:
 
-* the DOM tree
+* **the DOM tree**
 * comment trees (where users can comment on comments)
 * data compression algoritm trees (Huffman coding)
-* tournaments 
-* parser trees or syntax trees that help interpret code
-* calculators
+* single-elimination tournaments 
+* parser trees or syntax trees that help a computer interpret human-readable code
+* the way calculators compute order of operations
 
 The edges in a tree are sometimes referred to as "branches".  Nodes of the tree that do not have any children are called "leaves" because no branches lead away from them. The length of the longest path from the root to a leaf is called the tree's "height".
 
