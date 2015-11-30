@@ -141,7 +141,7 @@ That's cool, but it doesn't look very great. What if we could format our data so
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
 
-##[Directives](https://docs.angularjs.org/guide/directive)
+##[Directives](https://docs.angularjs.org/guide/directive#what-are-directives-)
 
 In Angular, we **add behavior to HTML** through directives. A directive is a marker on a HTML tag that tells Angular to run or reference Angular code. You've already used several!
 
