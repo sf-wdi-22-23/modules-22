@@ -188,5 +188,5 @@ PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO
         # once we have no more letters to go (after while loop):   
         # mark the current node as the end of a word   
         current_node['end_of_word'] = true
-        ```
+```
 
