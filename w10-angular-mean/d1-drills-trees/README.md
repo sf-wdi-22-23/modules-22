@@ -22,7 +22,7 @@
 
 <img src="images/bst.jpg" width="300px">
 
-* stores sorted data (keys have to be sortable)
+* stores data in a sorted order (keys have to be sortable)
 * max number of children per node: 2
 * left subtree of any node has all keys less than or equal to the node's key
 * right subtree of any node has all keys greater than or equal to the node's key
@@ -45,8 +45,6 @@
 ### Today's Challenges
 
 Today's challenges are set up more like what you might encounter in an actual coding interview. We expect you to work in teams of 2 or 3 and do each problem on the whiteboard or the table.  We'll have a very limited time to work on each problem in class, and we'll go over the problems after.  Please do not look at the solutions or look up solutions to these problems online during the drills this morning.
-
-
 
 
 ## Challenges
@@ -83,6 +81,7 @@ The data structure allows you to do the following:
 * given any node, find the left child node/subtree of that node with `.left`
 * given any node, find the right child node/subtree of that node with `.right`
 * given any node, find its key with `.key`
+
 
 1. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is the hex code of its color (for example: `#30af99`, `#c0ffee`). Users shouldn't be able to change the name of a color.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the hex color key as arguments.
 
