@@ -24,8 +24,8 @@ The MEAN stack is popular for many reasons:
 In addition to Angular's native template directives used in your html that are prefixed with `ng-`, Angular also has native services that you inject into your controllers that are prefixed with `$`. Some examples are:
 
 * $http - used to do AJAX requests to urls.
-* $window - same as the js `window` object.
-* $location - similar to the js `window.location` object.
+* $window - same as the JavaScript DOM `window` object.
+* $location - similar to the `window.location` object.
 * $scope - the service that connects angular templates to angular controllers.
 * $rootScope - the highest level scope.
 * $filter - provides some helpers to manipulate objects and data.
@@ -95,5 +95,5 @@ All of Angular is not loaded in every module, controller, and template. Instead,
 All the following challenges are completed in the `public/controllers.js` file.
 
 1. Use `$http` to get the posts from your `/api/posts` route and set them equal to `$scope.posts = data`.
-2. Write the `$scope.createPost()` function to use `$http` to create a new post and `unshift` it onto `$scope.posts`. (hint you will need to declare `$scope.post = {}` in your contoller.)
+2. Write the `$scope.createPost()` function to use `$http` to create a new post and `unshift` it onto `$scope.posts`. (Hint: you will need to declare `$scope.post = {}` for the new post in your contoller.)
 3. Write the `$scope.deletePost(post)` function.
