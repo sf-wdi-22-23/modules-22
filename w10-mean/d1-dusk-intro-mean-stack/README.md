@@ -77,7 +77,7 @@ All of Angular is not loaded in every module, controller, and template. Instead,
 
 **Goal: $http to Giphy API**
 
-1. In your angular project, in the `postsCtrl`, use `$http` to query the giphy API for "kitten" and console.log the response.
+1. In your angular project, in the `PostsIndexCtrl`, use `$http` to query the giphy API for "kitten" and console.log the response.
 1. Time to display those gifs on the page. Set `$scope.gifs` equal to the gifs inside the giphy API response. In your template use the `ng-repeat` directive to loop over the gifs and display each one in an `<img>`.
 1. Add a form and have it's `ng-submit` directive run a function called `searchGifs()`. Inside this form, add an input field that uses the `ng-model` directive that connects the input field to `$scope.term`, and add a `<button type="submit">Search</button>` inside the form.
 1. This `ng-submit` won't work until you add the `searchGifs()` function to your `$scope` like this:
