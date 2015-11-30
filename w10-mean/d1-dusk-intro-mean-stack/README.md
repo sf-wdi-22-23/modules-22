@@ -9,7 +9,15 @@
 
 ### Why?
 
-### Pros and Cons
+The MEAN stack is popular for many reasons:
+
+  - every technology in the stack is written in JavaScript, so developers only have to be familiar with one language   
+  - Angular's powerful front-end tools can do *a lot* on the client side, so you reduce time-consuming calls to the server when you just want a different view   
+  - the relatively unopinionated backend with Node and Express can easily accommodate Angular's opinionated structure   
+  - Node has great support for real-time communication between server and client   
+
+
+
 
 ## Angular: $http
 
