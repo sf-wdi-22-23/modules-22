@@ -108,7 +108,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Trees & Tries Intro (Brianna)</td>
     <td>Breadth-First Search (Brianna)</td>
     <td>Depth-First Search (Brianna)</td>
-    <td>Tree Traversal (Brianna)</td>
+    <td>Binary Tree Traversal (Brianna)</td>
     <td>String Matching(Alex)</td>
   </tr>
   <tr>
@@ -121,9 +121,9 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben)</td>
-    <td>Angular $http other verbs & stealthy semi-review (Ben)</td>
-    <td>Custom ng directives (Ben)</td>
+    <td>Intro MEAN and Client-Side Architecture GET (Ben)</td>
+    <td>Angular $http (Ben)</td>
+    <td>Custom directives (Ben)</td>
     <td>Intro weekend lab (Team)</td>
     <td>Weekend Lab (Team)</td>
   </tr>
