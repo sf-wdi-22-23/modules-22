@@ -111,7 +111,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Trees & Tries Intro (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d1-drills-trees" target=+_blank">Trees & Tries Intro</a> (Brianna)</td>
     <td>Breadth-First Search (Brianna)</td>
     <td>Depth-First Search (Brianna)</td>
     <td>Binary Tree Traversal (Brianna)</td>
@@ -119,7 +119,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-dawn-intro-angular-directives/dawn-ng-intro.md">Intro to Angular & Base Native Directives (Alex)</a></td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-dawn-intro-angular-directives/dawn-ng-intro.md">Intro to Angular & Base Native Directives</a> (Alex)</td>
     <td>Angular Routing with UI router (Brianna)</td>
     <td>Services and ng-resource (Alex)</td>
     <td>Custom Services (Brianna)</td>
@@ -127,7 +127,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro MEAN and Client-Side Architecture GET (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d1-dusk-intro-mean-stack" target="_blank">Intro MEAN and Client-Side Architecture, simple $http GET</a> (Ben)</td>
     <td>Angular $http (Ben)</td>
     <td>Custom directives (Ben)</td>
     <td>Intro weekend lab (Team)</td>
