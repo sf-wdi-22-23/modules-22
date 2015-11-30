@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Intro Angular</title>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<link href="bower_components/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app="ngFun">
+	{{ "lower cap string" | uppercase }}
+
+	<div ng-controller="PokemonCtrl">
+		<h1>Trainer: {{trainer.name || "Ash"}}</h1>
+		<span>Enter your name:</span>
+    <input ng-model="trainer.name"/>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Ndex</th>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="(key, value) in pokemon | orderBy: '-Ndex' | filter:searchText">
+        <td>{{value.Ndex}}</td>
+        <td>{{value.name}}</td>
+        <td>{{value.type}}</td>
+      </tr>
+    </tbody>
+    <br>
+    <span>Search Pokemon: </span>
+    <input ng-model="searchText"/>
+	</div>
+</body>
+</html>
