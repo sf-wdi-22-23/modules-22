@@ -113,8 +113,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module1</td>
-    <td>NG Intro & Base Native Directives (Alex, Juliana)</td>
-    <td>NG Routing with UI router (Brianna, Matt)</td>
+    <td>Intro to Angular & Base Native Directives (Alex, Juliana)</td>
+    <td>Angular Routing with UI router (Brianna, Matt)</td>
     <td>Services and ng-resource (Alex, Juliana)</td>
     <td>Custom Services (Brianna, Braus)</td>
     <td>Review (Alex, Juliana)</td>
@@ -122,7 +122,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module2</td>
     <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben, Braus)</td>
-    <td>NG $http other verbs & stealthy semi-review (Ben, Juliana)</td>
+    <td>Angular $http other verbs & stealthy semi-review (Ben, Juliana)</td>
     <td>Custom ng directives (Ben, Matt)</td>
     <td>Intro weekend lab (Braus)</td>
     <td>Weekend Lab (Team)</td>
