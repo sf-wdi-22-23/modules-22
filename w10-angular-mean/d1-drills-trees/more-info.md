@@ -55,31 +55,16 @@ Binary search trees add on an extra restriction to binary trees. In each node's 
 <img src="images/bst.jpg" width="300px">
 
 
-#### Balanced Binary Trees
+#### Balanced Trees
 
-Balanced binary trees are another basic variant of binary trees. A "balanced" tree has a height about as low as it can possibly be while still holding all its nodes.  For binary trees, that means the height is `O(log`<sub>`2`</sub>`(n))` (or just `O(log(n))`), where `n` is the number of nodes in the tree.  There are different definitions of exactly how to balance a tree, but you can tell a tree is balanced if all of the leaves are either at the very bottom level of the tree or just one level higher.
+Balanced trees are another basic variant of trees. A "balanced" tree has a height about as low as it can possibly be while still holding all its nodes.  There are different definitions of exactly how to balance a tree, but you can tell a tree is balanced if all of the "missing children" (areas where another node could be attached but isn't) are either at the very bottom level of the tree or just one level higher. For binary trees, being balanced means the height is `O(log`<sub>`2`</sub>`(n))` (or just `O(log(n))`), where `n` is the number of nodes in the tree.  
 
 #### And finally... Balanced Binary Search Trees
 
 Balanced binary search trees combine the balanced structure requirement with the node key requirement of binary search trees.  If an interview question asks about a tree, it's probably a balanced binary search tree. Ask your interview to clarify, though, whether the tree is balanced and whether it is a binary search tree. 
 
 
-### N-ary or K-ary Trees
-
-N-ary trees don't have to be binary; their nodes can have more than two children. These are also known as "just regular trees" and have the characteristics defined for all trees above. 
-
-### Tries
-
-Tries, also called prefix trees, store data differently than other trees we'll look at. The data is only stored in the leaves, and it builds up over the path from the root to each leaf.   Here's an example:
-
-<img src="images/trie.jpg" width="300px">
-
-Usually the end of each word in a trie will be marked, or there will be special end of word nodes that signify the end of a word.
-
-Specialized tries that store data in binary format (as sequences of 0s and 1s) are used by most hardware routers to send data across the internet. They allow for fast lookup within their limited set of stored sequences, so they're often used with words (sequences of letters!) for autocomplete, spell checking, or other string matching scenarios.
-
-
-## Why Are Binary Search Trees Even a Thing?
+#### Why Are Binary Search Trees Even a Thing?
 
 Below you'll find a table of speeds of common operations for a few of the data structures we've seen: unsorted arrays, sorted arrays, hashes, and binary search trees. The big O notation in the table shows the amortized worst case run time. You may not have a lot of context for big O yet, so before we jump into the main table here's an example. 
 
@@ -142,9 +127,30 @@ Twitter handles hundreds of millions of tweets each day.  (Computers can halde a
 <sup>\*</sup> Insertion or deletion at the end of an array is <i>O</i>(1)  (constant time).    
 <sup>\*\*</sup>  Sort and then binary search. A faster <i>O</i>(<i>n</i> + <i>k</i>&nbsp;log&nbsp;<i>n</i>) algorithm exists using the heap data structure, which we haven't talked about yet.  There are also faster sorts if you have information about your input.   
 <sup>+</sup> For a <a href="/wiki/Self-balancing_binary_search_tree" title="Self-balancing binary search tree" class="mw-redirect">Self-balancing binary search tree</a>, the height is <i>O</i>(log&nbsp;<i>n</i>). If the tree is not balanced, the height can be up to <i>O</i>(<i>n</i>).   
-<sup>++</sup> Can reduce to <i>O</i>(<i>h</i>) by augmenting each node to keep track of the size of its subtree.   
+<sup>++</sup> Can reduce to <i>O</i>(<i>height</i>) by augmenting each node to keep track of the size of its subtree.   
 
 
+
+### N-ary or K-ary Trees
+
+N-ary trees don't have to be binary; their nodes can have more than two children. These are also known as "just regular trees" and have the characteristics defined for all trees above. 
+
+### Tries
+
+Tries, also called prefix trees, store data differently than other trees we'll look at. The data is only stored in the leaves, and it builds up over the path from the root to each leaf.   Here's an example:
+
+<img src="images/trie.jpg" width="300px">
+
+Usually the end of each word in a trie will be marked, or there will be special end of word nodes that signify the end of a word.
+
+Specialized tries that store data in binary format (as sequences of 0s and 1s) are used by most hardware routers to send data across the internet. They allow for fast lookup within their limited set of stored sequences, so they're often used with words (sequences of letters!) for autocomplete, spell checking, or other string matching scenarios.
+
+
+## Tree Strategies for Interviews
+
+* Make sure you know whether a tree you're given is binary, self-balancing, a binary search tree. Or, if you're using a tree, clarify which of these properties you want it to have.   
+* Be clear about what each node's key is and what other data is stored in the node.   
+* Consider storing extra data about the tree inside each node. For example, if you need to find the kth heighest value in a binary search tree, a classic way to go about it is to have each node store the size of its subtree. 
 
 ## Vocab Practice 
 
@@ -184,7 +190,7 @@ Twitter handles hundreds of millions of tweets each day.  (Computers can halde a
   
   
 
-**Solutions**
+## Vocab Practice **Solutions**
 
 1. Use the diagram below to fill in the following table:
 	
