@@ -106,7 +106,3 @@ In addition, as a special bonus not always available in trees, you can:
 * given any node, find its parent node with `.parent` (the parent of the root node is `None`)
 
 1. Given the names of two people in a military group, and a tree that represents the military heirarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
-
-1. How would you update your approach if you didn't have access to a `.parent` method for each node?
-
- 
