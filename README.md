@@ -105,26 +105,26 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Trees & Tries Intro (Brianna, Matt)</td>
-    <td>Breadth-First Search (Brianna, Matt)</td>
-    <td>Depth-First Search (Brianna, Braus)</td>
-    <td>Tree Traversal (Brianna, Braus)</td>
-    <td>String Matching(Alex, Matt)</td>
+    <td>Trees & Tries Intro (Brianna)</td>
+    <td>Breadth-First Search (Brianna)</td>
+    <td>Depth-First Search (Brianna)</td>
+    <td>Tree Traversal (Brianna)</td>
+    <td>String Matching(Alex)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Intro to Angular & Base Native Directives (Alex, Juliana)</td>
-    <td>Angular Routing with UI router (Brianna, Matt)</td>
-    <td>Services and ng-resource (Alex, Juliana)</td>
-    <td>Custom Services (Brianna, Braus)</td>
-    <td>Review (Alex, Juliana)</td>
+    <td>Intro to Angular & Base Native Directives (Alex)</td>
+    <td>Angular Routing with UI router (Brianna)</td>
+    <td>Services and ng-resource (Alex)</td>
+    <td>Custom Services (Brianna)</td>
+    <td>Review (Alex)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben, Braus)</td>
-    <td>Angular $http other verbs & stealthy semi-review (Ben, Juliana)</td>
-    <td>Custom ng directives (Ben, Matt)</td>
-    <td>Intro weekend lab (Braus)</td>
+    <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben)</td>
+    <td>Angular $http other verbs & stealthy semi-review (Ben)</td>
+    <td>Custom ng directives (Ben)</td>
+    <td>Intro weekend lab (Team)</td>
     <td>Weekend Lab (Team)</td>
   </tr>
   <tr>
