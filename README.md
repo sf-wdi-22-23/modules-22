@@ -2,9 +2,15 @@
 
 Look here for all things related to lesson notes, exercises, and solutions as well as the schedule.
 
+#### Screencasts:
 [JS and jQuery Screencasts](https://www.youtube.com/playlist?list=PLw1xVKFboueks5UMLogE01mdThRU577oa)
 <br>
-[ExpressJS Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUkPTztJ8zEJsuTOMdxZshO8) (note: a few of these use a different templating solution called Handlebars instead of ejs, so those portions don't reflect what we've seen)
+[ExpressJS 4.x Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUkPTztJ8zEJsuTOMdxZshO8)
+<br>
+[Rails 4.x Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUn7MQ77Z7FnMeir_b_4HSuM)
+<br>
+[Angular 1.4.x Screencasts](https://www.youtube.com/playlist?list=PLNcEnkMSwDUmKzFoqOwClxw6OIgKxa5sM)
+
 <!-- ##Week 12 -->
 <!-- <table>
   <tr>
@@ -105,26 +111,26 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Trees & Tries Intro (Brianna, Matt)</td>
-    <td>Breadth-First Search (Brianna, Matt)</td>
-    <td>Depth-First Search (Brianna, Braus)</td>
-    <td>Tree Traversal (Brianna, Braus)</td>
-    <td>String Matching(Alex, Matt)</td>
+    <td>Trees & Tries Intro (Brianna)</td>
+    <td>Breadth-First Search (Brianna)</td>
+    <td>Depth-First Search (Brianna)</td>
+    <td>Binary Tree Traversal (Brianna)</td>
+    <td>String Matching(Alex)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>NG Intro & Base Native Directives (Alex, Juliana)</td>
-    <td>NG Routing with UI router (Brianna, Matt)</td>
-    <td>Services and ng-resource (Alex, Juliana)</td>
-    <td>Custom Services (Brianna, Braus)</td>
-    <td>Review (Alex, Juliana)</td>
+    <td>Intro to Angular & Base Native Directives (Alex)</td>
+    <td>Angular Routing with UI router (Brianna)</td>
+    <td>Services and ng-resource (Alex)</td>
+    <td>Custom Services (Brianna)</td>
+    <td>Review (Alex)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro MEAN and Client-Side Architecture, simple $http GET (Ben, Braus)</td>
-    <td>NG $http other verbs & stealthy semi-review (Ben, Juliana)</td>
-    <td>Custom ng directives (Ben, Matt)</td>
-    <td>Intro weekend lab (Braus)</td>
+    <td>Intro MEAN and Client-Side Architecture GET (Ben)</td>
+    <td>Angular $http (Ben)</td>
+    <td>Custom directives (Ben)</td>
+    <td>Intro weekend lab (Team)</td>
     <td>Weekend Lab (Team)</td>
   </tr>
   <tr>
