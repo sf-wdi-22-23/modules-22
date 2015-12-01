@@ -136,7 +136,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-homework.md" target="_blank"> Angular Routing (Alex)</a></td>
-    <td>[ng-resources](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework) (Juliana)</td>
+    <td>[ng-resources and directives](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework) (Juliana)</td>
     <td>services (Brianna)</td>
     <td>CRUD Weekend Lab (Angular Prototype)</td>
     <td>Lightning Talk Assignment / Research (Brianna)</td>
