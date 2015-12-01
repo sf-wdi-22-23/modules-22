@@ -128,7 +128,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d1-dusk-intro-mean-stack" target="_blank">Intro MEAN and Client-Side Architecture, simple $http GET</a> (Ben)</td>
-    <td>Angular $http (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-dusk-angular-http" target="_blank">Angular $http</a> (Ben)</td>
     <td>Custom directives (Ben)</td>
     <td>Intro weekend lab (Team)</td>
     <td>Weekend Lab (Team)</td>
