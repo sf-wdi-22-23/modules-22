@@ -120,7 +120,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-dawn-intro-angular-directives/dawn-ng-intro.md" target="_blank">Intro to Angular & Base Native Directives</a> (Alex)</td>
-    <td>Angular Routing with UI router (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/angular-ui-router-lab" target="_blank">Angular Routing with UI router</a> (Brianna)</td>
     <td>Services and ng-resource (Alex)</td>
     <td>Custom Services (Brianna)</td>
     <td>Review (Alex)</td>
