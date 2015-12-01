@@ -136,7 +136,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-homework.md" target="_blank"> Angular Routing (Alex)</a></td>
-    <td>ng-resources (Juliana)</td>
+    <td>[ng-resources](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework) (Juliana)</td>
     <td>services (Brianna)</td>
     <td>CRUD Weekend Lab (Angular Prototype)</td>
     <td>Lightning Talk Assignment / Research (Brianna)</td>
@@ -152,7 +152,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
 | Dusk | Project 2 | Project 2 Presentations  | | | |
 | HW | Project 2 |  [Angular Prep and Review](./w09-project-2/thankgiving_homework.md) (Alex)  | | | |
 
-## Week 8 - Project 2 
+## Week 8 - Project 2
  <table>
   <tr>
     <th></th>
@@ -274,7 +274,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d3-homework" target="_blank">Intro Rails Guide</a> (Brianna)</td>
    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w06-ruby/d4-homework" target="_blank">Rails for Zombies</a>(Ben)</td>
    <td><a href="https://github.com/sf-wdi-22-23/bog_app" target="_blank">Bog App, </a> (Braus/Brianna) & <a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w06-ruby/rails-checklist.md" target="_blank">Rails Checklist, </a>
-   Check out Rails Guides on <a href="http://guides.rubyonrails.org/active_model_basics.html" target="_blank">Models</a> and 
+   Check out Rails Guides on <a href="http://guides.rubyonrails.org/active_model_basics.html" target="_blank">Models</a> and
     <a href="http://guides.rubyonrails.org/association_basics.html" target="_blank"> AR Associations</a>(Juliana)</td>
 </tr>
 </table>
