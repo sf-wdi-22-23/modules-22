@@ -59,6 +59,6 @@ db.criminals.find()
 
 ## Stretch Challenges:
 
-1. Carefully integrate the content of your `public` folder with the contents from the Presidents or Criminals project `frontend` folder
+1. Carefully integrate the content of your `public` folder with the contents from the Criminals project `frontend` folder
 1. Replace the contents of the `app` folder with the corresponding contents from your project's `api` folder
 1. Debug and Test
