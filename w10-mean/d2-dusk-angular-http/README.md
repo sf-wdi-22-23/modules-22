@@ -58,7 +58,9 @@ db.criminals.find()
 1. `npm start`
 
 ## Stretch Challenges:
+#### (not for the squeamish)
 
 1. Carefully integrate the content of your `public` folder with the contents from the Criminals project `frontend` folder
-1. Replace the contents of the `app` folder with the corresponding contents from your project's `api` folder
-1. Debug and Test
+1. Carefully integrate the contents of the `app` folder with the corresponding contents from your project's `api` folder
+1. There are many conflicts to resolve between `server.js` and `app.js` as well as everything in the `config` folder
+1. Troubleshoot, Debug and Solve
