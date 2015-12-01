@@ -2,17 +2,17 @@
 
 # Angular $http in isolation
 
-In this lesson we will review the Angular `$http` service and look at some different ways to write the code. For the sake of simplicity, we will begin with a simple client-side Angular app and a separate api built in Express.
+In this lesson we will review the Angular `$http` service and look at some different ways to write the code. For the sake of simplicity, we will begin with a simple client-side Angular app and a separate API built in Express.
 
 The purpose is to get more experience with Angular's `$http` service and get comfortable troubleshooting and debugging.
 
 ```diff
-Please Note:
+Please Note: The following notation for `$http.get()` has been deprecated:
 - $http.get('URL').success(function(){...}).error(function(){...});
-has been deprecated!
-Use
+
+Please use this approach, instead:
 + http.get('URL').then(function successCallback(response){...}, function errorCallback(resonse){...});
-instead
+
 ```
 [Details here.](https://docs.angularjs.org/api/ng/service/$http#deprecation-notice)
 
