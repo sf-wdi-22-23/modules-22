@@ -15,9 +15,9 @@
 
 As you've seen by now, a huge amount of the code you work with in Angular are directives. Angular was designed to be an extension of HTML - a way to have custom-defined interactive tags of your own making.
 
-While we've been getting good at using the directives that come with Angular, it's time to start seeing what we can do if we start making some up.
+While we've been getting good at using the directives that come with Angular, it's time to start seeing what we can do if we make our own.
 
-One of the most obvious _uses_ of this is when you've got repetitive code to render some information or data. If you're using a bunch of tags all over the place, it's a simple DRY principle – you might forget a tag or decide to change something and have to change it in a million places.
+One of the most obvious _uses_ of this is when you've got repetitive code that renders some information or data. If you're using a bunch of tags all over the place, it's a simple DRY principle – you might forget a tag or decide to change something and have to change it in a million places.
 
 By extracting it to a custom directive, we can just reference that directive whenever we need to use it and not worry about repeating the code to render it.
 
@@ -129,24 +129,24 @@ function cardView(){
 
 #### 2. `directive.replace`
 
-Replace is pretty straightforward. Should this directive replace the HTML? Do you want it to get rid of what's in the template & swap it out with the template we're going to make? Or add to it, and not remove the original. For example, replacing would mean:
+Replace is pretty straightforward. Should this directive replace the HTML? Do you want it to get rid of what's in the template & swap it out with the template we're going to make? Or add to it, and not remove the original? For example, replacing would mean that your template code:
 
-```html
-<div ng-repeat="card in cards.all" >
-  <card></card>
-</div>
-```
-
-Would actually render as:
-
-```html
-<div ng-repeat="card in cards.all" >
-  <div class='card'>
-    <h4 class="card-title">{{question}}</h4>
-    <h6>Cards Against Assembly</h6>
+  ```html
+  <div ng-repeat="card in cards.all" >
+    <card></card>
   </div>
-</div>
-```
+  ```
+
+would actually render as:
+
+  ```html
+  <div ng-repeat="card in cards.all" >
+    <div class='card'>
+      <h4 class="card-title">{{question}}</h4>
+      <h6>Cards Against Assembly</h6>
+    </div>
+  </div>
+  ```
 
 See, replaced. Let's say we like that for our example:
 
@@ -220,7 +220,7 @@ If you notice, our template uses ``{{card.question}}`` inside it. This obviously
 
 It sure is. We're lacking a precise scope.
 
-Just like controllers, we want to define what our scope is. We want to be able to say "Render a card, with these details, in whatever context I need to render it in." A card shouldn't rely on a controller's data to know what information to render inside it. The controller should pass that data to our directive, so it's freestanding and not relying on anyone but itself.
+Just like controllers, we want directives to define what our scope is. We want to be able to say "Render a card, with these details, in whatever context I need to render it in." A card shouldn't rely on a controller's data to know what information to render inside it. The controller should pass that data to our directive, so it's freestanding and not relying on anyone but itself.
 
 That's where `directive.scope` comes in, and this lets us decide what attributes our element should have! For example, in our card example, maybe we want to render a card with just a string somewhere outside of this controller. We want to make our own card with our own hardcoded text.
 
@@ -230,7 +230,7 @@ Try this. In your `index.html`, adjust our `<card>` element to say:
 <card question="{{card.question}}"></card>
 ```
 
-In context, you'll see that the `ng-repeat` is giving us the variable `card`, and we're actually just rendering that out as a string. But we've decided we want to have an attribute called `question` to pass data through. We made that up, it's appropriate to our example, but it can be anything.
+In context, you'll see that the `ng-repeat` is giving us the variable `card`, and we're actually just rendering that out as a string. But we've decided we want to have an attribute called `question` to pass data through. We called it `question` because appropriate to our example, but it can be anything.
 
 There are only two other pieces we need to make this reality.
 
