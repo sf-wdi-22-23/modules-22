@@ -83,6 +83,13 @@ Here are some suggestions, you are welcome to add your own:
 - [ ] Rust
 - [ ] Go
 
+**Security**
+
+- [ ] CORS
+- [ ] XSS
+- [ ] query injection
+
+
 **ETC**
 
 - [ ] BitTorrent Protocol
