@@ -121,8 +121,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-dawn-intro-angular-directives/dawn-ng-intro.md" target="_blank">Intro to Angular & Base Native Directives</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/angular-ui-router-lab" target="_blank">Angular Routing with UI router</a> (Brianna)</td>
-    <td>Services and ng-resource (Alex)</td>
-    <td>Custom Services (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/angular-resource-lab" target="_blank">Services and ng-resource</a> (Alex)</td>
+    <td>ngClass and CSS Animations (Brianna)</td>
     <td>Review (Alex)</td>
   </tr>
   <tr>
@@ -137,7 +137,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-homework.md" target="_blank"> Angular Routing (Alex)</a></td>
     <td>[ng-resources and directives](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework) (Juliana)</td>
-    <td>services (Brianna)</td>
+    <td>CSS and UI Info (Brianna)</td>
     <td>CRUD Weekend Lab (Angular Prototype)</td>
     <td>Lightning Talk Assignment / Research (Brianna)</td>
   </tr>
