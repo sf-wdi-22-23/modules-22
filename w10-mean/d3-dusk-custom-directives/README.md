@@ -42,6 +42,8 @@ Take five minutes and inspect our starter code. You'll see a pretty normal Angul
 
 ## Building a Simple Directive - Codealong (15 mins)
 
+[GET THE STARTER CODE HERE!](https://github.com/sf-wdi-22-23/angular-custom-directives)
+
 Using our starter code, our goal is to take:
 
 ```html
@@ -332,3 +334,4 @@ You have 15 minutes! Go!
 - Where can you imagine using custom directives?
 - What four types of directives can you make?
 - How do you pass information into a custom directive?
+
