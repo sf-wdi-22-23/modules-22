@@ -122,7 +122,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-dawn-intro-angular-directives/dawn-ng-intro.md" target="_blank">Intro to Angular & Base Native Directives</a> (Alex)</td>
     <td><a href="https://github.com/sf-wdi-22-23/angular-ui-router-lab" target="_blank">Angular Routing with UI router</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/angular-resource-lab" target="_blank">Services and ng-resource</a> (Alex)</td>
-    <td>ngClass and CSS Animations (Brianna)</td>
+    <td>ng-class and CSS Animations (Brianna)</td>
     <td>Review (Alex)</td>
   </tr>
   <tr>
