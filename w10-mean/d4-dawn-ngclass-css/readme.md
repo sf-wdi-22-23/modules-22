@@ -1,13 +1,3 @@
----
-title: ng-class & CSS animation
-type: Lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Front-end frameworks
----
-
 # ng-class & CSS animation
 
 ### Objectives
@@ -15,40 +5,27 @@ competencies: Front-end frameworks
 - Change classes dynamically based on changing variables
 - Apply a CSS class using transition for subtle animation
 
-### Preparation
-- Create a basic Angular app
-- Be awesome at CSS
-- Explain the use case for CSS classes
-
 ## CSS Classes in Angular - Intro (5 mins)
 
-Today we'll be learning two things that are fun, light, and extremely useful.
+As you know, Angular is a great, dynamic front-end framework. One of the things you'll do _most_ often when building a frontend is apply CSS classes to style elements on the page. Having the ability to change those styles based on _data_  can enable you to make some really dynamic interface designs. You certainly have the skills to do this with tools you've already learned, but Angular has a special directive just for this purpose – **ngClass**.
 
-First, Angular is a super dynamic front-end framework, and one of the things you'll do _most_ often when building a frontend is apply CSS classes to style elements on the page. Having the ability to change those styles based on _data_ is really powerful and can enable you to make some really dynamic interface designs. You certainly have the skills to do this with plain-old logic, but Angular gives us a tool built for this purpose – **ngClass**.
-
-Second, we're going to play add some subtle animation to our style with CSS transitions. Little things like that can really boost the credibility of your design – _if_ you use it well. But you certainly can't use it well if you don't know how to use it at all so let's check it out today.
+Once we've looked at how Angular helps us apply classes, we'll mix in some non-Angular-specific strategies to add subtle animation to our style with CSS transitions. Little things like CSS animation can really boost the credibility of your design – _if_ you use it well. As a first step, you have to know how to use it at all!
 
 ## Starter Code - Intro (5 mins)
 
-> Note: First, quickly demonstrate the solution code. Show them what we'll be adding:
-> - A nice little animation on the form
-> - Adding a class to the input when there's an error
->
-> That's it. Simple, but it's cool to see ahead of time.
-
-Now, go check out the starter code and see what we're working with. We've built a pretty basic Angular app using stuff you've mostly already seen.
+Now, go check out the starter code in `starter-code/app` and see what we're working with. The starter code is a basic Angular app using stuff you've mostly already seen.
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
 ## ngClass - Codealong (10 mins)
 
-`ngClass` is a pretty simple directive. There are a couple of possible ways to use it, but either way, it just needs a `true` or a `false` to decide if it should apply a class or remove it.
+`ngClass` is a pretty simple directive. There are a couple of possible ways to use it, but it needs to know the name of a class and whether the element should have that class or not - it uses a value of `true` or `false` to decide if it should apply the class.
 
-As you can imagine, `ngClass` can be applied to any HTML tag. If it can handle normal classes, it can handle `ngClass`. But keep in mind, `ngClass` is designed for adding/removing classes, so if you don't expect the classes to change, just use normal `class='something'`.
+As you can imagine, `ngClass` can be applied to any HTML tag. If it can handle normal classes, it can handle `ngClass`. But keep in mind, `ngClass` is designed for adding/removing classes, so if you don't expect the classes to change, just use the normal `class="something"` attribute.
 
 Now let's give this a shot: Like in our finished example, we want to apply a class of `error` – we've already got a style for that that will make the borders red so it's obvious something's wrong.
 
-We need a true/false statement that will tell us if it's an "error" or not. For simplicity's sake, let's say that our only validation is whether the text of the input is four or more characters. The number's arbitrary but a good example.
+We need a true/false statement that will tell us if it's an "error" or not. For simplicity's sake, let's say that our only validation is whether the text of the input is four or more characters. The number here is arbitrary.
 
 We've got this:
 
@@ -69,13 +46,13 @@ ng-class="{'error': awards.newWinner.name.length <= 4}"
 
 `ng-class` is just an attribute we add, a directive like we've seen before. In the quotes is a javascript object, where the key is the class name and the value is an expression that evaluates to `true` or `false`.
 
-This could _easily_ be a property on an object. In this example it's an expression. Let your imagination be your guide, but when run it reads like:
+The value associated with each key could be a plain boolean like `true`, a simple expression like `awards.newWinner.name.length <= 4` above, or even a function call. Or, you could have a function that returns the entire object inside the ng-class string. Angular just needs to be able to evaluate the ng-class string to read like:
 
 ```js
 {'error': true}
 ```
 
-And by using a JS object in here, it's _easy_ to have multiple classes that get turned on/off via multiple dynamic booleans.
+Since ng-class translates the string to a JavaScript object, it's _easy_ to have multiple classes that get turned on/off via multiple dynamic booleans.
 
 ```js
 {'error': true, 'wombat': false, 'super': true, 'so-cool': true}
@@ -91,9 +68,10 @@ Would equate to:
 
 Now, go crazy. You have 10 minutes - start experimenting with your own `ngClass` expressions:
 
-- Add booleans as properties of your objects and try `ngClass` in our `ngRepeat`
-- Make a checkbox with a class directly on it that toggles something on/off
-- Make some changeable data in one part of the interface change the class & style in a totally separate part of the interface
+- Add booleans as properties of your objects
+- Try `ngClass` inside the `ngRepeat`
+- Make a checkbox with a class directly on it that toggles some style on/off
+- Make some changeable data in one part of the interface change the style of an element style in a separate part of the interface
 - Try using an `ngClick` to toggle an arbitrary piece of data that affects multiple pieces of the interface at once
 
 Play with it and you'll start seeing how powerful it is. Let's see what you come up with!
@@ -104,17 +82,17 @@ Play with it and you'll start seeing how powerful it is. Let's see what you come
 
 Now that we've got that down, let's talk about our other sweet trick – animation in CSS.
 
-There are two kinds of animation: **transitions** and **keyframe animations**.
+CSS supports two main kinds of animation: **transitions** and **keyframe animations**.
 
-They both result in styles changing over time, and both don't give you any extra styling – you can only animate CSS properties that already exist.
+They both result in styles changing over time, and both don't give you any extra styling – you can only animate using CSS properties that already exist.
 
-**Transitions** are generally used as a reaction to an interaction - something that changes when you hover or focus or click.
+**Transitions** are generally used as a reaction to a user's action - something that changes when you hover or focus or click.
 
-**Animations** have the ability to be more complicated, you can define them more precisely, and they're more flexible. They're also more code and still have to be triggered.
+**Animations** have the ability to be more complicated, can be defined more precisely, and are more flexible. They're also more code. Of course, they still have to be triggered somehow.
 
-It's worth noting that just like visual design, animation is an art. Not in a wishy-washy modern art kind of way, but in that it's easy to make it look ugly if you don't pay attention to the subtleties. If you really like using animation, take some time to research the basic animation principles and animating for interfaces. You'll be glad you did.
+It's worth noting that just like visual design, animation is an art. If you really like using animation, take some time to research the basic principles of animation for interfaces. You (and your users) will be glad you did.
 
-> **Important note:** Not all transitions or animations work on css-generated pseudo-elements. :before and :after work in some browsers, but not all, so test and make sure it works before assuming it will.
+> **Important note:** Not all transitions or animations work on css-generated pseudo-elements. :before and :after work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
 
 ## CSS Transition Demo (10 minutes)
 
@@ -124,7 +102,7 @@ Let's say, for example, when we hover over our form, it rights itself and moves 
 
 ![animated form](https://cloud.githubusercontent.com/assets/25366/9594904/8ba3527c-5016-11e5-94a5-f8affb95ffba.gif)
 
-We can inspect our form to see how it's rotated and positioned as it is:
+We can inspect our form to see how it's rotated and positioned to start with:
 
 ```css
 form {
