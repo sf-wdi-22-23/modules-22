@@ -18,4 +18,8 @@ Tonight's homework is intended to be light enough that you can review new Angula
 4. Check out <a href="http://angular-ui.github.io/bootstrap/#/getting_started" target="_blank">UI-Bootstrap</a>.  Why is it for? Read over the buttons section.  
 
 
-5. Review angular! Your classmates highly recommend <a href="" target="_blank">Todd Motto's guide to learning Angular in one day</a>.  Popular Angular style guides (well-researched and opionated guides on the right way to do Angular) include <a href="https://github.com/toddmotto/angularjs-styleguide" target="_blank">Todd Motto's</a> and <a href="https://github.com/johnpapa/angular-styleguide" target="_blank">John Papa's</a>.
+5. Review angular! Here are just a few of the resources your classmates recommend:
+
+	* <a href="" target="_blank">Todd Motto's guide to learning Angular in one day</a>   
+	* <a href="https://github.com/toddmotto/angularjs-styleguide" target="_blank">Todd Motto's</a> Angular styleguide   
+	* <a href="https://github.com/johnpapa/angular-styleguide" target="_blank">John Papa's</a> Angular styleguide   
