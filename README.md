@@ -129,14 +129,14 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d1-dusk-intro-mean-stack" target="_blank">Intro MEAN and Client-Side Architecture, simple $http GET</a> (Ben)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-dusk-angular-http" target="_blank">Angular $http</a> (Ben)</td>
-    <td>Custom directives (Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d3-dusk-custom-directives" target="_blank">Custom directives</a> (Ben)</td>
     <td>Intro weekend lab (Team)</td>
     <td>Weekend Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/blob/master/w10-mean/d1-homework.md" target="_blank"> Angular Routing (Alex)</a></td>
-    <td>[ng-resources and directives](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework) (Juliana)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-homework" target="_blank">ng-resources and directives</a> (Juliana)</td>
     <td>CSS and UI Info (Brianna)</td>
     <td>CRUD Weekend Lab (Angular Prototype)</td>
     <td>Lightning Talk Assignment / Research (Brianna)</td>
