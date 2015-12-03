@@ -1,1 +1,2 @@
-angular.module('Awwward', []);
+angular.module('Awwward', ['ui.bootstrap']);
+

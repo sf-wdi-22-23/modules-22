@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Chewy|Shadows+Into+Light);
 
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 body {
   width: 500px;
   margin: 4rem auto;
@@ -19,6 +22,20 @@ h1:before {
   position: relative;
   top: 0.8rem;
   left: -0.392rem;
+}
+h1:hover:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('../img/star.svg') no-repeat top left;
+  background-size: contain;
+  position: relative;
+  top: 0.8rem;
+  left: -0.392rem;
+
+  animation-duration: 1s;
+  animation-name: rock;
 }
 h1 {
   font-family: "Chewy", Sniglet, Helvetica, sans-serif;
@@ -121,4 +138,23 @@ ol {
 ol li {
   animation-duration: 800ms;
   animation-name: fadeIn;
+}
+
+
+@keyframes rock {
+  0%, 100% {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  20% {
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+  }
+  70% {
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+  }
 }
