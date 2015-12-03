@@ -1,5 +1,5 @@
-angular.module('Awwward', [])
-  .controller('awardsController', function AwardsController(){
+angular.module('Awwward')
+  .controller('awardsController', ['globalAlertService', function AwardsController(globalAlertService){
     this.newWinner = {};
     this.winners = [
       {name: "Winston Inner"},
@@ -14,6 +14,7 @@ angular.module('Awwward', [])
 
     function createNewWinner(){
       this.winners.push(this.newWinner);
+      globalAlertService.add("success", this.newWinner.name + " just won!");
       this.newWinner = {};
     }
-  });
+  }]);
