@@ -10,6 +10,7 @@ angular.module('Awwward')
     };
 
     globalAlertService.closeAlert = function(alert) {
+    	console.log("closing alert");
       var index = $rootScope.alerts.indexOf(alert);
       $rootScope.alerts.splice(index, 1);
     };
