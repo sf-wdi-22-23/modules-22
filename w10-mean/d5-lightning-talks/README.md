@@ -41,7 +41,6 @@ Here are some suggestions, you are welcome to add your own:
 - [ ] Cucumber
 - [ ] I18n
 - [ ] Nokogiri / Kimono
-- [ ] ActionMailer / MailGun / SendGrid / Mandril
 - [ ] Active Jobs
 
 
@@ -67,7 +66,6 @@ Here are some suggestions, you are welcome to add your own:
 - [ ] D3.js
 - [ ] Chart.js
 - [ ] HTML5 API
-- [ ] CSS Animations
 - [ ] Polymer / Web components
 - [ ] React
 - [ ] Ionic
@@ -92,7 +90,5 @@ Here are some suggestions, you are welcome to add your own:
 
 **ETC**
 
-- [ ] BitTorrent Protocol
 - [ ] OAuth
-- [ ] Auth0
 - [ ] Websockets / Socket.io
