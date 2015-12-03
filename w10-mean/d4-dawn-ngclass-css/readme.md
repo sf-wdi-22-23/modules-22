@@ -68,7 +68,7 @@ Would equate to:
 
 Now, go crazy. You have 10 minutes - start experimenting with your own `ngClass` expressions:
 
-- Add booleans as properties of your objects
+- Add more class names and booleans as properties of your `ngClass` object string
 - Try `ngClass` inside the `ngRepeat`
 - Make a checkbox with a class directly on it that toggles some style on/off
 - Make some changeable data in one part of the interface change the style of an element style in a separate part of the interface
@@ -88,7 +88,7 @@ They both result in styles changing over time, and both don't give you any extra
 
 **Transitions** are generally used as a reaction to a user's action - something that changes when you hover or focus or click.
 
-**Animations** have the ability to be more complicated, can be defined more precisely, and are more flexible. They're also more code. Of course, they still have to be triggered somehow.
+**Animations** have the ability to be more complicated, can be defined more precisely, and are more flexible. They're also more code. Of course, they still have to be triggered somehow. Angular has a wrapper for many of the base CSS animations called `ngAnimate`. However, today we'll look at those base CSS animations. 
 
 It's worth noting that just like visual design, animation is an art. If you really like using animation, take some time to research the basic principles of animation for interfaces. You (and your users) will be glad you did.
 
@@ -102,7 +102,7 @@ Let's say, for example, when we hover over our form, it rights itself and moves 
 
 ![animated form](https://cloud.githubusercontent.com/assets/25366/9594904/8ba3527c-5016-11e5-94a5-f8affb95ffba.gif)
 
-We can inspect our form to see how it's rotated and positioned to start with:
+We can inspect our form to see how it's rotated and positioned at the beginning:
 
 ```css
 form {
@@ -118,7 +118,7 @@ form {
 }
 ```
 
-That's easy. Let's just modify those rotations and positions, something like:
+Then add a `:hover` effect that modifies those rotations and positions, something like:
 
 ```css
 form:hover {
@@ -139,15 +139,24 @@ form {
 }
 ```
 
-The `all` lets you specify which CSS properties you want affected. You could list them out or cheat like we did there; the `300ms` says the transition should last that long, in milliseconds (or seconds); and the `ease-in-out` is one of a few choices that you can research to allow for _easing_, so the animation looks less robotic.
+The `all` means that all CSS properties will be affected by this transition. The `300ms` says the transition should last that long, in milliseconds, and the `ease-in-out` is one of a few choices that we have for _easing_. Easing makes the animation look more natural. You can list out individual properties with different transition effects like this:
+
+```
+div {
+  transition: background 0.2s ease,
+              padding 0.8s linear;
+}
+```
+
+Note also that you can put the time in seconds.
 
 ## CSS Animation Demo (10 minutes)
 
-Now before we try it ourselves, let's see an animation. Animations can be triggered, remember, and by default, are triggered when an object appears (or when a class is applied) to an object.
+Now before we try it ourselves, let's see an animation. Animations are triggered, remember. By default, they are triggered when an object appears or when a class is applied to an object.
 
-But first, we have to _define_ an animation with keyframes. Imagine a timeline where you're saying "At this spot, do this. At this next spot, change that. At this other spot, it should look like this."
+Before we can trigger an animation, we have to _define_  it with keyframes. Imagine a timeline where you're saying "At this spot, do this. At this next spot, change that. At this other spot, it should look like this."
 
-We do that by creating a special `@keyframes` rule, and just like a function in JS, we name it whatever we like:
+We do that by creating a special `@keyframes` rule, and we name it whatever we like:
 
 ```css
 @keyframes fadeIn {
@@ -163,9 +172,9 @@ We do that by creating a special `@keyframes` rule, and just like a function in 
 }
 ```
 
-Of course, nearly any properties can be changed and nearly any percentages can be included. You could have 100 keyframes if you want or just two.
+Of course, nearly any properties can be changed in each frame, and nearly any percentages can be included. You could have 100 keyframes if you want, or just two.
 
-But now that we've got a defined animation, we need to use it:
+Once you have an animation defined, here's how you'd use it:
 
 ```css
 ol li {
@@ -174,13 +183,13 @@ ol li {
 }
 ```
 
-Just like a JS function (or better, a custom font declaration), we just reference the name we invented.
+Just like a function, we reference the animation with the name we invented.
 
 **Try refreshing the page** – see how it now fades in? **Try adding a name.** See how it fades?
 
 ## CSS Transition & Animation Independent Practice (10 minutes)
 
-Now that we've seen two simple examples, try messing around. Add different keyframes and animate different properties. Use transitions over hover on other elements and see what CSS properties you can subtly animate.
+Now that we've seen two simple examples, play around with animations. Add keyframes to animate different properties. Use transitions over hover on other elements, and see what CSS properties you can subtly animate.
 
 There are a lot of CSS properties to play with and a lot of possibilities.  For instance:
 
