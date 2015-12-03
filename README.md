@@ -114,7 +114,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d1-drills-trees" target="_blank">Trees & Tries Intro</a> (Brianna)</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d2-drills-bfs" target="_blank">Breadth-First Search</a> (Brianna)</td>
     <td>[Depth-First Search](https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d3-drills-dfs) (Brianna)</td>
-    <td>Binary Tree Traversal (Brianna)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d4-drills-bst-traversal" target="_blank">Binary Tree Traversal</a> (Brianna)</td>
     <td>String Matching(Alex)</td>
   </tr>
   <tr>
