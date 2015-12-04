@@ -7,7 +7,7 @@ Your goal is to create a 5-10 minute presentation on a topic that is useful to y
 - What did you build?
 
 ##Topics:
-Here are some suggestions, you are welcome to add your own:
+Here are some suggestions; you are welcome to add your own:
 
 **DATA STORAGE**
 
@@ -20,6 +20,7 @@ Here are some suggestions, you are welcome to add your own:
 - [ ] Grunt / Gulp
 - [ ] Emmet
 - [ ] Travis CI
+- [ ] Capistrano
 
 **Templating**
 
@@ -27,46 +28,43 @@ Here are some suggestions, you are welcome to add your own:
 - [ ] Jade
 - [ ] Handlebars / Mustache
 
-**RUBY/Rails**
+**Ruby and/or Rails**
 
-- [ ] Jekyll
-- [ ] Sinatra
-- [ ] Capistrano
+- [ ] Sinatra framework
 - [ ] Chef
 - [ ] Will_Paginate / kaminari
 - [ ] OmniAuth
 - [ ] Capybara
-- [ ] Recaptcha
 - [ ] Brakeman
 - [ ] Cucumber
 - [ ] I18n
 - [ ] Nokogiri / Kimono
 - [ ] Active Jobs
 
+**JavaScript and/or Node**
 
-**NODE/JAVASCRIPT**
-
-- [ ] ES6 & Babel
-- [ ] Lodash
-- [ ] Moment.js
+- [ ] ES6
+- [ ] Lodash or Underscore
 - [ ] Cheerio
 - [ ] Browserify
-- [ ] CoffeeScript
 
-**VIEWS / FRONTEND**
+**UI Elements and Tools**
 
 - [ ] Modernizr
+- [ ] Static Site Generator (Jekyll, Hexo, or another)
 - [ ] LiveReload
 - [ ] SVG
 - [ ] Canvas API
 - [ ] WebRTC Video
 - [ ] WebRTC Audio
-- [ ] Phaser
+- [ ] Phaser game framework
 - [ ] Three.js
 - [ ] D3.js
 - [ ] Chart.js
-- [ ] HTML5 API
 - [ ] Polymer / Web components
+
+**Front End Frameworks**
+
 - [ ] React
 - [ ] Ionic
 - [ ] Meteor
@@ -75,20 +73,20 @@ Here are some suggestions, you are welcome to add your own:
 
 **Languages**
 
-- [ ] Swift
+- [ ] SASS or LESS
 - [ ] Python
 - [ ] Clojure
-- [ ] Rust
+- [ ] CoffeeScript
 - [ ] Go
+- [ ] Swift
 
-**Security**
+**Security and Authorization**
 
-- [ ] CORS
 - [ ] XSS
-- [ ] query injection
-
+- [ ] OAuth
+- [ ] Recaptcha
 
 **ETC**
 
-- [ ] OAuth
 - [ ] Websockets / Socket.io
+- [ ] TCP/IP
