@@ -54,8 +54,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>LEAVE BLANK</td>
   </tr>
 </table> -->
+##Week 11 
 
- ##Week 11 
  <table>
   <tr>
     <th></th>
@@ -97,7 +97,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Project 3</td>
     <td>Project 3</td>
   </tr>
-</table> -->
+</table>
 
 ## Week 10 - MEAN
  <table>
