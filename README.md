@@ -55,8 +55,8 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
 </table> -->
 
-<!-- ##Week 11 -->
-<!-- <table>
+ ##Week 11 
+ <table>
   <tr>
     <th></th>
     <th>Monday</th>
@@ -67,35 +67,35 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Big O (Alex, Juliana)</td>
+    <td>CodeWars & Interview Prep (Brianna prep / all)</td>
+    <td>CodeWars & Interview Prep (all)</td>
+    <td>CodeWars & Interview Prep (all)</td>
+    <td>CodeWars & Interview Prep (all)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>MEAN Auth (Braus, Alex)</td>
+    <td>Parse Auth (Ben, Matt)</td>
+    <td>Lightning Talk (Alex, Braus)  (team)</td>
+    <td>Project 3</td>
+    <td>Project 3</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Parse (Juliana, Ben)</td>
+    <td>Project 3 Intro + Approvals (team)</td>
+    <td>Project 3 Approvals (team)</td>
+    <td>Project 3</td>
+    <td></td>
   </tr>
   <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>LEAVE BLANK</td>
+    <td>Homework</td>
+    <td></td>
+    <td>Prep lightning talk</td>
+    <td>Project 3 prep</td>
+    <td>Project 3</td>
+    <td>Project 3</td>
   </tr>
 </table> -->
 
