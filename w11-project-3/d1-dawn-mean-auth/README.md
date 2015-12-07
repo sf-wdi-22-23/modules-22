@@ -154,7 +154,7 @@ app.config(function ($httpProvider) {
 
 **Getting Started**
 
-1. Fork, clone, npm install, nodemon [mean-auth-html](https://github.com/ajbraus/mean-auth-html).
+1. Fork, clone, npm install, nodemon [mean-auth-html](https://github.com/sf-wdi-22-23/mean-auth-html).
 1. Sign up, logout, and then login to make sure authentication is working.
 1. Look to see that the user was created.
 
