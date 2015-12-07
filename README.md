@@ -77,7 +77,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-23/tree/master/w11-mean-auth-project-3/mean-auth"> MEAN Auth </a> (Braus, Alex)</td>
     <td>Parse Auth (Ben, Matt)</td>
-    <td>Lightning Talk (Alex, Braus)  (team)</td>
+    <td>Lightning Talks (Alex, Braus)  (team)</td>
     <td>Project 3</td>
     <td>Project 3</td>
   </tr>
@@ -92,7 +92,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Homework</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d1-homework"> Add Parse To Project 0 </a></td>
-    <td>Prep lightning talk</td>
+    <td>Prepare your <a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w10-mean/d5-lightning-talks" target="_blank">lightning talk</a></td>
     <td>Project 3 prep</td>
     <td>Project 3</td>
     <td>Project 3</td>
