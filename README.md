@@ -91,7 +91,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Homework</td>
-    <td><a href"https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d1-homework"> Add Parse To Projject 0 </a></td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d1-homework"> Add Parse To Project 0 </a></td>
     <td>Prep lightning talk</td>
     <td>Project 3 prep</td>
     <td>Project 3</td>
