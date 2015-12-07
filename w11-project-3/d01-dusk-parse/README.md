@@ -28,7 +28,7 @@ You may use any front-end you already have or you can make a new one. I'm going 
 1. In `app.js`, include a `run` block that initializes your Parse application. In Angular, `run` blocks get run before all other code.
   ```js
   app.run(function() {
-      Parse.initialize("add-your-parse-application-Id","add-you-parse-javascript-key");
+      Parse.initialize("__YOUR_PARSE_APPLICATION_ID","__YOUR_PARSE_JAVASCRIPT_KEY");
     });
   ```
 
@@ -45,4 +45,11 @@ You may use any front-end you already have or you can make a new one. I'm going 
 1. Now go back to your Parse dashboard to see your new class and data!
 
 ## Challenge
-Create a fullstack Angular/Parse app CRUDing whatever resource you'd like. Could be fun to swap out your backend from your weekend project with a Parse backend. Consult the [Parse js docs](https://www.parse.com/docs/js/guide) and the [quick reference](https://www.parse.com/docs/rest/guide) for the rest API
+Create a fullstack Angular/Parse app CRUDing whatever resource you'd like. Could be fun to swap out your backend from your weekend project with a Parse backend.
+
+Suggestions:
+1. Weekend Lab
+1. Presidents project
+1. Any non-Angular project you built earlier that could use a quick database
+
+Consult the [Parse js docs](https://www.parse.com/docs/js/guide) and the [quick reference](https://www.parse.com/docs/rest/guide) for the rest API
