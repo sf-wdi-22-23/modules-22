@@ -67,7 +67,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Drills</td>
-    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d01-drills"> Big O </a>(Alex, Juliana)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d01-drills" target="_blank"> Big O </a>(Alex, Juliana)</td>
     <td>CodeWars & Interview Prep (Brianna prep / all)</td>
     <td>CodeWars & Interview Prep (all)</td>
     <td>CodeWars & Interview Prep (all)</td>
@@ -83,7 +83,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Parse (Juliana, Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d01-dusk-parse" target="_blank">Parse</a> (Ben)</td>
     <td>Project 3 Intro + Approvals (team)</td>
     <td>Project 3 Approvals (team)</td>
     <td>Project 3</td>
