@@ -3,7 +3,7 @@
 Owned by Facebook, Parse is a cloud app platform that enables users to add a scalable and powerful backend to launch a full-featured app.
 
 ### Setup Back-end
-1. Signup for [Parse](parse.com)
+1. Signup for [Parse](https://parse.com/)
 1. Select the "Data" product
 
   ![data](data.png)
