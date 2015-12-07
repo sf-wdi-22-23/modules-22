@@ -54,7 +54,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td>LEAVE BLANK</td>
   </tr>
 </table> -->
-##Week 11 
+##Week 11
 
  <table>
   <tr>
@@ -75,7 +75,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module1</td>
-    <td>MEAN Auth (Braus, Alex)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-23/tree/master/w11-mean-auth-project-3/mean-auth"> MEAN Auth </a> (Braus, Alex)</td>
     <td>Parse Auth (Ben, Matt)</td>
     <td>Lightning Talk (Alex, Braus)  (team)</td>
     <td>Project 3</td>
@@ -83,7 +83,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Parse (Juliana, Ben)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d01-dusk-parse" target="_blank">Parse</a> (Ben)</td>
     <td>Project 3 Intro + Approvals (team)</td>
     <td>Project 3 Approvals (team)</td>
     <td>Project 3</td>
