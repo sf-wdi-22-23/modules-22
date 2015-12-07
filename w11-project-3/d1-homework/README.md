@@ -2,7 +2,7 @@
 
 Remember [project 0!?](https://github.com/sf-wdi-22-23/modules-22/tree/master/w02-working-with-objects/project_zero) It was a microblog with no backend. For homework, you are going to link your project 0 up to a backend using Parse.  Work on a branch!
 
-Alternatively: Set up Parse as a backend for ANY of your other projects.  If you don't have any projects you're interested in trying Parse out with, you can use <a href="https://github.com/sf-wdi-22-23/Project-0-Solution/tree/master" target="blank">the class project 0 solution</a>.
+Alternatively: Set up Parse as a backend for ANY of your other projects.  If you don't have any projects you're interested in trying Parse out with, you can use <a href="https://github.com/sf-wdi-22-23/Project-0-Solution/tree/master" target="blank">the class project 0 solution</a>. Remember to fork and clone it if you choose this option.
 
 Use the [Parse Documentation](https://parse.com/docs/rest/guide) and what you learned today in class to set up a single resource Parse backend for Posts.
 
