@@ -84,7 +84,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/d01-dusk-parse" target="_blank">Parse</a> (Ben)</td>
-    <td>Project 3 Intro + Approvals (team)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/modules-22/tree/master/w11-project-3/project-3" target="_blank">Project 3 Intro + Approvals</a> (team)</td>
     <td>Project 3 Approvals (team)</td>
     <td>Project 3</td>
     <td></td>
