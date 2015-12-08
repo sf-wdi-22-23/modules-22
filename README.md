@@ -76,7 +76,7 @@ Look here for all things related to lesson notes, exercises, and solutions as we
   <tr>
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-22-23/modules-23/tree/master/w11-mean-auth-project-3/mean-auth"> MEAN Auth </a> (Braus, Alex)</td>
-    <td>Parse Auth (Ben, Matt)</td>
+    <td><a href="https://github.com/sf-wdi-22-23/parse-projects" target="_blank">Parse Auth</a> (Ben, Matt)</td>
     <td>Lightning Talks (Alex, Braus)  (team)</td>
     <td>Project 3</td>
     <td>Project 3</td>
