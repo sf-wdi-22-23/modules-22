@@ -76,8 +76,8 @@ We expect most students will complete this project individually, but pairs may b
 
 ## TIMELINE
 
-- **Wednesday, December 8th @ 2:00pm** - Project spec released.
-- **Thursday, December 9th @ 2:00pm** - Project planning deliverables deadline.
+- **Tuesday, December 8th @ 2:00pm** - Project spec released.
+- **Wednesday, December 9th @ 2:00pm** - Project planning deliverables deadline.
 - **Thursday, December 17th @ 10am** - Completed project deliverables deadline; project presentations.
 
 ## PRESENTATIONS
