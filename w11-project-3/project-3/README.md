@@ -86,4 +86,36 @@ Project 3 presentations will start at **10:00am** on **Thursday, December 17th**
 
 * What is your project, and what does it do? (demo)
 * What was your motivation to build it?
-* What did you learn?
+* What did you learn?  
+
+## MENTORS
+
+You'll meet with your mentor daily and for project evaluations. 
+
+### Alex
+
+* Angelo    
+* Francesca   
+* Mikey    
+* Riley    
+* Sam   
+* Will   
+
+
+### Ben
+
+* Chris   
+* Dani  
+* Laura B.   
+* Laura E.   
+* Margaux   
+* Uriel   
+
+### Brianna
+
+* Brian    
+* Jamey     
+* Jen    
+* Josh   
+* Matt    
+* Racha    
