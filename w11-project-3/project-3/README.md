@@ -90,7 +90,7 @@ Project 3 presentations will start at **10:00am** on **Thursday, December 17th**
 
 ## MENTORS
 
-You'll meet with your mentor daily and for project evaluations. 
+You'll meet with your mentor daily and get feedback from your mentor after the project. 
 
 ### Alex
 
@@ -104,8 +104,8 @@ You'll meet with your mentor daily and for project evaluations.
 
 ### Ben
 
-* Chris   
-* Dani  
+* Dani   
+* Jamey    
 * Laura B.   
 * Laura E.   
 * Margaux   
@@ -114,7 +114,7 @@ You'll meet with your mentor daily and for project evaluations.
 ### Brianna
 
 * Brian    
-* Jamey     
+* Chris   
 * Jen    
 * Josh   
 * Matt    
