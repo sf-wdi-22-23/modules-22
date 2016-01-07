@@ -531,3 +531,10 @@ Look here for all things related to lesson notes, exercises, and solutions as we
     <td></td>
   </tr>
 </table>
+
+
+
+<details> 
+  <summary>Q1: What is the best Language in the World? </summary>
+   <p> A1: JavaScript </p> 
+</details>
